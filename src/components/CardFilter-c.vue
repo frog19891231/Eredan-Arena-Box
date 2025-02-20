@@ -73,7 +73,7 @@ const tooltip = ref({
  */
 const fetchData = async () => {
     try {
-        const response = await fetch("./src/data/card.json");
+        const response = await fetch("src/data/card.json");
         characters.value = await response.json();
         console.log("成功讀取 JSON:", characters.value);
     } catch (error) {
