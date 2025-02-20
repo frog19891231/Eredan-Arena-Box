@@ -1,0 +1,149 @@
+[
+    {
+        "name": "Vivianne, The Botanist SV",
+        "id": "3903",
+        "Rarity": "Survival",
+        "classe": "Craftsman",
+        "guild": "Avalonians",
+        "race": "Human",
+        "basic_ability": {
+            "strength": "150",
+            "3": {
+                "skilltag": [
+                    "rain",
+                    "peryellowdice",
+                    "lightning",
+                    "peropp_str"
+                ]
+            },
+            "2": {
+                "skilltag": [
+                    "noble",
+                    "lightning",
+                    "peryellowdice",
+                    "opp_spore"
+                ]
+            },
+            "1": {
+                "skilltag": [
+                    "craft",
+                    "allava",
+                    "blessed seeds"
+                ]
+            }
+        },
+        "img_src": "https://imgur.com/dqlRB28",
+        "tag": [
+            "opp_spore",
+            "craft",
+            "allava",
+            "lightroot"
+        ],
+        "Strategy": {}
+    },
+    {
+        "name": "Volt the Capacitor SV",
+        "id": "2282",
+        "Rarity": "Survival",
+        "classe": "Sidekick",
+        "guild": "Pirates",
+        "race": "Beast",
+        "basic_ability": {
+            "strength": "",
+            "3": {
+                "skilltag": []
+            },
+            "2": {
+                "skilltag": []
+            },
+            "1": {
+                "skilltag": []
+            }
+        },
+        "img_src": "https://imgur.com/6p0T9HA",
+        "tag": [
+            "allpir",
+            "opp_thunderstruck",
+            "talonstrike"
+        ],
+        "Strategy": {}
+    },
+    {
+        "name": "Councillor Melinoé SV",
+        "id": "3957",
+        "Rarity": "Survival",
+        "classe": "Priest",
+        "guild": "The Council",
+        "race": "Naga",
+        "basic_ability": {
+            "strength": "",
+            "3": {
+                "skilltag": []
+            },
+            "2": {
+                "skilltag": []
+            },
+            "1": {
+                "skilltag": []
+            }
+        },
+        "img_src": "https://imgur.com/SLUzuKr",
+        "tag": [
+            "mediate",
+            "allzil",
+            "allrun",
+            "vigor"
+        ],
+        "Strategy": {}
+    },
+    {
+        "name": "Aitnaios, the Runesmith SV",
+        "id": "3927",
+        "Rarity": "Survival",
+        "classe": "Craftsman",
+        "guild": "Runic Legion",
+        "race": "Beast",
+        "basic_ability": {
+            "strength": "",
+            "3": {
+                "skilltag": []
+            },
+            "2": {
+                "skilltag": []
+            },
+            "1": {
+                "skilltag": []
+            }
+        },
+        "img_src": "https://imgur.com/3OBQVLW",
+        "tag": [
+            "craft",
+            "allrun",
+            "rune"
+        ],
+        "Strategy": {}
+    },
+    {
+        "name": "Unknown",
+        "id": "",
+        "Rarity": "",
+        "classe": "",
+        "guild": "",
+        "race": "",
+        "basic_ability": {
+            "strength": "",
+            "3": {
+                "skilltag": []
+            },
+            "2": {
+                "skilltag": []
+            },
+            "1": {
+                "skilltag": []
+            }
+        },
+        "img_src": "",
+        "tag": [],
+        "Strategy": {}
+    }
+]

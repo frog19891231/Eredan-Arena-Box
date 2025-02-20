@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 命令集.txt
+資料結構.txt
 
 # Editor directories and files
 .vscode/*
