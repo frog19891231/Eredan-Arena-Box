@@ -1,8 +1,8 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <!-- 導覽列 -->
-    <nav class="navbar">
-      <div class="container">
+    <nav class="navbar" :class="{ 'navbar-hidden': !showNavbar }">
+      <div class="container_home">
         <!-- Logo -->
         <div class="logo">MyLogo</div>
 
@@ -11,21 +11,25 @@
 
         <!-- 主要標籤 -->
         <ul :class="{ 'nav-links': true, 'show-menu': showMenu }">
-          <li><a href="#">篩選</a></li>
+          <li><a href="#" @click.prevent="switchComponent('CardFilter')">Card</a></li>
+          <li><a href="#" @click.prevent="switchComponent('SkillShow')">Content</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- 返回頂部按鈕 -->
-    <button v-show="showBackToTopButton" @click="scrollToTop" class="back-to-top">
+    <button
+      v-show="showBackToTopButton"
+      @click="scrollToTop"
+      class="back-to-top"
+    >
       ⬆
     </button>
 
     <!-- 主內容區域 -->
-    <main class="content">
+    <main class="main">
       <!-- 動態組件 -->
       <component :is="currentComponent"></component>
-      <CardFilter />
     </main>
 
     <!-- 頁腳 -->
@@ -37,28 +41,60 @@
 
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-import CardFilter from './CardFilter-c.vue'; // 確保路徑正確
+import { ref, onMounted, onBeforeUnmount, markRaw } from 'vue';
+import CardFilter from "./CardFilter.vue";
+import SkillShow from './SkillShow.vue';
+import AddData from './AddData.vue';
 
+
+// 狀態管理
 const showNavbar = ref(true);
 const lastScrollY = ref(0);
 const showMenu = ref(false);
 const showBackToTopButton = ref(false);
-const currentComponent = ref('CardFilter');
 
-const handleScroll = () => {
-  lastScrollY.value = window.scrollY;
-  showBackToTopButton.value = lastScrollY.value > 200;
+// 使用 markRaw 標記組件
+const components = {
+  CardFilter: markRaw(CardFilter),
+  SkillShow: markRaw(SkillShow),
+  AddData: markRaw(AddData),
+};
+const currentComponent = ref(components.AddData);
+
+// 切換組件功能
+const switchComponent = (componentName) => {
+  currentComponent.value = components[componentName];
 };
 
+// 滾動事件處理
+const handleScroll = () => {
+  const currentScrollY = window.scrollY;
+
+  // 控制導航欄的顯示/隱藏
+  if (currentScrollY > lastScrollY.value && currentScrollY > 100) {
+    showNavbar.value = false; // 向下滾動時隱藏導航欄
+  } else {
+    showNavbar.value = true; // 向上滾動時顯示導航欄
+  }
+
+  // 控制返回頂部按鈕的顯示
+  showBackToTopButton.value = currentScrollY > 200;
+
+  // 更新最後的滾動位置
+  lastScrollY.value = currentScrollY;
+};
+
+// 返回頂部功能
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
+// 切換漢堡選單
 const toggleMenu = () => {
   showMenu.value = !showMenu.value;
 };
 
+// 生命週期鉤子
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
 });
@@ -73,83 +109,62 @@ onBeforeUnmount(() => {
 /* 導覽列樣式 */
 .navbar {
   background-color: #1e40af;
-  /* 背景顏色 */
   color: white;
-  /* 文字顏色 */
   padding: 1rem;
-  /* 內邊距 */
   display: flex;
-  /* 使用 Flexbox 排版 */
   justify-content: space-between;
-  /* 項目分佈於兩端 */
   align-items: center;
-  /* 垂直居中 */
-  position: relative;
-  /* 正常元素流，不固定位置 */
+  position: fixed; /* 改為固定定位 */
+  top: 0;
+  left: 0;
   width: 100%;
-  /* 寬度 100% */
   z-index: 50;
-  /* 層級高於其他元素 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* 陰影效果 */
+  transition: transform 0.3s ease-in-out; /* 添加過渡效果 */
+}
+
+/* 導航欄隱藏時的樣式 */
+.navbar-hidden {
+  transform: translateY(-100%); /* 隱藏導航欄 */
 }
 
 /* 包裹導覽列內容的容器樣式 */
-.container {
+.container_home {
   display: flex;
-  /* 使用 Flexbox 排版 */
   justify-content: space-between;
-  /* 項目分佈於兩端 */
   align-items: center;
-  /* 垂直居中 */
   width: 90%;
-  /* 設定容器寬度 */
   max-width: 1200px;
-  /* 最大寬度 1200px */
 }
 
 /* Logo 樣式 */
 .logo {
   font-size: 1.5rem;
-  /* 字體大小 */
   font-weight: bold;
-  /* 加粗文字 */
 }
 
 /* 漢堡選單按鈕樣式（僅在小螢幕顯示） */
 .menu-toggle {
   display: none;
-  /* 預設隱藏 */
   background: none;
-  /* 去除背景 */
   border: none;
-  /* 去除邊框 */
   font-size: 1.5rem;
-  /* 字體大小 */
   color: white;
-  /* 文字顏色 */
   cursor: pointer;
-  /* 滑鼠為手形 */
 }
 
 /* 頁面上方導航項目的樣式 */
 .nav-links {
   display: flex;
-  /* 使用 Flexbox 排版 */
   gap: 1.5rem;
-  /* 項目間距 */
   font-size: 1.125rem;
-  /* 字體大小 */
 }
 
 /* 導覽項目連結的樣式 */
 .nav-links a {
   text-decoration: none;
-  /* 取消底線 */
   color: white;
-  /* 文字顏色 */
   transition: color 0.3s ease-in-out;
-  /* 滑鼠懸停過渡效果 */
 }
 
 /* 當滑鼠懸停時顯示底線 */
@@ -157,75 +172,56 @@ onBeforeUnmount(() => {
   text-decoration: underline;
 }
 
-/* 搜尋欄樣式 */
-.search-bar input {
-  padding: 0.5rem;
-  /* 內邊距 */
-  border-radius: 8px;
-  /* 圓角邊框 */
-  border: 1px solid #d1d5db;
-  /* 邊框顏色 */
-  outline: none;
-  /* 去除焦點輪廓 */
-}
-
 /* 手機版樣式 */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    /* 顯示漢堡選單 */
   }
 
   .nav-links {
     display: none;
-    /* 預設隱藏導航項目 */
     flex-direction: column;
-    /* 排成垂直 */
     position: absolute;
-    /* 絕對定位 */
     top: 100%;
-    /* 顯示在導航列下方 */
     left: 0;
-    /* 左對齊 */
     width: 100%;
-    /* 寬度 100% */
     background: #1e40af;
-    /* 背景顏色 */
     padding: 1rem;
-    /* 內邊距 */
   }
 
   .show-menu {
     display: flex;
-    /* 顯示導航項目 */
   }
 }
 
 /* 返回頂部按鈕樣式 */
 .back-to-top {
   position: fixed;
-  /* 固定位置 */
   bottom: 20px;
-  /* 距離頁面底部 20px */
   right: 20px;
-  /* 距離頁面右側 20px */
   background: #1e40af;
-  /* 背景顏色 */
-  color: white
-    /* 頁腳樣式 */
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* 頁尾樣式 */
 .footer {
   background-color: #1f2937;
-  /* 背景顏色 */
   color: white;
-  /* 文字顏色 */
   text-align: center;
-  /* 文字置中 */
   padding: 1rem;
-  /* 內邊距 */
   margin-top: 2rem;
-  /* 上邊距 */
+}
+
+.main {
+  padding-top: 120px;
 }
 </style>

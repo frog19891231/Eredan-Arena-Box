@@ -1,9 +1,4 @@
 {
-  "1": {},
-  "2": {
-    "en": "",
-    "zh": ""
-  },
   "Dice": [
     ":swordDice:",
     ":redDice:",
@@ -267,556 +262,1206 @@
       }
     }
   },
-  "Skill": {
-    "1": {
-      "name": {
-        "zh": ""
-      },
-      "description": {
-        "en": "",
-        "zh": ""
-      }
+  "Skill": [
+    {
+      "name": "Absorb",
+      "id": "4394",
+      "description": "Each of your opponents lose X of the specified alteration and you gain X of that alteration for each of them. \nYou gain even if they didn't lose anything.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4394.png"
     },
-    "Absorb": {
-      "name": {
-        "zh": "吸收"
-      },
-      "description": {
-        "en": "Each of your opponents lose X of the specified alteration and you gain X of that alteration for each of them. \nYou gain even if they didn't lose anything.",
-        "zh": "每位對手會失去 X 點指定的改變，而你將獲得每位對手失去的 X 點改變。\n即使對手沒有失去任何東西，你仍然可以獲得。"
-      }
+    {
+      "name": "Aftermath",
+      "id": "8407",
+      "description": "Negative alteration.\nAt the start of the fight OR at the end of skill activation phase suffer X Flat DMG.\nThis alteration is consumed when triggered.\nFlat DMG is a DMG that ignores everything.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8407.png"
     },
-    "Aftermath": {
-      "name": {
-        "zh": "後果"
-      },
-      "description": {
-        "en": "Negative alteration.\nAt the start of the fight OR at the end of skill activation phase suffer X Flat DMG.\nThis alteration is consumed when triggered.\nFlat DMG is a DMG that ignores everything.",
-        "zh": "負面改變。\n在戰鬥開始時或技能激活階段結束時，承受 X 點固定傷害。\n此改變在觸發時被消耗。\n固定傷害是無視一切的傷害。"
-      }
+    {
+      "name": "Ageless Wisdom",
+      "id": "9612",
+      "description": "At the start of the fight, if you have at least:\n2 Dice Rerolls lefting: you get 10 Dice Rerolls\n4 Dice Rerolls lefting: deal 3 times as much Spellbreaker DMG as your opp Strength\n8 Rerolls lefting: all your heroes receives 5 Stardust.\nSpellbreaker damage is a normal damage that also removes half of a random positive alteration from your opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9612.png"
     },
-    "Ageless Wisdom": {
-      "name": {
-        "zh": "永恆智慧"
-      },
-      "description": {
-        "en": "At the start of the fight, if you have at least:\n2 Dice Rerolls lefting: you get 10 Dice Rerolls\n4 Dice Rerolls lefting: deal 3 times as much Spellbreaker DMG as your opp Strength\n8 Rerolls lefting: all your heroes receives 5 Stardust.\nSpellbreaker damage is a normal damage that also removes half of a random positive alteration from your opponent.",
-        "zh": "在戰鬥開始時，如果你至少擁有：\n剩餘 2 次骰子重投：你獲得 10 次骰子重投\n剩餘 4 次骰子重投：造成相當於對手力量的 3 倍破咒傷害\n剩餘 8 次骰子重投：所有英雄獲得 5 點星塵。\n破咒傷害是一種普通傷害，還會移除對手隨機正面改變的一半。"
-      }
+    {
+      "name": "Allergy Bouquet",
+      "id": "5930",
+      "description": "Passive.\nEach time you activate an ability, the current TOTAL DMG you have been dealt is increased by 5%.\n(The damage caused ignores any alteration)",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5930.png"
     },
-    "Allergy Bouquet": {
-      "name": {
-        "zh": "過敏花束"
-      },
-      "description": {
-        "en": "Passive.\nEach time you activate an ability, the current TOTAL DMG you have been dealt is increased by 5%.\n(The damage caused ignores any alteration)",
-        "zh": "被動。\n每次你激活一個技能時，你目前受到的總傷害增加 5%。\n（造成的傷害無視任何改變）"
-      }
+    {
+      "name": "Allure",
+      "id": "5868",
+      "description": "Negative Alteration.\nThe next X times you increase or obtain a positive alteration, half (rounded up) of this increase/new alteration is given to your opponent instead. (Only the increased part is considered if the card already has the alteration)\nThis skill currently has a bug that when the holder gets an alteration with value 1, it is consumed but happens nothing.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5868.png"
     },
-    "Allure": {
-      "name": {
-        "zh": "魅惑"
-      },
-      "description": {
-        "en": "Negative Alteration.\nThe next X times you increase or obtain a positive alteration, half (rounded up) of this increase/new alteration is given to your opponent instead. (Only the increased part is considered if the card already has the alteration)\nThis skill currently has a bug that when the holder gets an alteration with value 1, it is consumed but happens nothing.",
-        "zh": "負面改變。\n接下來的 X 次你增加或獲得正面改變時，其中一半（向上取整）會轉移給你的對手。（如果卡牌已經擁有該改變，則僅考慮增加的部分）\n此技能目前存在一個錯誤：當持有者獲得值為 1 的改變時，該改變會被消耗，但什麼都不會發生。"
-      }
+    {
+      "name": "Alluring Skill",
+      "id": "5868",
+      "description": "After the skill effect, applies to the opponent 1 Allure.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5868.png"
     },
-    "Alluring Skill": {
-      "name": {
-        "zh": "魅惑技能"
-      },
-      "description": {
-        "en": "After the skill effect, applies to the opponent 1 Allure.",
-        "zh": "技能效果結束後，對對手施加 1 層魅惑。"
-      }
+    {
+      "name": "Almighty Frost",
+      "id": "9715",
+      "description": "Passive.\nEach time your opponent receives a Frost token, you get 20 Might for each frost token received by them.\nIf you have more than 200 Might, you get 1 Critical instead.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9715.png"
     },
-    "Almighty Frost": {
-      "name": {
-        "zh": "全能冰霜"
-      },
-      "description": {
-        "en": "Passive.\nEach time your opponent receives a Frost token, you get 20 Might for each frost token received by them.\nIf you have more than 200 Might, you get 1 Critical instead.",
-        "zh": "被動。\n每次對手獲得冰霜標記時，你會為每個他們獲得的冰霜標記獲得 20 點力量。\n如果你擁有超過 200 點力量，則改為獲得 1 點暴擊。"
-      }
+    {
+      "name": "Angry Totem",
+      "id": "6652",
+      "description": "Passive. Neutral Alteration.\nEach time you gain Strength, your opponent's increase by 20% of it for each Angry Totem you have.\nThis effect cannot trigger another totem.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6652.png"
     },
-    "Angry Totem": {
-      "name": {
-        "zh": "憤怒圖騰"
-      },
-      "description": {
-        "en": "Passive. Neutral Alteration.\nEach time you gain Strength, your opponent's increase by 20% of it for each Angry Totem you have.\nThis effect cannot trigger another totem.",
-        "zh": "被動，中立變化。\n每次你獲得力量時，你的對手的力量會因你擁有的每個憤怒圖騰而增加該力量的 20%。\n此效果無法觸發其他圖騰。"
-      }
+    {
+      "name": "Arcane Barrier",
+      "id": "4798",
+      "description": "Positive Alteration. Shield-like.\nAbsorb the X next DMG you suffer (Normal and Shock DMG only).\nDuring the combat, while you possess this alteration, every time you receive a negative alteration, you inflict a Shock 500 to your opponent, and every time you receive a positive alteration that isn't Arcane Barrier, you receive more 500 Arcane Barrier.\nIncreasing alterations triggers the side effect too.\nShock DMG is a DMG that cannot be altered by any alteration, but it cannot ignore shield-like skills.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4798.png"
     },
-    "Arcane Barrier": {
-      "name": {
-        "zh": "秘法屏障"
-      },
-      "description": {
-        "en": "Positive Alteration. Shield-like.\nAbsorb the X next DMG you suffer (Normal and Shock DMG only).\nDuring the combat, while you possess this alteration, every time you receive a negative alteration, you inflict a Shock 500 to your opponent, and every time you receive a positive alteration that isn't Arcane Barrier, you receive more 500 Arcane Barrier.\nIncreasing alterations triggers the side effect too.\nShock DMG is a DMG that cannot be altered by any alteration, but it cannot ignore shield-like skills.",
-        "zh": "正面變化，類似護盾。\n吸收你承受的下一次 X 傷害（僅限普通傷害和衝擊傷害）。\n在戰鬥中，當你擁有此變化時，每次你獲得負面變化時，會對對手造成 500 點衝擊傷害；每次你獲得的正面變化不是秘法屏障時，會額外獲得 500 點秘法屏障。\n變化的增加也會觸發此效果。\n衝擊傷害是一種無法被任何變化改變的傷害，但它無法無視類似護盾的技能。"
-      }
+    {
+      "name": "Aura",
+      "id": "q5vmftf",
+      "description": "Neutral Alteration. Passive.\nIncreases the value of a specified alteration either by a given value or by a given percentage.",
+      "img_url": "https://i.imgur.com/q5vmftf.png"
     },
-    "Aura": {
-      "name": {
-        "zh": "光環"
-      },
-      "description": {
-        "en": "Neutral Alteration. Passive.\nIncreases the value of a specified alteration either by a given value or by a given percentage.",
-        "zh": "中立變化，被動。\n提高指定變化的值，無論是通過給定的數值還是給定的百分比。"
-      }
+    {
+      "name": "Azure Tsunami",
+      "id": "3950",
+      "description": "At start of the combat:\nFor each :blueDice: causes 1000 Pure DMG.\nIncreases all your positive alterations by 25% (rounded up).\nPure DMG is a DMG that ignores any alteration that could reduce or prevent it.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/3950.png"
     },
-    "Azure Tsunami": {
-      "name": {
-        "zh": "蔚藍海嘯"
-      },
-      "description": {
-        "en": "At start of the combat:\nFor each :blueDice: causes 1000 Pure DMG.\nIncreases all your positive alterations by 25% (rounded up).\nPure DMG is a DMG that ignores any alteration that could reduce or prevent it.",
-        "zh": "戰鬥開始時：\n每個 :blueDice: 造成 1000 點純傷害。\n所有你的正面變化提高 25%（四捨五入）。\n純傷害是一種忽視任何能減少或防止它的變化的傷害。"
-      }
+    {
+      "name": "Backstab",
+      "id": "110",
+      "description": "Deals X Normal DMG to your opponent.\nYour opponent loses X/2 Strength.\nNormal DMG is a DMG that can be altered by anything.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/110.png"
     },
-    "Backstab": {
-      "name": {
-        "zh": "背刺"
-      },
-      "description": {
-        "en": "Deals X Normal DMG to your opponent.\nYour opponent loses X/2 Strength.\nNormal DMG is a DMG that can be altered by anything.",
-        "zh": "對你的對手造成 X 點普通傷害。\n你的對手失去 X/2 點力量。\n普通傷害是一種可以被任何東西改變的傷害。"
-      }
+    {
+      "name": "Barrage",
+      "id": "4141",
+      "description": "Deal X Normal DMG to your opponent.\nYour opponent receives X/10 DMG-.\nRepeat this skill effect for each Powder your opponent has. Consumes his powders.\nNormal DMG is a DMG that can be altered by anything.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4141.png"
     },
-    "Barrage": {
-      "name": {
-        "zh": "連射"
-      },
-      "description": {
-        "en": "Deal X Normal DMG to your opponent.\nYour opponent receives X/10 DMG-.\nRepeat this skill effect for each Powder your opponent has. Consumes his powders.\nNormal DMG is a DMG that can be altered by anything.",
-        "zh": "對你的對手造成 X 點普通傷害。\n你的對手受到 X/10 點傷害減免。\n對每個對手擁有的火藥重複此技能效果。消耗他的火藥。\n普通傷害是一種可以被任何東西改變的傷害。"
-      }
+    {
+      "name": "Berserk",
+      "id": "50",
+      "description": "Positive alteration.\nEach time you suffer a DMG that is not Flat DMG, increases your Strength by X.\nFlat DMG is a DMG that ignores every alteration from you and your opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/50.png"
     },
-    "Berserk": {
-      "name": {
-        "zh": "狂暴"
-      },
-      "description": {
-        "en": "Positive alteration.\nEach time you suffer a DMG that is not Flat DMG, increases your Strength by X.\nFlat DMG is a DMG that ignores every alteration from you and your opponent.",
-        "zh": "正面變化。\n每次你承受的傷害不是固定傷害時，會增加你的力量 X。\n固定傷害是一種無視你和對手所有變化的傷害。"
-      }
+    {
+      "name": "Big Bang Requiem",
+      "id": "8049",
+      "description": "This Alteration's tick starts at 12, each time one of your opponent dice change, the tick goes down by 1 and your opponent receives 300 Echo.\nWhen the tick goes down to 0: All opp dice are changed to :yellowDice: & deal 99 999 DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8049.png"
     },
-    "Big Bang Requiem": {
-      "name": {
-        "zh": "大爆炸安魂曲"
-      },
-      "description": {
-        "en": "This Alteration's tick starts at 12, each time one of your opponent dice change, the tick goes down by 1 and your opponent receives 300 Echo.\nWhen the tick goes down to 0: All opp dice are changed to :yellowDice: & deal 99 999 DMG.",
-        "zh": "此變化的計時從 12 開始，每次對手的骰子變化，計時減少 1 並且對手會受到 300 點回聲傷害。\n當計時降至 0 時：所有對手的骰子將變為 :yellowDice: 並造成 99,999 點傷害。"
-      }
+    {
+      "name": "Bite",
+      "id": "8595",
+      "description": "Deal X normal damage and your opponent receive 100 Bleeding.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8595.png"
     },
-    "Bite": {
-      "name": {
-        "zh": "咬擊"
-      },
-      "description": {
-        "en": "Deal X normal damage and your opponent receive 100 Bleeding.",
-        "zh": "造成 X 點普通傷害並使對手受到 100 點出血傷害。"
-      }
+    {
+      "name": "Bleeding",
+      "id": "4535",
+      "description": "When the bleeding hero takes damage, he immediately suffers an additional flat damage equal to his bleeding value.\nIf the damage is absorbed or is equal 0, Bleeding won't trigger.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4535.png"
     },
-    "Bleeding": {
-      "name": {
-        "zh": "出血"
-      },
-      "description": {
-        "en": "When the bleeding hero takes damage, he immediately suffers an additional flat damage equal to his bleeding value.\nIf the damage is absorbed or is equal 0, Bleeding won't trigger.",
-        "zh": "當出血的英雄承受傷害時，他會立即遭受等同於出血值的額外固定傷害。\n如果傷害被吸收或為 0，出血效果不會觸發。"
-      }
+    {
+      "name": "Blessed Seeds",
+      "id": "7088",
+      "description": "The next X times you activate an ability, you receive 200 Lightroot.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7088.png"
     },
-    "Blessed Seeds": {
-      "name": {
-        "zh": "祝福種子"
-      },
-      "description": {
-        "en": "The next X times you activate an ability, you receive 200 Lightroot.",
-        "zh": "接下來 X 次你啟動技能時，你將獲得 200 點光根。"
-      }
+    {
+      "name": "Blessing",
+      "id": "419",
+      "description": "Each time you deal DMG, you are healed by X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/419.png"
     },
-    "Blessing": {
-      "name": {
-        "zh": "祝福"
-      },
-      "description": {
-        "en": "Each time you deal DMG, you are healed by X.",
-        "zh": "每次你造成傷害時，你會恢復 X 點生命。"
-      }
+    {
+      "name": "Blizzard",
+      "id": "258",
+      "description": "Positive alteration. Shield-like.\nAbsorb the X next DMG you suffer (Normal and Shock DMG only).\nEach time Blizzard absorbs DMG, your opponent gets 1 Frost.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/258.png"
     },
-    "Blizzard": {
-      "name": {
-        "zh": "暴風雪"
-      },
-      "description": {
-        "en": "Positive alteration. Shield-like.\nAbsorb the X next DMG you suffer (Normal and Shock DMG only).\nEach time Blizzard absorbs DMG, your opponent gets 1 Frost.",
-        "zh": "正面變化，類似護盾。\n吸收你承受的下一次 X 傷害（僅限普通傷害和衝擊傷害）。\n每次暴風雪吸收傷害時，你的對手會獲得 1 點冰霜。"
-      }
+    {
+      "name": "Bloodthirsty Thorns",
+      "id": "9193",
+      "description": "Passive.\nEach time your heroes' Thorns deal damage, their opponent receives 10% of it's value as Bleeding.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9193.png"
     },
-    "Bloodthirsty Thorns": {
-      "name": {
-        "zh": "嗜血荊棘"
-      },
-      "description": {
-        "en": "Passive.\nEach time your heroes' Thorns deal damage, their opponent receives 10% of it's value as Bleeding.",
-        "zh": "被動。\n每次你的英雄的荊棘造成傷害時，對手會受到其 10% 的傷害值作為出血傷害。"
-      }
+    {
+      "name": "Blue Gift",
+      "id": "3991",
+      "description": "Neutral Alteration.\nAfter your opponent have dealt DMG to you and your DMG suffered is higher or equal to 5000 DMG, receive 800 Shield for each Blue Gift you have and consume all.\nIf you receive a gift after you already have 5000 suffered DMG, the gift is going to trigger in the next DMG you suffer.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/3991.png"
     },
-    "Blue Gift": {
-      "name": {
-        "zh": "藍色禮物"
-      },
-      "description": {
-        "en": "Neutral Alteration.\nAfter your opponent have dealt DMG to you and your DMG suffered is higher or equal to 5000 DMG, receive 800 Shield for each Blue Gift you have and consume all.\nIf you receive a gift after you already have 5000 suffered DMG, the gift is going to trigger in the next DMG you suffer.",
-        "zh": "中立變化。\n在對手對你造成傷害並且你承受的傷害等於或高於 5000 點後，對每個藍色禮物，你將獲得 800 點護盾並消耗所有禮物。\n如果你在已經承受 5000 點傷害後收到禮物，該禮物將在你下一次承受傷害時觸發。"
-      }
+    {
+      "name": "Brain Freeze",
+      "id": "7089",
+      "description": "The 2 heroes in combat lose all their positive alterations and all their :swordDice: become :redDice:.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7089.png"
     },
-    "Brain Freeze": {
-      "name": {
-        "zh": "腦凍"
-      },
-      "description": {
-        "en": "The 2 heroes in combat lose all their positive alterations and all their :swordDice: become :redDice:.",
-        "zh": "戰鬥中的兩位英雄失去所有正面變化，並且所有 :swordDice: 變為 :redDice:。"
-      }
+    {
+      "name": "Brave skill",
+      "id": "GMSqyhE",
+      "description": "The skill is amplified by half if your opponent is more wounded than you.",
+      "img_url": "https://i.imgur.com/GMSqyhE.png"
     },
-    "Brave": {
-      "name": {
-        "zh": "勇敢"
-      },
-      "description": {
-        "en": "The skill is amplified by half if your opponent is more wounded than you.",
-        "zh": "如果你的對手受傷比你更重，該技能的效果會增強一半。"
-      }
+    {
+      "name": "Bulwark",
+      "id": "723",
+      "description": "All the damage received above X is reduced to X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/723.png"
     },
-    "Bulwark": {
-      "name": {
-        "zh": "堡壘"
-      },
-      "description": {
-        "en": "All the damage received above X is reduced to X.",
-        "zh": "所有超過 X 的傷害將被減少至 X。"
-      }
+    {
+      "name": "Burgundy Gift",
+      "id": "9716",
+      "description": "Neutral Alteration.\nAt the start of the fight, your active allies receive 2 Stardust.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9716.png"
     },
-    "Burgundy Gift": {
-      "name": {
-        "zh": "酒紅禮物"
-      },
-      "description": {
-        "en": "Neutral Alteration.\nAt the start of the fight, your active allies receive 2 Stardust.",
-        "zh": "中立變化。\n戰鬥開始時，你的主動盟友獲得 2 顆星塵。"
-      }
+    {
+      "name": "Burning Light",
+      "id": "4593",
+      "description": "Every time your heroes are healed, they cause a DMG to their opponents equals 35% of the Heal.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4593.png"
     },
-    "Burning Light": {
-      "name": {
-        "zh": "燃燒之光"
-      },
-      "description": {
-        "en": "Every time your heroes are healed, they cause a DMG to their opponents equals 35% of the Heal.",
-        "zh": "每次你的英雄被治療時，他們會對對手造成相當於治療量 35% 的傷害。"
-      }
+    {
+      "name": "Caress of Death",
+      "id": "7458",
+      "description": "Steal your opponent's positive alterations one by one. For each stolen alteration deal 1000 Life Drain DMG.\nA Life Drain DMG is a Normal DMG that heals you by the same starting value.\nThe opposing positive are stolen BEFORE the Life Drains.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7458.png"
     },
-    "Caress of Death": {
-      "name": {
-        "zh": "死亡之撫"
-      },
-      "description": {
-        "en": "Steal your opponent's positive alterations one by one. For each stolen alteration deal 1000 Life Drain DMG.\nA Life Drain DMG is a Normal DMG that heals you by the same starting value.\nThe opposing positive are stolen BEFORE the Life Drains.",
-        "zh": "一個接一個地竊取對手的正面變化。每偷取一個變化，造成 1000 點生命吸取傷害。\n生命吸取傷害是一種普通傷害，會以相同的初始數值治療你。\n對方的正面變化會在生命吸取之前被竊取。"
-      }
+    {
+      "name": "Chain Lightning",
+      "id": "4059",
+      "description": "If the card suffers from the thunderstruck effect, it spreads it at 30% to its allies.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4059.png"
     },
-    "Chain Lightning": {
-      "name": {
-        "zh": "連鎖閃電"
-      },
-      "description": {
-        "en": "If the card suffers from the thunderstruck effect, it spreads it at 30% to its allies.",
-        "zh": "如果該卡牌受到雷擊效果，則會以 30% 的比例將其傳播給盟友。"
-      }
+    {
+      "name": "Chanelled Lightning",
+      "id": "8738",
+      "description": "Negative Alteration.\nAt the start of the fight, suffer X Lightning DMG and your allies receives X/2 Chanelled Lightning.\nLightning DMG is a normal DMG that applies 10% of its value as Thunderstruck to the opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8738.png"
     },
-    "Chanelled Lightning": {
-      "name": {
-        "zh": "引導閃電"
-      },
-      "description": {
-        "en": "Negative Alteration.\nAt the start of the fight, suffer X Lightning DMG and your allies receives X/2 Chanelled Lightning.\nLightning DMG is a normal DMG that applies 10% of its value as Thunderstruck to the opponent.",
-        "zh": "負面變化。\n戰鬥開始時，承受 X 點閃電傷害，並且你的盟友會獲得 X/2 點引導閃電。\n閃電傷害是一種普通傷害，會將其 10% 的傷害值作為雷擊效果施加於對手。"
-      }
+    {
+      "name": "Charged Skill",
+      "id": "HQAxqc8",
+      "description": "Increases the skill value by half consuming 1 Powder or 100 Thunderstruck on you.\n(Powder has priority if you have both.)",
+      "img_url": "https://i.imgur.com/HQAxqc8.png"
     },
-    "Charged Skill": {
-      "name": {
-        "zh": "充能技能"
-      },
-      "description": {
-        "en": "Increases the skill value by half consuming 1 Powder or 100 Thunderstruck on you.\n(Powder has priority if you have both.)",
-        "zh": "通過消耗 1 顆火藥或 100 點雷擊傷害來提高技能值的一半。\n（如果兩者同時擁有，優先消耗火藥。）"
-      }
+    {
+      "name": "Charts of Infinity",
+      "id": "6344",
+      "description": "Neutral Alteration.\nThe next times you activate a skill deal 2000 pure DMG and your opponent receives half of one of your negative alterations, and his allies receive 25% of it.\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.\nYou do not lose any part of your negative alterations.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6344.png"
     },
-    "Charts of Infinity": {
-      "name": {
-        "zh": "無盡圖表"
-      },
-      "description": {
-        "en": "Neutral Alteration.\nThe next times you activate a skill deal 2000 pure DMG and your opponent receives half of one of your negative alterations, and his allies receive 25% of it.\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.\nYou do not lose any part of your negative alterations.",
-        "zh": "中立變化。\n接下來每次你啟動技能時，造成 2000 點純傷害，並且你的對手會受到你一個負面變化的一半傷害，對手的盟友則會受到其中 25% 的傷害。\n純傷害是一種無視所有能減少或防止它的變化的傷害。\n你不會失去任何部分的負面變化。"
-      }
+    {
+      "name": "Chromatic Symphony",
+      "id": "5757",
+      "description": "At the start of combat, your opponent receives 500 Echo for each of your unique dice pairs (RR or BB or YY or SS).",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5757.png"
     },
-    "Chromatic Symphony": {
-      "name": {
-        "zh": "色彩交響曲"
-      },
-      "description": {
-        "en": "At the start of combat, your opponent receives 500 Echo for each of your unique dice pairs (RR or BB or YY or SS).",
-        "zh": "戰鬥開始時，對手會根據你擁有的每一對獨特骰子組合（RR、BB、YY 或 SS）收到 500 點回聲。"
-      }
+    {
+      "name": "Cleaver of Athorg",
+      "id": "5754",
+      "description": "Neutral Alteration.\nEach time you activate a Skill, your opponent receive 2 Frost for each of your :swordDice:.\nThis alteration isn't consumable.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5754.png"
     },
-    "Cleaver of Athorg": {
-      "name": {
-        "zh": "阿索爾的開膛刀"
-      },
-      "description": {
-        "en": "Neutral Alteration.\nEach time you activate a Skill, your opponent receive 2 Frost for each of your :swordDice:.\nThis alteration isn't consumable.",
-        "zh": "中立變化。\n每次你啟動技能時，對手會根據你擁有的每個 :swordDice: 受到 2 點冰霜。\n此變化不可消耗。"
-      }
+    {
+      "name": "Cohesion",
+      "id": "1750",
+      "description": "At the start of combat, the value of your skills is increased by 10% for each of the specified allies.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/1750.png"
     },
-    "Cohesion": {
-      "name": {
-        "zh": "凝聚力"
-      },
-      "description": {
-        "en": "At the start of combat, the value of your skills is increased by 10% for each of the specified allies.",
-        "zh": "戰鬥開始時，根據每個指定的盟友，你的技能效果提高 10%。"
-      }
+    {
+      "name": "Confusion",
+      "id": "8778",
+      "description": "Negative Alteration. Consumable\nWhen the holder of this debuff gets hit by a :swordDice:, the holder causes a :swordDice: DMG to himself too.\nThe Confusion DMG is a normal DMG that the card causes to itself considering all the alterations he has, i.e., consuming own Criticals, increased by DMG+, decreased by DMG-...",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8778.png"
     },
-    "Confusion": {
-      "name": {
-        "zh": "混亂"
-      },
-      "description": {
-        "en": "Negative Alteration. Consumable\nWhen the holder of this debuff gets hit by a :swordDice:, the holder causes a :swordDice: DMG to himself too.\nThe Confusion DMG is a normal DMG that the card causes to itself considering all the alterations he has, i.e., consuming own Criticals, increased by DMG+, decreased by DMG-...",
-        "zh": "負面變化。可消耗\n當擁有此 debuff 的卡牌被 :swordDice: 攻擊時，該卡牌也會對自己造成一個 :swordDice: 傷害。\n混亂傷害是卡牌根據自己擁有的所有變化所造成的普通傷害，即消耗自己的暴擊，並受到 DMG+ 增加、DMG- 減少等影響..."
-      }
+    {
+      "name": "Constricting Skill",
+      "id": "6872",
+      "description": "After the skill effect, applies to the opponent as much Constriction as half of the skill value.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6872.png"
     },
-    "Constricting Skill": {
-      "name": {
-        "zh": "束縛技能"
-      },
-      "description": {
-        "en": "After the skill effect, applies to the opponent as much Constriction as half of the skill value.",
-        "zh": "在技能效果結束後，對對手施加相當於技能值一半的束縛。"
-      }
+    {
+      "name": "Constriction",
+      "id": "6872",
+      "description": "Negative alteration.\nEach time you activate a skill, suffer X DMG and all your negative alterations are increased by 10%.\nThis alteration self-increases too.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6872.png"
     },
-    "Constriction": {
-      "name": {
-        "zh": "束縛"
-      },
-      "description": {
-        "en": "Negative alteration.\nEach time you activate a skill, suffer X DMG and all your negative alterations are increased by 10%.\nThis alteration self-increases too.",
-        "zh": "負面變化。\n每次你啟動技能時，承受 X 點傷害，並且所有負面變化都增加 10%。\n此變化也會自我增強。"
-      }
+    {
+      "name": "Corrupt",
+      "id": "4500",
+      "description": "The skill is amplified by half for each negative alteration on your opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4500.png"
     },
-    "Corrupt": {
-      "name": {
-        "zh": "腐化"
-      },
-      "description": {
-        "en": "The skill is amplified by half for each negative alteration on your opponent.",
-        "zh": "每當你的對手有一個負面變化時，技能效果會增強一半。"
-      }
+    {
+      "name": "Crackling Incantation",
+      "id": "5049",
+      "description": "Each time you are dealt DMG, you receive 3% of the total as DMG+ (flat increase if you already have DMG+).\nA flat increase is the increase of an alteration that cannot interact with any other effect in the game.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5049.png"
     },
-    "Crackling Incantation": {
-      "name": {
-        "zh": "噼啪咒語"
-      },
-      "description": {
-        "en": "Each time you are dealt DMG, you receive 3% of the total as DMG+ (flat increase if you already have DMG+).\nA flat increase is the increase of an alteration that cannot interact with any other effect in the game.",
-        "zh": "每次你受到傷害時，會獲得相當於總傷害值 3% 的 DMG+（如果已經擁有 DMG+，則為固定增加）。\n固定增加是指無法與遊戲中的任何其他效果交互的變化提升。"
-      }
+    {
+      "name": "Craft",
+      "id": "5670",
+      "description": "Craft do something depending on the Swords you roll before the skill activation phase.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5670.png"
     },
-    "Craft": {
-      "name": {
-        "zh": "工匠"
-      },
-      "description": {
-        "en": "Craft do something depending on the Swords you roll before the skill activation phase.",
-        "zh": "工匠根據在技能啟動階段前擲出的劍骰數量執行特定行動。"
-      }
+    {
+      "name": "Crimson Death",
+      "id": "5238",
+      "description": "Each time the opponent in combat receives Bleeding, the Strength of all your heroes will be increased by a quarter of the value. (This effect happens in all combats)",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5238.png"
     },
-    "Crimson Death": {
-      "name": {
-        "zh": "緋紅之死"
-      },
-      "description": {
-        "en": "Each time the opponent in combat receives Bleeding, the Strength of all your heroes will be increased by a quarter of the value. (This effect happens in all combats)",
-        "zh": "每當戰鬥中的對手受到流血效果時，所有英雄的力量將增加該值的四分之一。（此效果在所有戰鬥中生效）"
-      }
+    {
+      "name": "Critical",
+      "id": "93",
+      "description": "The next X times you deal DMG, the DMG is doubled.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/93.png"
     },
-    "Crushing Skill": {
-      "name": {
-        "zh": "碾壓技能"
-      },
-      "description": {
-        "en": "Increase the skill value by 50% if your Strength is higher than your opponent's Strength.",
-        "zh": "如果你的力量高於對手的力量，技能值將增加 50%。"
-      }
+    {
+      "name": "Crush",
+      "id": "4213",
+      "description": "Deal X DMG to your opponent (orX*1.5 of your Strength is superior to your opponents).",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4213.png"
     },
-    "Curse": {
-      "name": {
-        "zh": "詛咒"
-      },
-      "description": {
-        "en": "Negative Alteration.\nAt the end of the skill phase, you suffer X flat DMG, repeated for every other negative alteration.\nFlat DMG is a DMG that ignores everything.",
-        "zh": "負面變化。\n在技能階段結束時，你會承受 X 點固定傷害，並對每個其他負面變化重複一次。\n固定傷害是一種無視所有效果的傷害。"
-      }
+    {
+      "name": "Crushing Skill",
+      "id": "8595",
+      "description": "Increase the skill value by 50% if your Strength is higher than your opponent's Strength.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8595.png"
     },
-    "Cursed Skill": {
-      "name": {
-        "zh": "詛咒技能"
-      },
-      "description": {
-        "en": "After the skill, applies to the opponent 10% of the skill's value as Curse, +10% for each Eclipse on the opponent.",
-        "zh": "技能結束後，對對手施加該技能值 10% 的詛咒效果，並根據對手擁有的每個蝕效果額外增加 10%。"
-      }
+    {
+      "name": "Curse",
+      "id": "4543",
+      "description": "Negative Alteration.\nAt the end of the skill phase, you suffer X flat DMG, repeated for every other negative alteration.\nFlat DMG is a DMG that ignores everything.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4543.png"
     },
-    "DMG Drain": {
-      "name": {
-        "zh": "傷害汲取"
-      },
-      "description": {
-        "en": "Your opponents' DMG are decreased by X and all your DMG are increased by X.",
-        "zh": "你的對手的傷害降低 X，而你的所有傷害增加 X。"
-      }
+    {
+      "name": "Cursed Skill",
+      "id": "4543",
+      "description": "After the skill, applies to the opponent 10% of the skill's value as Curse, +10% for each Eclipse on the opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4543.png"
     },
-    "DMG+": {
-      "name": {
-        "zh": "傷害提升"
-      },
-      "description": {
-        "en": "All your DMG is increased by X.",
-        "zh": "你的所有傷害增加 X。"
-      }
+    {
+      "name": "DMG Drain",
+      "id": "109",
+      "description": "Your opponents' DMG are decreased by X and all your DMG are increased by X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/109.png"
     },
-    "DMG-": {
-      "name": {
-        "zh": "傷害降低"
-      },
-      "description": {
-        "en": "DMG dealt by your character is reduced by X.",
-        "zh": "你的角色造成的傷害減少 X。"
-      }
+    {
+      "name": "DMG+",
+      "id": "113",
+      "description": "All your DMG is increased by X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/113.png"
     },
-    "Dark Heritage": {
-      "name": {
-        "zh": "黑暗傳承"
-      },
-      "description": {
-        "en": "Every time your cards get an alteration that they didn’t have, their opponents receive 35 Terror.",
-        "zh": "每當你的卡牌獲得一個原本沒有的變化時，他們的對手將受到 35 點恐懼效果。"
-      }
+    {
+      "name": "DMG-",
+      "id": "155",
+      "description": "DMG dealt by your character is reduced by X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/155.png"
     },
-    "Deadly Rain": {
-      "name": {
-        "zh": "致命暴雨"
-      },
-      "description": {
-        "en": "If Deathcaller Ludmilla is in play, at the start of the fight, deal as much Pure DMG as the Strength of Deathcaller Ludmilla to your opponent and your opponent receives 10% of the total as Bleeding, 3 times.\n\nDeathcaller Ludmilla is always drawn at the beginning of the fight.\n\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
-        "zh": "如果死亡呼喚者露德米拉在場，戰鬥開始時，對你的對手造成與死亡呼喚者露德米拉力量等量的純粹傷害，並且對手將承受總傷害的 10% 作為流血效果，該效果重複 3 次。\n\n死亡呼喚者露德米拉在戰鬥開始時總是會被抽到。\n\n純粹傷害是一種無法被任何變化減少或防止的傷害。"
-      }
+    {
+      "name": "Dark Heritage",
+      "id": "4823",
+      "description": "Every time your cards get an alteration that they didn’t have, their opponents receive 35 Terror.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4823.png"
     },
-    "Death Stare": {
-      "name": {
-        "zh": "死亡凝視"
-      },
-      "description": {
-        "en": "Deal X DMG minus the Strength of your opponent that ignores all alterations that could reduce or prevent it.",
-        "zh": "造成 X 點傷害，減去對手的力量，並且該傷害無視所有可能減少或防止傷害的變化。"
-      }
+    {
+      "name": "Deadly Rain",
+      "id": "7602",
+      "description": "If Deathcaller Ludmilla is in play, at the start of the fight, deal as much Pure DMG as the Strength of Deathcaller Ludmilla to your opponent and your opponent receives 10% of the total as Bleeding, 3 times.\n\nDeathcaller Ludmilla is always drawn at the beginning of the fight.\n\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7602.png"
     },
-    "Decisive Strikes": {
-      "name": {
-        "zh": "果斷打擊"
-      },
-      "description": {
-        "en": "Deal X Pure DMG.\n\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
-        "zh": "造成 X 點純粹傷害。\n\n純粹傷害是一種無法被任何變化減少或防止的傷害。"
-      }
+    {
+      "name": "Death Stare",
+      "id": "311",
+      "description": "Deal X DMG minus the Strength of your opponent that ignores all alterations that could reduce or prevent it.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/311.png"
     },
-    "Decoy": {
-      "name": {
-        "zh": "誘餌"
-      },
-      "description": {
-        "en": "Positive Alteration\n\nIf one of your positive alterations should be targeted by one of your opponent's skills, it targets Decoy instead.\n\nThis alteration is triggered by Mimic, Mad Hat, Spellbreaker & Dispel.\n\nThis skill is not triggered by Tidal Wave, Swarm of Decay, Shieldbreaker, Brain Freeze or Caress of Death.\n\nWhen triggered, only 1 Decoy is consumed, no matter the effect redirected.",
-        "zh": "正面變化\n\n如果你的某個正面變化應該被對手的技能針對，它會改為針對誘餌。\n\n此變化會被模仿者、瘋狂帽、破法者和驅散觸發。\n\n此技能不會被海嘯、腐朽群襲、破盾者、腦凍或死亡撫觸觸發。\n\n當被觸發時，僅消耗 1 個誘餌，無論被重定向的效果是什麼。"
-      }
+    {
+      "name": "Decisive Strikes",
+      "id": "8041",
+      "description": "Deal X Pure DMG.\n\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8041.png"
     },
-    "Defend The Borders": {
-      "name": {
-        "zh": "捍衛邊境"
-      },
-      "description": {
-        "en": "Once your opponent has been dealt 8000 DMG, all your active :ava: gain 2000 Shield and their Strength is increased by 200.\n\nThis quest can be triggered only 1 time per card.",
-        "zh": "當你的對手承受 8000 點傷害時，你所有的活躍 :ava: 獲得 2000 點護盾，並且力量增加 200。\n\n此任務每張卡牌僅能觸發一次。"
-      }
+    {
+      "name": "Decoy",
+      "id": "8008",
+      "description": "Positive Alteration\n\nIf one of your positive alterations should be targeted by one of your opponent's skills, it targets Decoy instead.\n\nThis alteration is triggered by Mimic, Mad Hat, Spellbreaker & Dispel.\n\nThis skill is not triggered by Tidal Wave, Swarm of Decay, Shieldbreaker, Brain Freeze or Caress of Death.\n\nWhen triggered, only 1 Decoy is consumed, no matter the effect redirected.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8008.png"
     },
-    "Deja vu": {
-      "name": {
-        "zh": "既視感"
-      },
-      "description": {
-        "en": "Activate the last ability used by the opponent.",
-        "zh": "啟動對手最後使用的技能。"
-      }
+    {
+      "name": "Defend The Borders",
+      "id": "5595",
+      "description": "Once your opponent has been dealt 8000 DMG, all your active :ava: gain 2000 Shield and their Strength is increased by 200.\n\nThis quest can be triggered only 1 time per card.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5595.png"
     },
-    "Devour": {
-      "name": {
-        "zh": "吞噬"
-      },
-      "description": {
-        "en": "Deal X normal DMG to the opponent.\n\nIf you have any negative alteration, consume one of them and receive X/2 STR.\n\nElse, if you have a positive alteration, remove half of a random one and receive X STR.",
-        "zh": "對對手造成 X 點普通傷害。\n\n如果你有任何負面變化，消耗其中一個並獲得 X/2 點力量。\n\n否則，如果你有正面變化，則移除一個隨機的正面變化的一半，並獲得 X 點力量。"
-      }
+    {
+      "name": "Deja vu",
+      "id": "1250",
+      "description": "Activate the last ability used by the opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/1250.png"
     },
-    "Dexterity": {
-      "name": {
-        "zh": "靈巧"
-      },
-      "description": {
-        "en": "The next X times you consume a Dodge, Riposte or Critical, gain one of the other 2 at random.",
-        "zh": "在接下來的 X 次中，每當你消耗閃避、反擊或致命一擊時，隨機獲得另外兩者之一。"
-      }
+    {
+      "name": "Devour",
+      "id": "5889",
+      "description": "Deal X normal DMG to the opponent.\n\nIf you have any negative alteration, consume one of them and receive X/2 STR.\n\nElse, if you have a positive alteration, remove half of a random one and receive X STR.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5889.png"
     },
-    "Dispel": {
-      "name": {
-        "zh": "驅散"
-      },
-      "description": {
-        "en": "Delete X positive alteration(s) on your opponent.",
-        "zh": "移除對手的 X 個正面變化。"
-      }
+    {
+      "name": "Dexterity",
+      "id": "4794",
+      "description": "The next X times you consume a Dodge, Riposte or Critical, gain one of the other 2 at random.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4794.png"
     },
-    "Dodge": {
-      "name": {
-        "zh": "閃避"
-      },
-      "description": {
-        "en": "The next X times you suffer DMG, it will be halved.",
-        "zh": "在接下來的 X 次受到傷害時，傷害將減半。"
-      }
+    {
+      "name": "Dispel",
+      "id": "dsLVynU",
+      "description": "Delete X positive alteration(s) on your opponent.",
+      "img_url": "https://i.imgur.com/dsLVynU.png"
     },
-    "Draconic Legacy": {
-      "name": {
-        "zh": "龍裔傳承"
-      },
-      "description": {
-        "en": "Each time you obtain a DMG+, your allies gain 750 Blizzard.\n\nEach time you obtain a Shield type alteration (Shield / Blizzard / Arcane Barrier / Bulwark), your allies obtain 75 DMG+.\n\nThis effect considers increasing Shield and DMG+ too.",
-        "zh": "每當你獲得傷害提升（DMG+）時，你的盟友將獲得 750 點暴風雪效果。\n\n每當你獲得護盾類型的變化（護盾 / 暴風雪 / 秘法屏障 / 防禦壁壘）時，你的盟友將獲得 75 點傷害提升。\n\n此效果也考慮增加護盾和傷害提升。"
-      }
+    {
+      "name": "Dodge",
+      "id": "176",
+      "description": "The next X times you suffer DMG, it will be halved.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/176.png"
     },
-    "E": {}
-  }
+    {
+      "name": "Draconic Legacy",
+      "id": "6866",
+      "description": "Each time you obtain a DMG+, your allies gain 750 Blizzard.Each time you obtain a Shield type alteration (Shield / Blizzard / Arcane Barrier / Bulwark), your allies obtain 75 DMG+.This effect considers increasing Shield and DMG+ too",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6866.png"
+    },
+    {
+      "name": "Dragon Bite",
+      "id": "4177",
+      "description": "Deal X DMG and your opponent bleeds, it receives X/10 Bleeding.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4177.png"
+    },
+    {
+      "name": "Dragon Hide",
+      "id": "4162",
+      "description": "The X next times you are dealt DMG, they will be halved and your opponent will be dealt half.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4162.png"
+    },
+    {
+      "name": "Dragon Noodles",
+      "id": "7427",
+      "description": "Craftsman Passive.  The next X times your strength is reduced revert it and gain an additional 200 Strength.  At the end of the fight Heal 900 for each remaining Dragon Noodle.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7427.png"
+    },
+    {
+      "name": "Earthen Coating",
+      "id": "9218",
+      "description": "Positive alteration. Shield-like Skill.  Absorbs the next X damage suffered.  As long as this is active, each time you activate a skill your opponent suffers X Earthquake damage.  Earthquake DMG is a DMG that ignores all alterations that could reduce or prevent it and applies half of its value as Aftermath to all active opponents.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9218.png"
+    },
+    {
+      "name": "Earthquake",
+      "id": "8401",
+      "description": "Deal X Pure DMG to your opponent, and give to all the opposing heroes X/2 Aftermath.  Pure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8401.png"
+    },
+    {
+      "name": "Eau de Corruption",
+      "id": "5675",
+      "description": "After the skill activation phase, you receive a Strength value equal the sum of all malus your card have applied to the opponent during the combat.  Purify, Mist, Rain and Devour do not affect the STR gain.  Debuffs applied prior to the combat aren't counted on the STR gain.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5675.png"
+    },
+    {
+      "name": "Echoing Skill",
+      "id": "4744",
+      "description": "Skill mddifier.  After the skill effect, applies Echo to your opponent equal to 10% of the skill's value.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4744.png"
+    },
+    {
+      "name": "Eclipse",
+      "id": "434",
+      "description": "Cancels the X next Heals of your opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/434.png"
+    },
+    {
+      "name": "Electric Dragnet",
+      "id": "7294",
+      "description": "Craftsman Passive.  The next X times you activate a skill, increase your opponent's negative alterations by 25% (rounded up).  If they do not have any, they receive Constriction 500.  After this deal 1500 flat damage and apply 150 Thunderstruck to them.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7294.png"
+    },
+    {
+      "name": "Empowered Skill",
+      "id": "8595",
+      "description": "Increase the skill value by 10% for each level that your active equipment has.  This modifier rounds the value to the nearest integer.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8595.png"
+    },
+    {
+      "name": "Encore",
+      "id": "8396",
+      "description": "Negative Alteration.  After the :swordDice: phase, reroll one of your dice to the same color.  This alteration triggers Echo, Dice Change based Equips & Song of the Abysses.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8396.png"
+    },
+    {
+      "name": "Endurance",
+      "id": "5614",
+      "description": "The next X times you receive damage, the damage is reduced by the value of your Strength.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5614.png"
+    },
+    {
+      "name": "Eternal Fog",
+      "id": "8401",
+      "description": "Each time one of your Mist is consumed, Heal 500.  At the end of skill activation phase, if you have at least:  3 Mist: You receive 4000 Shield and your allies receive 2 Mist.  7 Mist: Deal 2500 Shock DMG & your allies receive 2 Dodges.  18 Mist: Heals half of your current suffered DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8401.png"
+    },
+    {
+      "name": "Eternal Winter",
+      "id": "5628",
+      "description": "Every time your opponents trigger their Frostbite, the Frostbite is increased by 10%, and every time they deal a DMG from a Sword, their Frostbite is triggered again.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5628.png"
+    },
+    {
+      "name": "Fire Rune",
+      "id": "1591",
+      "description": "Create X Rune and the DMG that your opponent deals is decreased byX*20. At the end of the opponent's skill activation phase, each Rune deals 200 DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/1591.png"
+    },
+    {
+      "name": "Fireball",
+      "id": "114",
+      "description": "Deals X DMG to your opponent and he has DMG -X/10.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/114.png"
+    },
+    {
+      "name": "Flare",
+      "id": "8065",
+      "description": "Deal X Normal DMG and you receive one Solar Light.  Normal DMG is a DMG that can be affected by everything.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8065.png"
+    },
+    {
+      "name": "Flow",
+      "id": "5339",
+      "description": "Every time you cast a skill, you Heal X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5339.png"
+    },
+    {
+      "name": "Flowering",
+      "id": "4172",
+      "description": "Deal X DMG and apply a Spore to you and your opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4172.png"
+    },
+    {
+      "name": "Focus X -> Y",
+      "id": "6843",
+      "description": "Gain as much Y as your X.  Your X is divided by 2.  Example: Focus Strength -> DMG+",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6843.png"
+    },
+    {
+      "name": "Forked Lightning",
+      "id": "8738",
+      "description": "Deal X Lightning DMG and your opponent's allies receives X/2 Chanelled Lightning.  Lightning DMG is a normal DMG that applies 10% of its value as Thunderstruck to the opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8738.png"
+    },
+    {
+      "name": "Forsaken Destiny",
+      "id": "9440",
+      "description": "Each time you activate a skill, you receive Curse equal to the sum of Curse on the opposing heroes.  At the end of skill activation phase, consume your Curse. If you have consumed at least:  2500 Curse: Deal 5000 flat damage. (not interacting with anything)  7500 Curse: Suffer 5000 flat damage to give ALL of your allies 2 Stardust. (even for non-active allies)  15000 Curse: All your opponent's receive 1500 Curse and 1500 more if you lose the round.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9440.png"
+    },
+    {
+      "name": "Freezing Criticals",
+      "id": "9189",
+      "description": "Each time one of your heroes consumes a Critical, their opponent gets Frostbite 250. If they have already 750, trigger the Frostbite instead of giving more.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9189.png"
+    },
+    {
+      "name": "Frenzy",
+      "id": "4532",
+      "description": "At the end of the skill activation phase, X random dice that aren't S become S.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4532.png"
+    },
+    {
+      "name": "Frost",
+      "id": "600",
+      "description": "⋆ You are frosted, the Icy ability of your opponent will be increased by X tenth.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/600.png"
+    },
+    {
+      "name": "Frostbite",
+      "id": "916",
+      "description": "Your opponent will get 1 Frost and will be hurt by X each time he activates an ability.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/916.png"
+    },
+    {
+      "name": "Frostbolt",
+      "id": "A78zxgd",
+      "description": "Deals X DMG to your opponent and he receives X/10 Frostbite.",
+      "img_url": "https://i.imgur.com/A78zxgd.png"
+    },
+    {
+      "name": "Happy Totem",
+      "id": "6649",
+      "description": "Passive. Neutral Alteration.  Each time you gain Strength, its value is increased by 20% for each Happy Totem you have.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6649.png"
+    },
+    {
+      "name": "Harsh Sickness",
+      "id": "8884",
+      "description": "Neutral Alteration.  Each time your Strength should be lowered but is already at 0, you suffer as much flat DMG instead.  Flat DMG is a DMG that ignores everything.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8884.png"
+    },
+    {
+      "name": "Heal",
+      "id": "5",
+      "description": "Heals X DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5.png"
+    },
+    {
+      "name": "Heal The Villagers!",
+      "id": "8060",
+      "description": "Quest Passive.  When you healed yourself at least 10 times, double your Strength and all your positive alterations.  This Quest is applied only to :ava: characters.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8060.png"
+    },
+    {
+      "name": "Hit",
+      "id": "177",
+      "description": "Deals X DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/177.png"
+    },
+    {
+      "name": "Icy",
+      "id": "567",
+      "description": "The skill is amplified by a tenth for each Frost on your opponent. Your opponent gets 1 Frost.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/567.png"
+    },
+    {
+      "name": "Illusion",
+      "id": "4606",
+      "description": "Activate an offensive ability at random with X as its value. (Except Smite and Physical Attack)",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4606.png"
+    },
+    {
+      "name": "Impeding End",
+      "id": "7300",
+      "description": "⋆ Passive Skill. Neutral Alteration.  Everyone suffer at the start of the fight 8000 Pure DMG.  When the cards affected by Impeding End gets fully healed, deals 4000 Pure DMG to the opponent and deletes all opponent's positive alterations.  Pure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7300.png"
+    },
+    {
+      "name": "Improvement",
+      "id": "8595",
+      "description": "Passive.  Gives a new effect to already existing alterations.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8595.png"
+    },
+    {
+      "name": "Inspire",
+      "id": "300",
+      "description": "Your selected allies have 1 additional dice throw.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/300.png"
+    },
+    {
+      "name": "Invoke",
+      "id": "1750",
+      "description": "If the specified Dragon is in your team, transform into a more powerful form.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/1750.png"
+    },
+    {
+      "name": "Kiss of Oblivion",
+      "id": "4845",
+      "description": "Both cards in combat heal any damage taken till the activation of this skill.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4845.png"
+    },
+    {
+      "name": "Leech",
+      "id": "9186",
+      "description": "Negative Alteration  Each time you activate a skill, your opponent is healed by X, increased by the value of your Bleeding.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9186.png"
+    },
+    {
+      "name": "Lethal Dose",
+      "id": "7918",
+      "description": "At the end of the skill activation phase, if your opponent has at least:  -10 Poison: Delete all his Positive alterations;  -15 Poison: his Strength becomes 0;  -25 Poison: He suffers 999 999 flat DMG.  Flat DMG is a DMG that ignores everything.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7918.png"
+    },
+    {
+      "name": "Life Drain",
+      "id": "46",
+      "description": "Deals X DMG to your opponent and you gain X health points.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/46.png"
+    },
+    {
+      "name": "Lightning",
+      "id": "236",
+      "description": "Strikes your opponent by dealing him X DMG and increasing by X/10 the next DMG he suffers.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/236.png"
+    },
+    {
+      "name": "Lightning Rune",
+      "id": "1632",
+      "description": "Create X Rune and increase the next DMG that your opponent suffers byX*20. At the end of the skills activation phase, each Rune deals 200 DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/1632.png"
+    },
+    {
+      "name": "Lightroots",
+      "id": "6936",
+      "description": "Each time your opponent deals DMG to you, your opponent will be hurt by X Shock DMG and you will be healed by X.  This alteration cannot be targeted by other skills or alterations.  Shock DMG is a DMG that cannot be increased and decreased, but still consumes skills as Scarab and Shield.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6936.png"
+    },
+    {
+      "name": "Mad Hat",
+      "id": "5893",
+      "description": "⋆ The next X times you activate a skill, copy an opposing positive alteration, then deal 1500 Shock damage to your opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5893.png"
+    },
+    {
+      "name": "Madly-go-round",
+      "id": "7412",
+      "description": "Each time you trigger a skill, your opponent's DMG+ are increased by your Terror malus value.  This effect is applied on the opponent at start of the fight.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7412.png"
+    },
+    {
+      "name": "Magma Wall",
+      "id": "4466",
+      "description": "Each time your opponents deal DMG to you, they receive 6% of the total as DMG- (flat increase if your opponent already have DMG- ).  A flat increase is the increase of an alteration that cannot interact with any other effect in the game.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4466.png"
+    },
+    {
+      "name": "March of Conquest",
+      "id": "6449",
+      "description": "At start of the combat, increase all the DMG your opponent will be dealt by an amount equal to your Strength (Maximum 500).",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6449.png"
+    },
+    {
+      "name": "Mediate",
+      "id": "7127",
+      "description": "⋆ With 3 guilds being mediated, :cou: plus 2 other guilds, when any of the 3 guilds triggers the 1st effect, the current allies of the 2 other guilds receive the 2nd effect.  *Example: if it is Mediate :noz: & :win: opp Ice > DMG+ 25 , if a :win: card applies opp Ice the :noz: and :cou: receive DMG+ 25.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7127.png"
+    },
+    {
+      "name": "Meditation",
+      "id": "4903",
+      "description": "⋆ You heal X and half of a negative alteration on yourself is converted into Riposte or Dodge (if the value converted is 10 or lower) or +STR or +DMG (if higher than 10).",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4903.png"
+    },
+    {
+      "name": "Menacing Sky",
+      "id": "8748",
+      "description": "*Whenever your opponent receives Thunderstruck, you receive 50% of it as Berserk. Immediately when your opponent have been dealt:*  6000 Damage: Double your Strength.  12000 Damage: Receive 2 Critical, Dodge and Riposte.  24000 Damage: Deal 5000 Forked Lightning DMG to your opponent.  Forked Lightning DMG is a normal DMG that applies 10% of its value as Thunderstruck to the opponent and 50% of its value as Chanelled Lightning to your opponent's allies.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8748.png"
+    },
+    {
+      "name": "Mend",
+      "id": "5192",
+      "description": "At the end of skills activation phase, you Heal X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5192.png"
+    },
+    {
+      "name": "Might",
+      "id": "9549",
+      "description": "Positive Alteration.  Each time you activate a skill, gain X Strength.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9549.png"
+    },
+    {
+      "name": "Mighty Skill",
+      "id": "9549",
+      "description": "Skill Modifier.  After the skill effect, gain 10% of the skill's value as Might.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9549.png"
+    },
+    {
+      "name": "Mimic",
+      "id": "1010",
+      "description": "Deal X DMG and copy a positive effect from the opponent (stackable).",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/1010.png"
+    },
+    {
+      "name": "Mirror",
+      "id": "9187",
+      "description": "Position Alteration  The next X times your opponent receives a positive alteration, copy it (affected by decoy)  The next X times you receive a debuff your opponent copies it.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9187.png"
+    },
+    {
+      "name": "Mist",
+      "id": "5126",
+      "description": "After you receive a negative alteration (increase counts too) during the combat, this negative alteration is halved.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5126.png"
+    },
+    {
+      "name": "Multiguild Skill",
+      "id": "UvcQBjY",
+      "description": "Increases the skill value by 25% per each different guild on your current cards in game.  The guild of your hero in combat is counted  The skill value is increased by at least 25% and at max by 75%",
+      "img_url": "https://i.imgur.com/UvcQBjY.png"
+    },
+    {
+      "name": "Necrotic",
+      "id": "AmOKZTX",
+      "description": "⋆ The skill is amplified by half for each negative alteration on your current hero.",
+      "img_url": "https://i.imgur.com/AmOKZTX.png"
+    },
+    {
+      "name": "Nefertoth",
+      "id": "6072",
+      "description": "Neutral Alteration.  At the end of the skill activation phase, for each of your Nefertoth, deal as much pure DMG as your Strength.  Pure DMG ignores every alteration from both in combat.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6072.png"
+    },
+    {
+      "name": "Noble",
+      "id": "u5aJ0LX",
+      "description": "The skill is amplified by half if you are more wounded than your opponent.",
+      "img_url": "https://i.imgur.com/u5aJ0LX.png"
+    },
+    {
+      "name": "Paper Scales",
+      "id": "5836",
+      "description": "Each time you deal as much or less than 1000 DMG, you receive 15 Berserk.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5836.png"
+    },
+    {
+      "name": "Parry",
+      "id": "4325",
+      "description": "The X next time you are dealt DMG, block them and deal as much DMG as your Strength.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4325.png"
+    },
+    {
+      "name": "Phalanx",
+      "id": "9334",
+      "description": "⋆ Positive alteration. Shield-like skill.  Absorbs the next X damage you suffer.  The damage dealt to Phalanx is decreased by the Strength of your allies.  Consumed before all the other Shield-type alterations (Shield, Blizzard, Arcane Barrier, Coating).  Shield Bash consume Shield first, then Phalanx on additional activation.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9334.png"
+    },
+    {
+      "name": "Physical Attack",
+      "id": "206",
+      "description": "Deal X times in a row as much DMG as your Strength.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/206.png"
+    },
+    {
+      "name": "Pillage",
+      "id": "8401",
+      "description": "⋆ Deal X Normal DMG and steal half of an opposing positive alteration.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8401.png"
+    },
+    {
+      "name": "Plague",
+      "id": "7915",
+      "description": "Deal X Normal DMG and your opponent receive 1 Poison.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7915.png"
+    },
+    {
+      "name": "Poison",
+      "id": "7533",
+      "description": "Negative Alteration.  The next time you would be healed, you suffer flat DMG instead.  At end of fight you suffer 500 flat DMG.  Flat DMG is a DMG that ignores everything.  This alteration trigger and causes the heal value as DMG even if your opponent is not damaged.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7533.png"
+    },
+    {
+      "name": "Portal",
+      "id": "1242",
+      "description": "⋆ Deal X DMG and apply one of the negative effects on your hero to your opponent (stackable).",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/1242.png"
+    },
+    {
+      "name": "Powder",
+      "id": "234",
+      "description": "⋆ The X next time your suffer DMG from a S, a keg will explode and triple (before modification) these DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/234.png"
+    },
+    {
+      "name": "Powerup Gaz",
+      "id": "8883",
+      "description": "Each Time you activate a skill, if you have at least:  35 Stench: your opponent receive Harsh Sickness.  400 Stench: Gain as much Strength as your Stench Bonus.  1200 Stench: All your opponents (even the ones that still are in the deck) receive Harsh Sickness.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8883.png"
+    },
+    {
+      "name": "Purify",
+      "id": "318",
+      "description": "Delete X times half of a negative effect on your hero.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/318.png"
+    },
+    {
+      "name": "Quest",
+      "id": "aggregats-56",
+      "description": "Each of your Avalonians have to complete a goal to share a buff between them.",
+      "img_url": "https://www.eredan-arena.com/images/HD/aggregats/56.png"
+    },
+    {
+      "name": "Rage",
+      "id": "140",
+      "description": "Your Strength increases by X each time you deal DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/140.png"
+    },
+    {
+      "name": "Rain",
+      "id": "3835",
+      "description": "Heal X DMG and delete one of your negative alterations.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/3835.png"
+    },
+    {
+      "name": "Rain of Arrows",
+      "id": "8389",
+      "description": "The opposing heroes receive 20 Thunderstruck and you lose 10 Rage each time you consume a Critical.  When you will have consumed:  7 Criticals: Deal 2500 Shock damage and halve the Strength of the opposing hero.  11 Criticals: You and your allies receive 30 Vigor.  17 Criticals: At the end of skill activation phase activate your 1st and 2nd skills once.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8389.png"
+    },
+    {
+      "name": "Rain of Gifts",
+      "id": "5667",
+      "description": "After the dice rolling phase, your cards obtain 1 Red Gift for each Red Dice rolled, 1 Blue Gift for each Blue Dice rolled, and 1 Yellow Gift for each Yellow Dice rolled.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5667.png"
+    },
+    {
+      "name": "Rampage",
+      "id": "4533",
+      "description": "Deal X and you gain one Frenzy.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4533.png"
+    },
+    {
+      "name": "Red Gift",
+      "id": "3990",
+      "description": "Neutral Alteration.  After you have dealt DMG to your opponent and his DMG suffered is higher or equal to 5000 DMG, deal 800 flat DMG for each Red Gift you have and consume all.  If you receive a gift after your opponent already have 5000 suffered DMG, the gift is going to trigger in the next DMG you cause.  Flat DMG is a DMG that ignores everything.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/3990.png"
+    },
+    {
+      "name": "Redeeming Skill",
+      "id": "8311",
+      "description": "After the skill effect, receive 1 Redemption.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8311.png"
+    },
+    {
+      "name": "Redemption",
+      "id": "8311",
+      "description": "The next X times your Heal exceeds the DMG you have, increase your Strength and your positive alterations (except Redemption) by 25% (rounded up).  After the skill activation phase, you Heal 1000 per each Redemption lefting.  The end phase's Heal effect can trigger another Redemption too.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8311.png"
+    },
+    {
+      "name": "Reflected Skill",
+      "id": "8595",
+      "description": "If the reflected skill is a positive alteration, your allies also receive 25% of it for each Reflection in the game.  If the reflected skill is a negative alteration, your opponent's allies also receive 25% of it for each Reflection in the game.  (The opponent's Reflections are considered too, so can have at max 6 Reflection in game, ranging from 25% to 150% of reflected alteration.)",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8595.png"
+    },
+    {
+      "name": "Resilience",
+      "id": "426",
+      "description": "All the DMG you suffer decreases by X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/426.png"
+    },
+    {
+      "name": "Resonant Echo",
+      "id": "53yaoYt",
+      "description": "Whenever your opponent's Echo is triggered, you receives 20% of it as DMG+ and your opponent receives 20% of it as DMG-.  If you have at least 400 DMG+, trigger Purify 1 Instead.",
+      "img_url": "https://i.imgur.com/53yaoYt.png"
+    },
+    {
+      "name": "Restore",
+      "id": "5",
+      "description": "At end of the skill activation phase you Heal X. This effect is repeated for each other positive alteration you have.  Restore doesn't count itself in the repetition.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5.png"
+    },
+    {
+      "name": "Riposte",
+      "id": "324",
+      "description": "The X next times you suffer DMG from a S you'll deal as much DMG as your Strength.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/324.png"
+    },
+    {
+      "name": "Round of Drinks",
+      "id": "6942",
+      "description": "The next X times you receive a positive alteration, your allies receive 50% as well and you deal 2000 Shock DMG to your opponent.  Shock DMG is an unmodifiable DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6942.png"
+    },
+    {
+      "name": "Rune",
+      "id": "721",
+      "description": "Create X Runes. At the end of the Skills activation phase, each Rune deals 200 DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/721.png"
+    },
+    {
+      "name": "Runic",
+      "id": "722",
+      "description": "The skill is amplified by half for each of your Rune. Your Runes are destroyed.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/722.png"
+    },
+    {
+      "name": "Sacred",
+      "id": "hlGhHOU",
+      "description": "Increases the skill value by half for each positive alteration on you.",
+      "img_url": "https://i.imgur.com/hlGhHOU.png"
+    },
+    {
+      "name": "Scarab",
+      "id": "829",
+      "description": "The next X times you receive DMG, this DMG will be converted into Heal.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/829.png"
+    },
+    {
+      "name": "Seek the Thunder's Spear!",
+      "id": "5981",
+      "description": "Passive. Each time you change a dice into :swordDice:, strike your opponent with a Lightning 1000.  (Change 2 or more dices of same color at same time counts as 1 trigger only)",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5981.png"
+    },
+    {
+      "name": "Seismic Tremor",
+      "id": "4738",
+      "description": "Passive.  Each time you activate a skill, deal flat damage to your opponent equal to your Strength.  Flat damage is a damage that ignores everything.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4738.png"
+    },
+    {
+      "name": "Shield",
+      "id": "4",
+      "description": "⋆ Absorb the X next DMG you suffer.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4.png"
+    },
+    {
+      "name": "Shield Bash",
+      "id": "710",
+      "description": "You lose your Shield and deal one and a half its value plus X DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/710.png"
+    },
+    {
+      "name": "Shieldbreaker",
+      "id": "lBUld7s",
+      "description": "Breaks one of the opposing shield alterations (Shield, Blizzard or Arcane Barrier) removing it. Then you cause X DMG, plus the value of shield removed more half.",
+      "img_url": "https://i.imgur.com/lBUld7s.png"
+    },
+    {
+      "name": "Shock",
+      "id": "264",
+      "description": "Deals X unmodifiable DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/264.png"
+    },
+    {
+      "name": "Silver Gift",
+      "id": "7805",
+      "description": "Neutral Alteration. Consumable.  The next times you activate a skill your Strength and your positive alterations are increased by 20% (rounded down).",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7805.png"
+    },
+    {
+      "name": "Sinister",
+      "id": "RDTsnVj",
+      "description": "The skill value is increased by 50% for each opposing positive alteration.",
+      "img_url": "https://i.imgur.com/RDTsnVj.png"
+    },
+    {
+      "name": "Smite",
+      "id": "334",
+      "description": "Deal as much DMG as your opponent!s Strength multiplied by X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/334.png"
+    },
+    {
+      "name": "Smuggled",
+      "id": "TM1Ckc1",
+      "description": "The skill value is doubled if your opponent has the same skill (don't need to be the same value).",
+      "img_url": "https://i.imgur.com/TM1Ckc1.png"
+    },
+    {
+      "name": "Smuggler's Treaty",
+      "id": "5992",
+      "description": "Passive.  Each time your :pir: receive any positive alteration, your :zil: on the field receive 25% of it (rounded up).  Each time your :zil: receive any positive alteration, your :pir: on the field receive 25% of it (rounded up).  (This effect can be triggered only during the combat, so alterations obtained out of combat won't be shared)",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5992.png"
+    },
+    {
+      "name": "Solar Light",
+      "id": "8061",
+      "description": "Positive Alteration.  If you are :solarian: : The next time you Heal DMG, heal the same amount another time.  If you are not :solarian: : the next time you suffer DMG, you suffer the same amount another time as a flat DMG.  Flat DMG is a DMG that ignores everything.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/8061.png"
+    },
+    {
+      "name": "Song of the Abysses",
+      "id": "7087",
+      "description": "Each time one of your dice changes, you are hurt by 750 Shock DMG, and one of your current opponent's positive alteration is increased by 25% (rounded up)  Shock DMG is a DMG that cannot be reduced or increased, but still is affected by Scarab and Shield-like skills.  This effect is applied on the opponent's team.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7087.png"
+    },
+    {
+      "name": "Spellbreaker",
+      "id": "379",
+      "description": "⋆ Deal [VALUE] DMG, delete half of a positive alteration on your opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/379.png"
+    },
+    {
+      "name": "Spoils of War",
+      "id": "6932",
+      "description": "Each time one of your cards wins a battle, its current allies receive as much Strength as the defeated's base Strength, plus 1 Frenzy and 1 Endurance.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6932.png"
+    },
+    {
+      "name": "Spore",
+      "id": "3789",
+      "description": "Apply a Spore, at each skill activation it grows. At the end of the skill activation phase deal 400 DMG for each of your Spores or Heal 400 DMG for each of your Spores if you are Dais.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/3789.png"
+    },
+    {
+      "name": "Stardust",
+      "id": "6681",
+      "description": "Positive Alteration  The next X times you receive a positive alteration, its value is increased by half (only the received value). (Rounded up)",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6681.png"
+    },
+    {
+      "name": "Static Charge",
+      "id": "4882",
+      "description": "⋆ Every time the Shield of your cards absorbs DMG, who damaged it suffers a pure DMG equal half of the absortion and receives 10% of the absortion as Thunderstruck.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4882.png"
+    },
+    {
+      "name": "Stench",
+      "id": "310",
+      "description": "You stink, your opponent loses X Strength each time you activate an ability.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/310.png"
+    },
+    {
+      "name": "Stone",
+      "id": "7848",
+      "description": "⋆ Posivite Alteration  At the end of the skill activation phase, you receive 500 Shield.  This alteration is used by the Ultimate Armor Skill to trigger some effects.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7848.png"
+    },
+    {
+      "name": "Storm",
+      "id": "3367",
+      "description": "The elements are unleashed, deal X DMG to your opponent and increase all the next DMG they take by X/10 each time you activate an ability.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/3367.png"
+    },
+    {
+      "name": "Strength Drain",
+      "id": "109",
+      "description": "Your opponent's Strength is reduced by X and your Strength increases by X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/109.png"
+    },
+    {
+      "name": "Strength+",
+      "id": "17",
+      "description": "Your Strength increases by X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/17.png"
+    },
+    {
+      "name": "Strength-",
+      "id": "109",
+      "description": "Your opponent loses X Strength.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/109.png"
+    },
+    {
+      "name": "Support",
+      "id": "lRD9kU2",
+      "description": "Give to all heros of the specified attribute the specified alteration.",
+      "img_url": "https://i.imgur.com/lRD9kU2.png"
+    },
+    {
+      "name": "Swarm of Decay",
+      "id": "6188",
+      "description": "Halves all positive alterations received during the combat.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/6188.png"
+    },
+    {
+      "name": "Symbiosis",
+      "id": "1750",
+      "description": "Cards with Symbiosis share 50% of all buffs received between them.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/1750.png"
+    },
+    {
+      "name": "Talonstrike",
+      "id": "4734",
+      "description": "The next X times you deal DMG via a Sword Dice you deal a pure DMG equal this DMG dealt.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4734.png"
+    },
+    {
+      "name": "Terror",
+      "id": "389",
+      "description": "The DMG that your opponent's hero deals is reduced by X each time he activates an ability.(stackable)",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/389.png"
+    },
+    {
+      "name": "The Axiom of Strength",
+      "id": "9336",
+      "description": "Triples your Strength, then deals a Shock Damage equal to the Strength Bonus accumulated by your heroes during the game.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9336.png"
+    },
+    {
+      "name": "Thorn",
+      "id": "340",
+      "description": "Your opponent will be hurt by X each time he deals DMG to you.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/340.png"
+    },
+    {
+      "name": "Thorny Spore",
+      "id": "CpqBtmG",
+      "description": "Each time you activate a skill, consume a Spore to gain 150 Thorns.",
+      "img_url": "https://i.imgur.com/CpqBtmG.png"
+    },
+    {
+      "name": "Thunder of Guem",
+      "id": "5678",
+      "description": "Each time you receive DMG+, your opponent will receive a Thunderstruck equal half of its value multiplied by the Swords you rolled before the Skill Activation Phase.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5678.png"
+    },
+    {
+      "name": "Thunderclap",
+      "id": "7777",
+      "description": "Deal X Lightning DMG.  Each time you attack with a :swordDice:, the opposing heroes receive Thunderstruck equal to 10% of your Strength.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7777.png"
+    },
+    {
+      "name": "Thunderstruck",
+      "id": "235",
+      "description": "⋆ All the DMG you suffer increase by X.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/235.png"
+    },
+    {
+      "name": "Tidal Wave",
+      "id": "3950",
+      "description": "Increase the value of one of your positive alterations by 25% (rounded up) and deal X DMG.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/3950.png"
+    },
+    {
+      "name": "Time Loop",
+      "id": "4621",
+      "description": "Activates again the skill that activated as number X in the skill sequence. This sequence counts skills from both in combat, and it counts any skill cast, so if the 2 first skills casts were your 1st ability, Time Loop 2 will replay it..",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4621.png"
+    },
+    {
+      "name": "Transcendence",
+      "id": "2766",
+      "description": "⋆ Give to all your heros of the specified attribute: while throwing the dices, you can't get S.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/2766.png"
+    },
+    {
+      "name": "Twinkle Little Star",
+      "id": "7754",
+      "description": "At the start of the fight, you receive 1 Stardust for each of your unique Dice Pair.  Dice Pair is a combo of 2 equal dices, like:redDice: :redDice: .",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7754.png"
+    },
+    {
+      "name": "Ultimate Armor",
+      "id": "7847",
+      "description": "Everytime your shield absorbs DMG without getting destroyed, you receive one Stone. At the end of the skill activation phase, If you have at least:  -5 Stones: Your Strength become 1500 and delete all your negative alterations;  -10 Stones: you receive 3 Frenzy;  -19 Stones: you become Unbreakable.  Unbreakable means that you cannot receive any DMG anymore.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7847.png"
+    },
+    {
+      "name": "Unified Skill",
+      "id": "VPjENEK",
+      "description": "Increases the skill value by 25% per each different race on your current cards in game.  The race of your hero in combat is counted  The skill value is increased by at least 25% and at max by 75%",
+      "img_url": "https://i.imgur.com/VPjENEK.png"
+    },
+    {
+      "name": "Verdant Growth",
+      "id": "4952",
+      "description": "Each time you heal yourself or receive thorns, your Strength increases by 20% of the value.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4952.png"
+    },
+    {
+      "name": "Vigor",
+      "id": "7372",
+      "description": "Positive Alteration.  Every time you damage the opponent, you get X DMG+.  If you already have the DMG+ alteration, Vigor does a 'flat' increase, not interacting with others effects.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7372.png"
+    },
+    {
+      "name": "War Runes",
+      "id": "7141",
+      "description": "Neutral Alteration. Consumable.  The next times you activate a skill, you receive 2 Runes, or 300 DMG+ if you already have Runes.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/7141.png"
+    },
+    {
+      "name": "Wildfire",
+      "id": "5397",
+      "description": "Each time you cast a skill, you inflict X Fireball to the opponent.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/5397.png"
+    },
+    {
+      "name": "Yellow Gift",
+      "id": "3992",
+      "description": "Neutral Alteration.  At the end of skill activation phase, Heal 800 per each Yellow Gift.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/3992.png"
+    }
+  ]
 }
