@@ -12,7 +12,8 @@
         <!-- 主要標籤 -->
         <ul :class="{ 'nav-links': true, 'show-menu': showMenu }">
           <li><a href="#" @click.prevent="switchComponent('CardFilter')">Card</a></li>
-          <li><a href="#" @click.prevent="switchComponent('SkillShow')">Content</a></li>
+          <li><a href="#" @click.prevent="switchComponent('SkillShow')">Skill</a></li>
+          <li><a href="#" @click.prevent="switchComponent('EquipShow')">Equip</a></li>
         </ul>
       </div>
     </nav>
@@ -44,7 +45,9 @@
 import { ref, onMounted, onBeforeUnmount, markRaw } from 'vue';
 import CardFilter from "./CardFilter.vue";
 import SkillShow from './SkillShow.vue';
+import EquipShow from './EquipShow.vue';
 import AddData from './AddData.vue';
+import AddCard from './AddCard.vue';
 
 
 // 狀態管理
@@ -57,9 +60,12 @@ const showBackToTopButton = ref(false);
 const components = {
   CardFilter: markRaw(CardFilter),
   SkillShow: markRaw(SkillShow),
+  EquipShow: markRaw(EquipShow),
   AddData: markRaw(AddData),
+  AddCard: markRaw(AddCard),
+
 };
-const currentComponent = ref(components.AddData);
+const currentComponent = ref(components.EquipShow);
 
 // 切換組件功能
 const switchComponent = (componentName) => {

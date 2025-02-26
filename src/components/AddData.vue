@@ -1,50 +1,59 @@
 <template>
     <div>
-        <h1>Add Skill Data</h1>
-        <p>The skill generated format is here</p>
+        <h1>Add Data</h1>
+        <p>The generated format is here</p>
+
+        <!-- 下拉選單 -->
+        <select v-model="selectedOption">
+            <option disabled value="">請選擇一個選項</option>
+            <option v-for="option in options" :key="option.value" :value="option.value">
+                {{ option.label }}
+            </option>
+        </select>
 
         <div class="dashed-line"></div>
 
-        <div>
+        <!-- 動態表單 -->
+        <div v-show="selectedOption === 'option1'">
             <div class="horizontal-table">
                 <div>
-                    <p>
-                        <button @click="clearSkill">Clear</button>
-                        <button @click="copySkill">Copy</button>
-                    </p>
-
-                    <div class="table-cell">
-                        <label>Name：</label>
-                        <input type="text" v-model="input_name" placeholder="Enter name" />
-                    </div>
-                    <div class="table-cell">
-                        <label>ID：</label>
-                        <input type="text" v-model="input_id" placeholder="Enter ID" />
-                    </div>
-                    <div class="table-cell">
-                        <label>Description：</label>
-                        <input type="text" v-model="input_description" placeholder="Enter description" />
-                    </div>
-                    <div class="table-cell">
-                        <label>URL：</label>
-                        <input type="text" v-model="input_url" placeholder="Enter URL" />
+                    <div v-for="field in skillFields" :key="field.key" class="table-cell">
+                        <label>{{ field.label }}：</label>
+                        <input type="text" v-model="inputData[field.key]"
+                            :placeholder="`Enter ${field.label.toLowerCase()}`" />
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div v-show="selectedOption === 'option2'">
+            <div class="horizontal-table">
+                <div>
+                    <div class="table-cell">
+                        <label>Wiki Input：</label>
+                        <input type="text" v-model="input_wiki" placeholder="Enter wiki data" />
+                        <button @click="parseInput">+</button>
+                    </div>
+                    <div class="table-cell">
+                        <label>url Input：</label>
+                        <input type="text" v-model="items.url" placeholder="Enter img url" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 操作按鈕 -->
+        <div v-if="selectedOption">
+            <button @click="clearInputs">Clear</button>
+            <button @click="copyOutput">Copy</button>
+
             <p v-if="copyStatus === 'success'" class="success-message">內容已複製到剪貼簿！</p>
             <p v-if="copyStatus === 'error'" class="error-message">複製失敗，請手動複製內容。</p>
+
+            <!-- JSON 輸出 -->
             <div class="output">
-                <pre ref="preElement">
-  {
-    "name": "{{ input_name }}",
-    "id": "{{ input_id }}",
-    "description": "{{ input_description }}",
-    "img_url": "{{ input_url }}"
-  }
-          </pre>
+                <pre ref="preElement">{{ formattedOutput }}</pre>
             </div>
-
-
         </div>
 
         <div class="dashed-line"></div>
@@ -52,33 +61,64 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 // 輸入欄位的資料
-const input_name = ref('');
-const input_id = ref('');
-const input_description = ref('');
-const input_url = ref('');
+const inputData = ref({
+    name: '',
+    id: '',
+    description: '',
+    url: '',
+});
 
-// 複製狀態
+const input_wiki = ref('');
 const preElement = ref(null);
 const copyStatus = ref(null);
 
+// 下拉選單的選項
+const options = ref([
+    { value: 'option1', label: 'Skill' },
+    { value: 'option2', label: 'Equip' },
+]);
+
+// 預設選擇的值
+const selectedOption = ref('option2');
+
+// 表單欄位配置
+const skillFields = ref([
+    { key: 'name', label: 'Name' },
+    { key: 'id', label: 'ID' },
+    { key: 'description', label: 'Description' },
+    { key: 'url', label: 'URL' },
+]);
+
 // 清空輸入欄位
-const clearSkill = () => {
-    input_name.value = '';
-    input_id.value = '';
-    input_description.value = '';
-    input_url.value = '';
+const clearInputs = () => {
+    inputData.value = { name: '', id: '', description: '', url: '' };
+    input_wiki.value = '';
+    items.value = {};
+
 };
 
+// 格式化 JSON 輸出
+const formattedOutput = computed(() => {
+    let data = {};
+
+    if (selectedOption.value === 'option1') {
+        data = { ...inputData.value };
+    } else if (selectedOption.value === 'option2') {
+        data = { ...items.value };
+    }
+
+    return JSON.stringify(data, null, 2);
+});
+
 // 複製內容到剪貼簿
-const copySkill = async () => {
+const copyOutput = async () => {
     if (!preElement.value) return;
 
     const preText = preElement.value.textContent;
 
-    // 檢查是否有內容
     if (!preText.trim()) {
         copyStatus.value = 'error';
         setTimeout(() => (copyStatus.value = null), 2000);
@@ -95,17 +135,74 @@ const copySkill = async () => {
         setTimeout(() => (copyStatus.value = null), 2000);
     }
 };
+
+// 解析後的數據
+const items = ref({});
+
+const parseInput = () => {
+    if (!input_wiki.value.trim()) return;
+
+    // 按換行符分割每一段
+    const lines = input_wiki.value.trim().split("\n");
+
+    // 只處理第一行（假設每次只有一筆資料）
+    const line = lines[0];
+    const result = {};
+
+    // 提取 Name
+    const nameMatch = line.match(/^(.*?) Rarity /);
+    if (nameMatch) {
+        result.name = nameMatch[1].trim();
+    }
+
+    // 提取 Rarity
+    const rarityMatch = line.match(/Rarity (\w+)/);
+    if (rarityMatch) {
+        result.rarity = rarityMatch[1].trim();
+    }
+
+    // 提取 Position
+    const positionMatch = line.match(/Position (.*?) Level/);
+    if (positionMatch) {
+        result.position = positionMatch[1].trim();
+    }
+
+    // 提取 Level
+    const levelMatch = line.match(/Level (.*?) Effect/);
+    if (levelMatch) {
+        result.level = levelMatch[1].trim();
+    }
+
+    // 提取 Effect
+    const effectMatch = line.match(/Effect ⋆ (.*?) 圖片/);
+    if (effectMatch) {
+        result.effect = effectMatch[1].trim();
+    }
+
+    // 提取 Last Patch
+    const lastPatchMatch = line.match(/Last Patch: (.*?)$/);
+    if (lastPatchMatch) {
+        result.last_patch = lastPatchMatch[1].trim();
+    }
+    if (nameMatch) {
+        result.url = "";
+    }
+
+    // 將解析結果存儲到 items
+    items.value = result;
+};
+
+
 </script>
 
 <style scoped>
-/* 虛線分隔線 */
+/* 樣式保持不變 */
 .dashed-line {
     width: 100%;
     border-top: 2px dashed #ddd;
     margin: 10px 0;
 }
 
-/* 水平表格樣式 */
 .horizontal-table {
     display: flex;
     justify-content: center;
@@ -129,7 +226,6 @@ const copySkill = async () => {
     border-radius: 4px;
 }
 
-/* 輸出區域樣式 */
 .output {
     padding: 10px;
     border-radius: 5px;
@@ -146,7 +242,6 @@ pre {
     margin: 0;
 }
 
-/* 按鈕樣式 */
 button {
     margin: 5px;
     padding: 8px 16px;
@@ -161,7 +256,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* 提示訊息樣式 */
 .success-message {
     color: green;
     margin-top: 10px;

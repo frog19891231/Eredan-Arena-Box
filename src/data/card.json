@@ -143,5 +143,28 @@
         "img_src": "",
         "tag": [],
         "Strategy": {}
-    }
+    },
+    {
+        "name": "Banu'Raka, The Sandstorm SV",
+        "id": "2905",
+        "Rarity": "Survival",
+        "classe": "Warrior",
+        "guild": "Desert Nomads",
+        "race": "Golem",
+        "basic_ability": {
+          "1": {
+            "skilltag": []
+          },
+          "2": {
+            "skilltag": []
+          },
+          "3": {
+            "skilltag": []
+          },
+          "strength": ""
+        },
+        "img_src": "",
+        "tag": [],
+        "Strategy": []
+      }
 ]

@@ -1,34 +1,37 @@
 <template>
   <div class="container">
-    <h1>Skill</h1>
-    <p>This section displays the various capabilities, including buffs, passives, skill modifiers, and more.</p>
+    <h1>Equip</h1>
+    <p>Just...equip information.</p>
+    <!--
+    <p v-html="parseText(txt)"></p>
+      <img :src="image" :alt="'Image ' + index" />
+    -->
 
     <!-- 搜尋欄 -->
     <div class="search-bar">
       <div class="search-input-container">
-        <input type="text" v-model="searchQuery" placeholder="search" @input="handleSearch"
-          class="search-input-text" />
+        <input type="text" v-model="searchQuery" placeholder="search" @input="handleSearch" class="search-input-text" />
         <!-- 清除按鈕 -->
         <button v-if="searchQuery" class="clear-button" @click="clearSearch">
           ×
         </button>
       </div>
     </div>
-
     <!-- 技能列表 -->
-    <div class="skills-container">
-      <div v-if="filteredSkills.length > 0" class="skills-list">
-        <div v-for="skill in filteredSkills" :key="skill.id" class="skill-item">
-          <img :src="skill.img_url" :alt="skill.name" class="skill-image" />
-          <div class="skill-details">
-            <h2 class="skill-name">{{ skill.name }}</h2>
-            <p class="skill-description" style="white-space: pre-line; text-align: left">{{ skill.description }}</p>
+    <div class="equip-container">
+      <div v-if="filteredequip.length > 0" class="equip-list">
+        <div v-for="equip in filteredequip" :key="equip.id" class="equip-item">
+          <img :src="equip.url" :alt="equip.name" :class="['equip-image', getRarityClass(equip.rarity)]" />
+          <div class="equip-details">
+            <h2 class="equip-name">{{ equip.name }}</h2>
+            <!-- 使用 v-html 渲染轉換後的內容 -->
+            <!--v-html="parseText(equip.effect)"-->
+            <p class="equip-description">{{ equip.effect }}</p>
           </div>
-
         </div>
       </div>
       <div v-else class="no-results">
-        <p>沒有找到相關技能。</p>
+        <p>no </p>
       </div>
     </div>
   </div>
@@ -40,12 +43,24 @@ import data_lib from '../data/library.json';
 
 // 從 JSON 文件中加載技能數據
 const libraries = ref(data_lib);
-const skillsMap = ref(new Map());
+const equipMap = ref(new Map());
+
+
+// 動態加載圖片
+const imageFiles = import.meta.glob("../assets/img/aggregats/*.{jpg,png,gif,jpeg,svg}");/**/
+const images = ref([]);
+
+onMounted(() => {
+  for (const path in imageFiles) {
+    const module = imageFiles[path]();
+    images.value.push(module.default);
+  }
+});
 
 // 將技能數據轉換為 Map 儲存
 onMounted(() => {
-  libraries.value.Skill.forEach(skill => {
-    skillsMap.value.set(skill.id, skill);
+  libraries.value.Equip.forEach(equip => {
+    equipMap.value.set(equip.name, equip);
   });
 });
 
@@ -53,13 +68,13 @@ onMounted(() => {
 const searchQuery = ref('');
 
 // 計算屬性：根據搜尋關鍵字過濾技能列表
-const filteredSkills = computed(() => {
-  const skillsArray = Array.from(skillsMap.value.values());
+const filteredequip = computed(() => {
+  const equipArray = Array.from(equipMap.value.values());
   if (!searchQuery.value) {
-    return skillsArray; // 如果沒有輸入關鍵字，返回所有技能
+    return equipArray; // 如果沒有輸入關鍵字，返回所有技能
   }
-  return skillsArray.filter(skill =>
-    (skill.name || '').toLowerCase().includes(searchQuery.value.toLowerCase())
+  return equipArray.filter(equip =>
+    (equip.name || '').toLowerCase().includes(searchQuery.value.toLowerCase())
   );
 });
 
@@ -71,6 +86,28 @@ const handleSearch = () => {
 // 清除搜尋內容
 const clearSearch = () => {
   searchQuery.value = '';
+};
+
+// 根據稀有度獲取樣式
+const getRarityClass = (rarity) => {
+  const rarityColors = {
+    Common: 'rarity-Common',
+    Rare: 'rarity-Rare',
+    Epic: 'rarity-Epic',
+    Legendary: 'rarity-Legendary',
+  };
+  return rarityColors[rarity] || 'tag-default'; // 預設樣式
+};
+
+const txt = ref(" At the start of the fight you receive 48-247 Thorns. :sap:: you receive 48-247 Lightroot instead. ")
+
+// 解析文本，將特定語法轉換為圖片
+const parseText = (text) => {
+  const regex = /:\w+:/g; // 匹配 :word: 格式的語法
+  return text.replace(regex, (match) => {
+    const keyword = match.slice(1, -1); // 去掉前後的冒號
+    return `<img src="/images/${keyword}.png" alt="${keyword}" class="emoji" />`;
+  });
 };
 </script>
 
@@ -114,6 +151,7 @@ const clearSearch = () => {
   box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 }
 
+
 /* 清除按鈕樣式 */
 .clear-button {
   position: absolute;
@@ -144,20 +182,19 @@ const clearSearch = () => {
 }
 
 /* 技能列表容器 */
-.skills-container {
+.equip-container {
   margin-top: 20px;
-  /* 確保與上方內容有間距 */
 }
 
 /* 技能列表樣式 */
-.skills-list {
+.equip-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 /* 技能項目樣式 */
-.skill-item {
+.equip-item {
   display: flex;
   align-items: center;
   background: #ffffff;
@@ -168,48 +205,63 @@ const clearSearch = () => {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-item:hover {
+.equip-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* 技能詳細信息樣式 */
-.skill-details {
+.equip-details {
   flex: 1;
   margin-left: 20px;
-  /* 與圖示之間的間距 */
 }
 
-.skill-name {
+.equip-name {
   font-size: 1.5rem;
   font-weight: bold;
   color: #1e40af;
   margin: 0 0 8px;
 }
 
-.skill-description {
+.equip-description {
   font-size: 1rem;
   color: #666;
   margin: 0;
   line-height: 1.5;
 }
 
-/* 技能圖示樣式 */
-.skill-image {
+.equip-image {
   width: 150px;
   height: 150px;
   border-radius: 8px;
   object-fit: cover;
+  border-radius: 40px;
+  background-color: #e0be4fa1;
+  border: 10px solid;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rarity-Common {
+  border-color: #666;
+}
+
+.rarity-Rare {
+  border-color: #1e40af;
+}
+
+.rarity-Epic {
+  border-color: blueviolet;
+}
+
+.rarity-Legendary {
+  border-color: chocolate;
 }
 
 /* 讓卡片在小螢幕上自動換行，變為一排顯示1個 */
 @media (max-width: 768px) {
-
-  /* 技能項目樣式 */
-  .skill-item {
+  .equip-item {
     display: block;
   }
-
 }
 
 /* 無結果提示 */
@@ -219,5 +271,12 @@ const clearSearch = () => {
   color: #666;
   margin-top: 20px;
   padding: 20px;
+}
+
+/* 表情圖片樣式 */
+.emoji {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
 </style>
