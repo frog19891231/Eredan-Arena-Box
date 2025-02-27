@@ -2,48 +2,46 @@
   <div v-if="!cardShow">
     <h1>Card</h1>
     <p>Some cards are shown here, but they are not comprehensive</p>
-      <div class="character-card-container">
-          <div v-for="(character, card) in characters" :key="card" class="character-card">
-              <img :src="'src/assets/img/shibi_bg/' + character.id + '.png'" @click="selectCharacter(character)" />
-          </div>
+    <div class="character-card-container">
+      <div v-for="(character, card) in characters" :key="card" class="character-card">
+        <img :src="'src/assets/img/shibi_bg/' + character.id + '.png'" @click="selectCharacter(character)" />
       </div>
+    </div>
   </div>
+  <!--  -->
   <div v-if="cardShow" style="padding-top: 50px;">
-      <button class="back-button" @click="cardShow = !cardShow">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15 18l-6-6 6-6" stroke="black" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-          </svg>
-      </button>
+    <button class="back-button" @click="cardShow = !cardShow">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 18l-6-6 6-6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
 
 
-      <div>
-          <div :class="['character-container', 'w-border']">
-              <!-- 角色圖片 -->
-              <img :src="selectedCharacter.img_src + '.png'" class="character-img" />
+    <div>
+      <div :class="['character-container', 'w-border']">
+        <!-- 角色圖片 -->
+        <img :src="selectedCharacter.img_src + '.png'" class="character-img" />
 
-              <!-- 角色資訊 -->
-              <div class="character-info">
-                  <p><strong>{{ selectedCharacter.name }}</strong></p>
-                  <p><strong>ID：</strong> {{ selectedCharacter.id }}</p>
-                  <!-- 標籤區塊 -->
-                  <div class="tags">
-                      <strong>標籤：</strong>
-                      <span v-for="(tag, index) in selectedCharacter.tag" :key="index"
-                          :class="['tag', getTagClass(tag)]" 
-                          @mouseover="showTooltip(tag, $event)"
-                          @mouseleave="hideTooltip">
-                          {{ tag }}
-                      </span>
-                  </div>
-                  <!-- 自訂 Tooltip -->
-                  <div v-if="tooltip.show" class="tooltip" :style="{ top: tooltip.y + 'px', left: tooltip.x + 'px' }">
-                      <img :src="'src/assets/img/capacites/113.png'" style="width: 50px;"/>
-                      <p >{{ tooltip.text }}</p>
-                  </div>
-              </div>
+        <!-- 角色資訊 -->
+        <div class="character-info">
+          <p><strong>{{ selectedCharacter.name }}</strong></p>
+          <p><strong>ID：</strong> {{ selectedCharacter.id }}</p>
+          <!-- 標籤區塊 -->
+          <div class="tags">
+            <strong>標籤：</strong>
+            <span v-for="(tag, index) in selectedCharacter.tag" :key="index" :class="['tag', getTagClass(tag)]"
+              @mouseover="showTooltip(tag, $event)" @mouseleave="hideTooltip">
+              {{ tag }}
+            </span>
           </div>
+          <!-- 自訂 Tooltip -->
+          <div v-if="tooltip.show" class="tooltip" :style="{ top: tooltip.y + 'px', left: tooltip.x + 'px' }">
+            <img :src="'src/assets/img/capacites/113.png'" style="width: 50px;" />
+            <p>{{ tooltip.text }}</p>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
 </template>
 
@@ -65,11 +63,11 @@ const tooltip = ref({
 
 const fetchData = async () => {
   try {
-      const response = await fetch("./src/data/card.json");
-      characters.value = await response.json();
-      //console.log("成功讀取 JSON:", characters.value);
+    const response = await fetch("./src/data/card.json");
+    characters.value = await response.json();
+    //console.log("成功讀取 JSON:", characters.value);
   } catch (error) {
-      console.error("讀取 JSON 失敗：", error);
+    console.error("讀取 JSON 失敗：", error);
   }
 };
 
@@ -84,10 +82,10 @@ const selectCharacter = (character) => {
 
 const getTagClass = (tag) => {
   const tagColors = {
-      "craft": "tag-craft",
-      "allava": "tag-allava",
-      "lightroot": "tag-lightroot",
-      "opp_spore": "tag-opp-spore",
+    "craft": "tag-craft",
+    "allava": "tag-allava",
+    "lightroot": "tag-lightroot",
+    "opp_spore": "tag-opp-spore",
   };
 
   return tagColors[tag] || "tag-default"; // 預設樣式
@@ -101,10 +99,10 @@ const showTooltip = (tag, event) => {
 };
 
 const tagDescriptions = {
-"craft": "與工匠相關的能力",
-"allava": "阿瓦隆相關技能",
-"lightroot": "光根系統強化",
-"opp_spore": "對抗孢子的能力"
+  "craft": "與工匠相關的能力",
+  "allava": "阿瓦隆相關技能",
+  "lightroot": "光根系統強化",
+  "opp_spore": "對抗孢子的能力"
 };
 
 const hideTooltip = () => {
@@ -152,7 +150,7 @@ const hideTooltip = () => {
 /* 讓卡片在小螢幕上自動換行，變為一排顯示1個 */
 @media (max-width: 768px) {
   .character-card {
-      width: 30%;
+    width: 30%;
   }
 }
 
@@ -208,16 +206,16 @@ const hideTooltip = () => {
 /* 當畫面變窄（手機版）時，改為垂直排列 */
 @media (max-width: 600px) {
   .character-container {
-      flex-direction: column;
-      /* 改為垂直排列 */
-      align-items: center;
-      /* 讓內容置中 */
+    flex-direction: column;
+    /* 改為垂直排列 */
+    align-items: center;
+    /* 讓內容置中 */
   }
 
   .character-img {
-      min-width: 300px;
-      width: 100px;
-      /* 手機版縮小圖片 */
+    min-width: 300px;
+    width: 100px;
+    /* 手機版縮小圖片 */
   }
 }
 
@@ -260,26 +258,26 @@ const hideTooltip = () => {
 
 /* 標籤樣式 */
 .tag {
-display: inline-block;
-padding: 5px 10px;
-margin: 5px;
-border-radius: 5px;
-font-size: 14px;
-background-color: #3498db;
-color: white;
-cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
 }
 
 /* Tooltip 樣式 */
 .tooltip {
-position: absolute;
-background-color: rgba(0, 0, 0, 0.8);
-color: white;
-padding: 5px 10px;
-border-radius: 5px;
-font-size: 12px;
-white-space: nowrap;
-pointer-events: none;
-z-index: 1000;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1000;
 }
 </style>

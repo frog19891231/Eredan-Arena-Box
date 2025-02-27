@@ -1476,7 +1476,7 @@
       "level": "1 - 10",
       "effect": "At the start of the fight you receive 48-247 Thorns.  :sap:: you receive 48-247 Lightroot instead.",
       "last_patch": "24 Aug 2023",
-      "url": "http://static.eredan.com/images/web_big/732a5629afd9fe5770783875e285ae8c.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/35.png"
     },
     {
       "name": "Akra's Bowl",
@@ -1521,7 +1521,7 @@
       "level": "1 - 10",
       "effect": "At the start of the fight, get 50 Resilience.  Each time you receive Blessing, receive 10-51 more.",
       "last_patch": "24 Mar 2022",
-      "url": "http://static.eredan.com/images/print/60d8f8456768e8d826fd4b186ad59d2c.png"
+      "url": "https://www.eredan-arena.com/images/thumb/items/27.png"
     },
     {
       "name": "Artrezil's Ring",
@@ -1530,7 +1530,7 @@
       "level": "1 - 10",
       "effect": ":mage~1: or :priest:: each time you sufffer less than 388-2001 DMG your opponent receives 35 Terror and you get 35 Blessing.  \"Archmage Artrezil\" or \"Archmage Minerva\": at the start of the fight copy 1 random opposing positive alteration.",
       "last_patch": "31 Dec 2023",
-      "url": "http://static.eredan.com/images/print/fd65622f5ac691d3506ed0532fcca78e.png"
+      "url": "https://www.eredan-arena.com/images/thumb/items/40.png"
     },
     {
       "name": "Awakening",
@@ -1582,6 +1582,7 @@
       "rarity": "Epic",
       "position": "2nd / Defender",
       "level": "1 - 10",
+      "effect":"Each time you activate a skill, Heal 40-206 DMG.",
       "last_patch": "29 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/72.png"
     },
@@ -1628,7 +1629,7 @@
       "level": "1 - 10",
       "effect": "Receive 291-1501 Shield.  Each time your opponent receives a new type of positive alteration, receive 145-750 more Shield.",
       "last_patch": "18 Jan 2023",
-      "url": "http://static.eredan.com/images/print/5c9ae1dc5ad8cc24ac0c788372f7749f.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/31.png"
     },
     {
       "name": "Chains of Dread",
@@ -1662,6 +1663,7 @@
       "rarity": "Legendary",
       "position": "2nd / Defender",
       "level": "1 - 10",
+      "effect":":win:: Each time you receive DMG+, deal 200-1031 Icy Normal DMG to your opponent.  King Hrimnir: Your opponent also receive 50-257 Frostbite.  Icy DMG is a DMG that is increased by 10% for every Frost on your opponent.",
       "last_patch": "23 Dec 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/135.png"
     },
@@ -1708,7 +1710,7 @@
       "level": "1 - 10",
       "effect": "At the start of the fight, receive 24-123 DMG+ for each ally from a different guild.",
       "last_patch": "24 Mar 2022",
-      "url": "http://static.eredan.com/images/print/0af260ddb7dc19cadf0d76b51755e1ad.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/32.png"
     },
     {
       "name": "Councillor's Stiletto",
@@ -1717,7 +1719,7 @@
       "level": "1 - 10",
       "effect": "At the start of the fight, deal 485-2502 DMG and decrease the opponent's strength by 25%.  Unknown Race or Edrianne: Your opponent receives 50 bleeding.",
       "last_patch": "18 Jan 2023",
-      "url": "http://static.eredan.com/images/print/f2c1031c8c40d37b6e8c5279c2c2de27.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/3.png"
     },
     {
       "name": "Councillor's Treaty",
@@ -1762,7 +1764,7 @@
       "level": "1 - 10",
       "effect": "At the start of the fight, receive 100 DMG-.  Each time you suffer DMG from :swordDice:, the opponent receives 155-799 Bleeding.",
       "last_patch": "24 Mar 2022",
-      "url": "http://static.eredan.com/images/print/ef1a5b11087c64a3af0eb4ea62a6c652.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/38.png"
     },
     {
       "name": "Deadly Arrow",
@@ -1807,7 +1809,7 @@
       "level": "1 - 10",
       "effect": ":priest:: at the start of the fight deal 600-3095 Shock DMG and receive 60-309 Blessing.  :ava::priest:: you receive 1 Riposte also.  Shock DMG is a DMG that cannot be modified by alterations, but can consume shield skills and can be prevented.",
       "last_patch": "07 Dec 2023",
-      "url": "http://static.eredan.com/images/print/7bc47bd0fbd24f08d7af64df23941f9e.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/15.png"
     },
     {
       "name": "Eredan's Wisdom",
@@ -2014,7 +2016,7 @@
       "level": "1 - 10",
       "effect": "At the start of combat you receive 581-2997 Shield.  At the end of skill activation phase receive 116-599 Shield for each opponent Sword.",
       "last_patch": "18 Jan 2023",
-      "url": "http://static.eredan.com/images/print/5f3d57bd6a6650f24b21e3e21d48ff85.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/23.png"
     },
     {
       "name": "Kotoba's Banner",
@@ -2194,7 +2196,7 @@
       "level": "1 - 10",
       "effect": "At the start of the fight, deals 155-799 DMG to the opponent, and it receives 15-79 DMG-.",
       "last_patch": "24 Mar 2022",
-      "url": "http://static.eredan.com/images/print/a37ee5f34ae76d7fd4cf5fd2e0454bf2.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/1.png"
     },
     {
       "name": "Orb of Life",
@@ -2203,7 +2205,7 @@
       "level": "1 - 10",
       "effect": "At the end of skill activation phase, heal 388-2001 health points.",
       "last_patch": "24 Mar 2022",
-      "url": "http://static.eredan.com/images/print/49103907967f7a6944a9b97d75787877.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/19.png"
     },
     {
       "name": "Paladin's Amulet",
@@ -2467,9 +2469,21 @@
       "url": "https://www.eredan-arena.com/images/HD/items/148.png"
     },
     {
+      "name": "Sword CS",
+      "rarity": "Common",
+      "position": "1st / Attacker",
+      "level": "1 - 10",
+      "effect": "At the start of the Fight, deal 100-515 Normal DMG.",
+      "last_patch": "29 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/66.png"
     },
     {
+      "name": "Sword of Artaban",
+      "rarity": "Legendary",
+      "position": "1st / Attacker",
+      "level": "1 - 10",
+      "effect": ":colossus:: At the start of the fight deal 969-4999 Pure DMG to your opponent, +242-1249 for each of your :swordDice: and receive 96-499 DMG+.  Artaban: you also receive 1 Riposte and 1 Critical.  Pure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
+      "last_patch": "06 Sep 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/96.png"
     },
     {
@@ -2497,7 +2511,7 @@
       "level": "1 - 10",
       "effect": "Colossus: Each time you activate a skill, heal 291-1501, plus 400 Shield if you have 1 Roll left.",
       "last_patch": "01 Jun 2023",
-      "url": "{   \"url\": \"http://static.eredan.com/images/print/e8a9286e655a0c6497e20910e6a43efe.png\" }"
+      "url": "http://static.eredan.com/images/print/e8a9286e655a0c6497e20910e6a43efe.png"
     },
     {
       "name": "Telendar's Blade",
@@ -2533,7 +2547,7 @@
       "level": "1 - 10",
       "effect": "Each time your opponent receives Strength, get 10-51% of it.  At the start of the fight receive 1 Riposte if you are :kot:.",
       "last_patch": "26 Aug 2023",
-      "url": "http://static.eredan.com/images/print/5722093643c77bddf46adbccfbfe5afc.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/39.png"
     },
     {
       "name": "The Council's Banner",
@@ -2578,7 +2592,7 @@
       "level": "1 - 10",
       "effect": ":tem:: At the start of the fight, receive 800-4127 Shield and trigger a Deja Vu.",
       "last_patch": "18 Nov 2023",
-      "url": "http://static.eredan.com/images/print/e6a24d16232f2744e1122470505c651c.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/42.png"
     },
     {
       "name": "The Perforator",
@@ -2644,6 +2658,12 @@
       "url": "http://static.eredan.com/images/print/da3f87d0a3b2024eee5a20ddb5da4fc4.png"
     },
     {
+      "name": "Vampire Dagger",
+      "rarity": "Legendary",
+      "position": "1st / Attacker",
+      "level": "1 - 10",
+      "effect": ":undead:: At the end of skill activation phase, deal 500-2579 Backstab damage and 500-2579 Life Drain damage to your opponent.  Lazlo, the Bloody Count or Wayna or Wayna's Reflection: Deal 250-1289 Bite damage and 250-1289 Backstab damage at the start of the fight.  Bite damage is a damage that also applies 100 Bleeding to the opponent.  Backstab damage is a damage that also decreases your opponent Strength by 50% of the damage value.  Lifedrain damage is a damage that also heals by the same value.",
+      "last_patch": "29 Oct 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/169.png"
     },
     {
@@ -2671,7 +2691,7 @@
       "level": "1 - 10",
       "effect": "At the rune consumption phase, gain 155-799 Shield for each Rune consumed.",
       "last_patch": "04 Aug 2022",
-      "url": "http://static.eredan.com/images/print/a4a9b9538ed53d7e922e1df8ba63948e.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/34.png"
     },
     {
       "name": "Weakening Potion CS",
@@ -2689,7 +2709,7 @@
       "level": "1 - 10",
       "effect": "At the start of combat, receive 1 Dragon Hide, or 2 if you are :dragon~1:.  Each time one of your Dragon Hides are consumed, deal 500-2579 Flat DMG to your opponent and he receives 50-257 Bleeding.  Flat DMG is a DMG that ignores everything.",
       "last_patch": "10 Feb 2024",
-      "url": "http://static.eredan.com/images/print/b2e8d30fa191b7729c1f8d78913ff5cb.png"
+      "url": "https://www.eredan-arena.com/images/HD/items/41.png"
     },
     {
       "name": "Witchblade Armor",
@@ -2710,12 +2730,12 @@
       "url": "http://static.eredan.com/images/print/45214b1680b3b2e1616bf9f2794bb5a8.png"
     },
     {
-      "name": "Last Patch: 22 Aug 2023 Wyrmguard",
+      "name": "Wyrmguard",
       "rarity": "Legendary",
       "position": "2nd / Defender",
       "level": "1 - 10",
       "effect": ":noz::warrior:: If you did not roll any :swordDice: at the start of the game, all the positive alterations received by you are increased by 8-41%, +10% if Blue-Mark is one of your current allies in game (rounded up).",
-      "last_patch": "22 Aug 2023 Wyrmguard Rarity Legendary Position 2nd / Defender Level 1 - 10 Effect ⋆ :noz::warrior:: If you did not roll any :swordDice: at the start of the game, all the positive alterations received by you are increased by 8-41%, +10% if Blue-Mark is one of your current allies in game (rounded up). 圖片 Last Patch: 20 Aug 2024",
+      "last_patch": "20 Aug 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/161.png"
     },
     {
