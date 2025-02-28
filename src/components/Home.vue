@@ -43,7 +43,7 @@ import SkillShow from './SkillShow.vue';
 import EquipShow from './EquipShow.vue';
 import AddData from './AddData.vue';
 import AddCard from './AddCard.vue';
-import A from './A.vue';
+import EquipImageSearch from './EquipImageSearch.vue';
 
 
 // 用於存儲當前的 Hash 值
@@ -79,7 +79,7 @@ const components = {
   EquipShow: markRaw(EquipShow),
   AddData: markRaw(AddData),
   AddCard: markRaw(AddCard),
-  A: markRaw(A),
+  EquipImageSearch: markRaw(EquipImageSearch),
 };
 const currentComponent = ref(components.intro);
 
@@ -92,7 +92,7 @@ const updateLinks = () => {
     links.value = [
       { "1st": "AddData", "2th": "AddData" },
       { "1st": "AddCard", "2th": "AddCard" },
-      { "1st": "A", "2th": "test" }
+      { "1st": "EquipImageSearch", "2th": "EquipImageSearch" }
     ];
   } else {
     links.value = [
@@ -112,6 +112,7 @@ updateLinks();
 // 切換組件功能
 const switchComponent = (componentName) => {
   currentComponent.value = components[componentName];
+  showMenu.value = !showMenu.value;
 };
 
 // 滾動事件處理
@@ -258,6 +259,7 @@ onBeforeUnmount(() => {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
 }
 
 /* 頁尾樣式 */

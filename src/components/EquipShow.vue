@@ -2,80 +2,107 @@
   <div class="container">
     <h1>Equip</h1>
     <p>Just...equip information.</p>
-    <!--
-    <p v-html="parseText(txt)"></p>
-      <img :src="image" :alt="'Image ' + index" />
-    -->
 
     <!-- 搜尋欄 -->
     <div class="search-bar">
       <div class="search-input-container">
-        <input type="text" v-model="searchQuery" placeholder="search" @input="handleSearch" class="search-input-text" />
+        <input
+          type="text"
+          v-model="searchQuery"
+          placeholder="search"
+          @input="handleSearch"
+          class="search-input-text"
+        />
         <!-- 清除按鈕 -->
         <button v-if="searchQuery" class="clear-button" @click="clearSearch">
           ×
         </button>
+        <button class="adv-button" @click="toggleAdvSearch">
+          Adv
+        </button>
+      </div>
+
+      <!-- 進階篩選器 -->
+      <div v-if="showAdvSearch" class="adv-search-container">
+        <div>
+          <label for="rarity">Rarity:</label>
+          <select id="rarity" v-model="selectedRarity">
+            <option value="">All</option>
+            <option v-for="rarity in EquipRarity" :key="rarity" :value="rarity">
+              {{ rarity }}
+            </option>
+          </select>
+        </div>
+
+        <div>
+          <label for="position">Position:</label>
+          <select id="position" v-model="selectedPosition">
+            <option value="">All</option>
+            <option v-for="pos in position" :key="pos" :value="pos">
+              {{ pos }}
+            </option>
+          </select>
+        </div>
       </div>
     </div>
+
     <!-- 技能列表 -->
     <div class="equip-container">
       <div v-if="filteredequip.length > 0" class="equip-list">
-        <div v-for="equip in filteredequip" :key="equip.id" class="equip-item">
-          <img :src="equip.url" :alt="equip.name" :class="['equip-image', getRarityClass(equip.rarity)]" />
+        <div v-for="equip in filteredequip" :key="equip.name" class="equip-item">
+          <img
+            :src="equip.url"
+            :alt="equip.name"
+            :class="['equip-image', getRarityClass(equip.rarity)]"
+          />
           <div class="equip-details">
             <h2 class="equip-name">{{ equip.name }}</h2>
-            <!-- 使用 v-html 渲染轉換後的內容 -->
-            <!--v-html="parseText(equip.effect)"-->
             <p class="equip-description">{{ equip.effect }}</p>
           </div>
         </div>
       </div>
       <div v-else class="no-results">
-        <p>no </p>
+        <p>No results found.</p>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue';
-import data_lib from '../data/library.json';
+import { ref, computed, onMounted } from "vue";
+import data_lib from "../data/library.json";
 
 // 從 JSON 文件中加載技能數據
 const libraries = ref(data_lib);
 const equipMap = ref(new Map());
 
+// 篩選標的選項
+const EquipRarity = ref(["Common", "Rare", "Epic", "Legendary"]);
+const position = ref(["1st / Attacker", "2nd / Defender"]);
 
-// 動態加載圖片
-const imageFiles = import.meta.glob("../assets/img/aggregats/*.{jpg,png,gif,jpeg,svg}");/**/
-const images = ref([]);
-
-onMounted(() => {
-  for (const path in imageFiles) {
-    const module = imageFiles[path]();
-    images.value.push(module.default);
-  }
-});
-
-// 將技能數據轉換為 Map 儲存
-onMounted(() => {
-  libraries.value.Equip.forEach(equip => {
-    equipMap.value.set(equip.name, equip);
-  });
-});
+// 選擇的篩選條件
+const selectedRarity = ref("");
+const selectedPosition = ref("");
 
 // 搜尋關鍵字
-const searchQuery = ref('');
+const searchQuery = ref("");
 
-// 計算屬性：根據搜尋關鍵字過濾技能列表
+// 是否顯示進階篩選器
+const showAdvSearch = ref(false);
+
+// 計算屬性：根據搜尋關鍵字和篩選條件過濾技能列表
 const filteredequip = computed(() => {
   const equipArray = Array.from(equipMap.value.values());
-  if (!searchQuery.value) {
-    return equipArray; // 如果沒有輸入關鍵字，返回所有技能
-  }
-  return equipArray.filter(equip =>
-    (equip.name || '').toLowerCase().includes(searchQuery.value.toLowerCase())
-  );
+  return equipArray.filter((equip) => {
+    const matchesSearch = equip.name
+      .toLowerCase()
+      .includes(searchQuery.value.toLowerCase());
+    const matchesRarity =
+      !selectedRarity.value || equip.rarity === selectedRarity.value;
+    const matchesPosition =
+      !selectedPosition.value || equip.position === selectedPosition.value;
+    return matchesSearch && matchesRarity && matchesPosition;
+  });
 });
 
 // 搜尋處理
@@ -83,32 +110,39 @@ const handleSearch = () => {
   // 可以在這裡添加額外的搜尋邏輯
 };
 
-// 清除搜尋內容
+// 清除搜尋
 const clearSearch = () => {
-  searchQuery.value = '';
+  searchQuery.value = "";
+  selectedRarity.value = "";
+  selectedPosition.value = "";
+};
+
+// 切換進階搜尋
+const toggleAdvSearch = () => {
+  if (showAdvSearch.value) {
+    clearSearch()
+  }
+  showAdvSearch.value = !showAdvSearch.value;
+
 };
 
 // 根據稀有度獲取樣式
 const getRarityClass = (rarity) => {
   const rarityColors = {
-    Common: 'rarity-Common',
-    Rare: 'rarity-Rare',
-    Epic: 'rarity-Epic',
-    Legendary: 'rarity-Legendary',
+    Common: "rarity-Common",
+    Rare: "rarity-Rare",
+    Epic: "rarity-Epic",
+    Legendary: "rarity-Legendary",
   };
-  return rarityColors[rarity] || 'tag-default'; // 預設樣式
+  return rarityColors[rarity] || "rarity-default";
 };
 
-const txt = ref(" At the start of the fight you receive 48-247 Thorns. :sap:: you receive 48-247 Lightroot instead. ")
-
-// 解析文本，將特定語法轉換為圖片
-const parseText = (text) => {
-  const regex = /:\w+:/g; // 匹配 :word: 格式的語法
-  return text.replace(regex, (match) => {
-    const keyword = match.slice(1, -1); // 去掉前後的冒號
-    return `<img src="/images/${keyword}.png" alt="${keyword}" class="emoji" />`;
+// 將技能數據轉換為 Map 儲存
+onMounted(() => {
+  libraries.value.Equip.forEach((equip) => {
+    equipMap.value.set(equip.name, equip);
   });
-};
+});
 </script>
 
 <style scoped>
@@ -155,7 +189,7 @@ const parseText = (text) => {
 /* 清除按鈕樣式 */
 .clear-button {
   position: absolute;
-  right: 16px;
+  right: -50px;
   /* 調整與右邊的距離 */
   top: 50%;
   transform: translateY(-50%);
@@ -179,6 +213,31 @@ const parseText = (text) => {
 
 .clear-button:hover {
   color: #1e40af;
+}
+
+.adv-button {
+  position: absolute;
+  right: 420px;
+  /* 調整與右邊的距離 */
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  z-index: 10;
+  /* 確保按鈕在最上層 */
+  width: 24px;
+  /* 固定寬度 */
+  height: 24px;
+  /* 固定高度 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
 }
 
 /* 技能列表容器 */
@@ -207,7 +266,7 @@ const parseText = (text) => {
 
 .equip-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* 技能詳細信息樣式 */
