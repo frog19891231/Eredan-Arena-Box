@@ -6,15 +6,10 @@
     <!-- 搜尋欄 -->
     <div class="search-bar">
       <div class="search-input-container">
-        <input
-          type="text"
-          v-model="searchQuery"
-          placeholder="search"
-          @input="handleSearch"
-          class="search-input-text"
-        />
+        <input type="text" v-model="searchQuery" placeholder="search" @input="handleSearch" class="search-input-text" />
         <!-- 清除按鈕 -->
-        <button v-if="searchQuery" class="clear-button" @click="clearSearch">
+        <button v-if="searchQuery || selectedRarity || selectedPosition || selectedTag" class="clear-button"
+          @click="clearSearch">
           ×
         </button>
         <button class="adv-button" @click="toggleAdvSearch">
@@ -43,6 +38,17 @@
             </option>
           </select>
         </div>
+
+        <!-- Tag 篩選器 -->
+        <div>
+          <label>Tags:</label>
+          <div class="tag-container">
+            <button v-for="tag in uniqueTags" :key="tag" :class="['tag-button', { active: selectedTag === tag }]"
+              @click="selectTag(tag)" v-html="emoToImg(tag)">
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -50,14 +56,10 @@
     <div class="equip-container">
       <div v-if="filteredequip.length > 0" class="equip-list">
         <div v-for="equip in filteredequip" :key="equip.name" class="equip-item">
-          <img
-            :src="equip.url"
-            :alt="equip.name"
-            :class="['equip-image', getRarityClass(equip.rarity)]"
-          />
+          <img :src="equip.url" :alt="equip.name" :class="['equip-image', getRarityClass(equip.rarity)]" />
           <div class="equip-details">
             <h2 class="equip-name">{{ equip.name }}</h2>
-            <p class="equip-description">{{ equip.effect }}</p>
+            <pre class="equip-description" v-html="formattedText(equip.effect)"></pre>
           </div>
         </div>
       </div>
@@ -69,12 +71,17 @@
 </template>
 
 <script setup>
+/******************************************************************** */
 import { ref, computed, onMounted } from "vue";
 import data_lib from "../data/library.json";
 
 // 從 JSON 文件中加載技能數據
 const libraries = ref(data_lib);
 const equipMap = ref(new Map());
+const emojiData = ref({});
+const taghub = ref(new Set()); // 使用 Set 來存儲唯一的 tag
+
+const emoji = ref([]);
 
 // 篩選標的選項
 const EquipRarity = ref(["Common", "Rare", "Epic", "Legendary"]);
@@ -83,12 +90,35 @@ const position = ref(["1st / Attacker", "2nd / Defender"]);
 // 選擇的篩選條件
 const selectedRarity = ref("");
 const selectedPosition = ref("");
+const selectedTag = ref("")
 
 // 搜尋關鍵字
 const searchQuery = ref("");
 
 // 是否顯示進階篩選器
 const showAdvSearch = ref(false);
+
+// 將 Set 轉換為陣列
+const uniqueTags = computed(() => Array.from(taghub.value));
+
+/************************************************************************** */
+// 加載圖片
+const loadImages = async () => {
+  const modules = import.meta.glob("../assets/img/aggregats/*.{jpg,png}");/**/
+  const paths = Object.keys(modules);
+
+  const images = await Promise.all(
+    paths.map(async (path) => {
+      const module = await modules[path]();
+      return {
+        id: path.split("/").pop().split(".")[0], // 提取檔案名稱（不含副檔名）
+        path: module.default, // 圖片的實際路徑
+      };
+    })
+  );
+
+  emoji.value = images; // 直接賦值，提高效能
+};
 
 // 計算屬性：根據搜尋關鍵字和篩選條件過濾技能列表
 const filteredequip = computed(() => {
@@ -101,13 +131,16 @@ const filteredequip = computed(() => {
       !selectedRarity.value || equip.rarity === selectedRarity.value;
     const matchesPosition =
       !selectedPosition.value || equip.position === selectedPosition.value;
-    return matchesSearch && matchesRarity && matchesPosition;
+    const matchesTag =
+      !selectedTag.value || (equip.tag && equip.tag.includes(selectedTag.value));
+    return matchesSearch && matchesRarity && matchesPosition && matchesTag;
   });
 });
 
+
 // 搜尋處理
 const handleSearch = () => {
-  // 可以在這裡添加額外的搜尋邏輯
+  console.log("Search query:", searchQuery.value);
 };
 
 // 清除搜尋
@@ -115,15 +148,17 @@ const clearSearch = () => {
   searchQuery.value = "";
   selectedRarity.value = "";
   selectedPosition.value = "";
+  selectedTag.value = "";
 };
 
 // 切換進階搜尋
 const toggleAdvSearch = () => {
-  if (showAdvSearch.value) {
-    clearSearch()
-  }
   showAdvSearch.value = !showAdvSearch.value;
+};
 
+// 選擇 tag
+const selectTag = (tag) => {
+  selectedTag.value = selectedTag.value === tag ? "" : tag; // 點擊已選中的 tag 時取消選擇
 };
 
 // 根據稀有度獲取樣式
@@ -137,12 +172,57 @@ const getRarityClass = (rarity) => {
   return rarityColors[rarity] || "rarity-default";
 };
 
+// 格式化文本，替換表情符號
+const formattedText = (text) => {
+  if (!text) {
+    return text; // 如果是 undefined 或 null，直接返回原始值
+  }
+
+  return text.replace(/:([a-zA-Z0-9_~]+):/g, (matched, name) => {
+
+
+    if (emoToImg(name)) {
+      return emoToImg(name)
+    }
+    // 如果沒有找到匹配的，返回原始文本
+    return matched;
+  });
+};
+
+const emoToImg = (name) => {
+  const emojiName = name;
+  // 比對資料庫中的名稱
+  const emo =
+    emojiData.value.find((item) => item.name === emojiName);
+
+  // 如果找到匹配的 emoji，返回 <img> 標籤
+  if (emo) {
+    const emojiImage = emoji.value.find((item) => item.id === emo.id);
+    if (emojiImage) {
+      return `<img src="${emojiImage.path}" alt="${name}" style="  width: 30px; height: 30px; ; vertical-align: middle; ">`;
+    }
+  }
+}
+
+
+/************************************************************************************ */
 // 將技能數據轉換為 Map 儲存
 onMounted(() => {
   libraries.value.Equip.forEach((equip) => {
     equipMap.value.set(equip.name, equip);
+
+
+    // 提取並存儲 tag
+    if (equip.tag && Array.isArray(equip.tag)) { // 修正為 equip.tag
+      equip.tag.forEach((tag) => {
+        taghub.value.add(tag); // 將 tag 添加到 Set 中
+      });
+    }
   });
+  emojiData.value = libraries.value.Emoji;
+  loadImages();
 });
+
 </script>
 
 <style scoped>
@@ -164,15 +244,12 @@ onMounted(() => {
   display: inline-block;
   width: 100%;
   max-width: 400px;
-  /* 控制搜尋欄的最大寬度 */
 }
 
 /* 輸入框樣式 */
 .search-input-text {
   width: 100%;
-  /* 控制輸入框的寬度 */
   padding: 12px 40px 12px 16px;
-  /* 右邊留出 40px 的空間 */
   font-size: 16px;
   border: 2px solid #1e40af;
   border-radius: 25px;
@@ -185,12 +262,10 @@ onMounted(() => {
   box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 }
 
-
 /* 清除按鈕樣式 */
 .clear-button {
   position: absolute;
   right: -50px;
-  /* 調整與右邊的距離 */
   top: 50%;
   transform: translateY(-50%);
   background: none;
@@ -201,11 +276,8 @@ onMounted(() => {
   padding: 0;
   line-height: 1;
   z-index: 10;
-  /* 確保按鈕在最上層 */
   width: 24px;
-  /* 固定寬度 */
   height: 24px;
-  /* 固定高度 */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,7 +290,6 @@ onMounted(() => {
 .adv-button {
   position: absolute;
   right: 420px;
-  /* 調整與右邊的距離 */
   top: 50%;
   transform: translateY(-50%);
   background: none;
@@ -229,11 +300,8 @@ onMounted(() => {
   padding: 0;
   line-height: 1;
   z-index: 10;
-  /* 確保按鈕在最上層 */
   width: 24px;
-  /* 固定寬度 */
   height: 24px;
-  /* 固定高度 */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -283,6 +351,10 @@ onMounted(() => {
 }
 
 .equip-description {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: left;
   font-size: 1rem;
   color: #666;
   margin: 0;
@@ -332,10 +404,35 @@ onMounted(() => {
   padding: 20px;
 }
 
-/* 表情圖片樣式 */
-.emoji {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
+/* Tag 容器 */
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tag-button {
+  padding: 6px 6px;
+  /* 保持內邊距 */
+  border: none;
+  /* 移除邊框 */
+  border-radius: 16px;
+  /* 圓角 */
+  background-color: transparent;
+  /* 透明背景 */
+  cursor: pointer;
+  /* 鼠標指針 */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* 過渡效果 */
+  margin: 4px;
+  /* 按鈕之間的間距 */
+}
+
+.tag-button.active {
+  transform: scale(2);
+  /* 放大 10% */
+  transition: transform 0.2s ease;
+  /* 添加平滑過渡效果 */
 }
 </style>

@@ -1,4 +1,5 @@
 <template>
+  
   <div class="min-h-screen flex flex-col">
     <!-- 導覽列 -->
     <nav class="navbar" :class="{ 'navbar-hidden': !showNavbar }">
@@ -30,7 +31,7 @@
 
     <!-- 頁腳 -->
     <footer class="footer">
-      &copy; 2025 MyWebsite. 版權所有。
+       Copyright &copy; 2025 MyWebsite.
     </footer>
   </div>
 </template>
@@ -81,7 +82,7 @@ const components = {
   AddCard: markRaw(AddCard),
   EquipImageSearch: markRaw(EquipImageSearch),
 };
-const currentComponent = ref(components.intro);
+const currentComponent = ref(components.EquipShow);
 
 // 導航連結
 const links = ref([]);
