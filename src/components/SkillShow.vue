@@ -210,6 +210,11 @@ const clearSearch = () => {
     display: block;
   }
 
+  .search-input-container {
+    width: 70%;
+    right: 5%;
+  }
+
 }
 
 /* 無結果提示 */

@@ -1,11 +1,11 @@
 <template>
-  
   <div class="min-h-screen flex flex-col">
     <!-- 導覽列 -->
-    <nav class="navbar" :class="{ 'navbar-hidden': !showNavbar }">
+    <nav ref="navbarRef" class="navbar" :class="{ 'navbar-hidden': !showNavbar }">
       <div class="container_home">
         <!-- Logo -->
-        <div class="logo"><a href="#" @click.prevent="switchComponent('intro')">MyLogo</a></div>
+        <div class="logo"><a href="#" @click.prevent="switchComponent('intro')">
+            <img src="../../public/EABox.svg" ></img></a></div>
 
         <!-- 漢堡選單按鈕（小螢幕） -->
         <button class="menu-toggle" @click="toggleMenu">☰</button>
@@ -20,18 +20,20 @@
     </nav>
 
     <!-- 返回頂部按鈕 -->
-    <button v-show="showBackToTopButton" @click="scrollToTop" class="back-to-top">
-      ⬆
-    </button>
+    <transition name="fade">
+      <button v-show="showBackToTopButton" @click="scrollToTop" class="back-to-top">
+        ⬆
+      </button>
+    </transition>
 
     <!-- 主內容區域 -->
-    <main class="main">
+    <main class="main" :style="{ paddingTop: `${navbarHeight + 32}px` }">
       <component :is="currentComponent"></component>
     </main>
 
     <!-- 頁腳 -->
     <footer class="footer">
-       Copyright &copy; 2025 MyWebsite.
+      Copyright &copy; 2025 MyWebsite.
     </footer>
   </div>
 </template>
@@ -44,8 +46,8 @@ import SkillShow from './SkillShow.vue';
 import EquipShow from './EquipShow.vue';
 import AddData from './AddData.vue';
 import AddCard from './AddCard.vue';
+import Feedback from './Feedback.vue';
 import EquipImageSearch from './EquipImageSearch.vue';
-
 
 // 用於存儲當前的 Hash 值
 const hash = ref('');
@@ -71,6 +73,8 @@ const showNavbar = ref(true);
 const lastScrollY = ref(0);
 const showMenu = ref(false);
 const showBackToTopButton = ref(false);
+const navbarHeight = ref(0);
+const navbarRef = ref(null);
 
 // 使用 markRaw 標記組件
 const components = {
@@ -80,9 +84,10 @@ const components = {
   EquipShow: markRaw(EquipShow),
   AddData: markRaw(AddData),
   AddCard: markRaw(AddCard),
+  Feedback: markRaw(Feedback),
   EquipImageSearch: markRaw(EquipImageSearch),
 };
-const currentComponent = ref(components.EquipShow);
+const currentComponent = ref(components.intro);
 
 // 導航連結
 const links = ref([]);
@@ -113,25 +118,32 @@ updateLinks();
 // 切換組件功能
 const switchComponent = (componentName) => {
   currentComponent.value = components[componentName];
-  showMenu.value = !showMenu.value;
+  showMenu.value = false;
 };
 
 // 滾動事件處理
+let scrollTimeout;
+
 const handleScroll = () => {
   const currentScrollY = window.scrollY;
 
-  // 控制導航欄的顯示/隱藏
-  if (currentScrollY > lastScrollY.value && currentScrollY > 100) {
-    showNavbar.value = false; // 向下滾動時隱藏導航欄
-  } else {
-    showNavbar.value = true; // 向上滾動時顯示導航欄
-  }
+  // 清除之前的延遲
+  clearTimeout(scrollTimeout);
 
-  // 控制返回頂部按鈕的顯示
-  showBackToTopButton.value = currentScrollY > 200;
+  // 設置延遲
+  scrollTimeout = setTimeout(() => {
+    if (currentScrollY > lastScrollY.value && currentScrollY > 100) {
+      showNavbar.value = false; // 向下滾動時隱藏導航欄
+    } else {
+      showNavbar.value = true; // 向上滾動時顯示導航欄
+    }
 
-  // 更新最後的滾動位置
-  lastScrollY.value = currentScrollY;
+    // 控制返回頂部按鈕的顯示
+    showBackToTopButton.value = currentScrollY > 200;
+
+    // 更新最後的滾動位置
+    lastScrollY.value = currentScrollY;
+  }, 100); // 延遲 100ms
 };
 
 // 返回頂部功能
@@ -144,8 +156,23 @@ const toggleMenu = () => {
   showMenu.value = !showMenu.value;
 };
 
-// 生命週期鉤子
+// 動態調整導航欄高度
 onMounted(() => {
+  const observer = new ResizeObserver((entries) => {
+    for (let entry of entries) {
+      navbarHeight.value = entry.contentRect.height;
+    }
+  });
+
+  if (navbarRef.value) {
+    observer.observe(navbarRef.value);
+  }
+
+  onBeforeUnmount(() => {
+    observer.disconnect();
+  });
+
+  // 監聽滾動事件
   window.addEventListener('scroll', handleScroll);
 });
 
@@ -153,7 +180,6 @@ onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll);
 });
 </script>
-
 
 <style scoped>
 /* 導覽列樣式 */
@@ -189,7 +215,7 @@ onBeforeUnmount(() => {
 
 /* Logo 樣式 */
 .logo {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 5vw, 2rem);
   font-weight: bold;
 }
 
@@ -207,7 +233,7 @@ onBeforeUnmount(() => {
 .nav-links {
   display: flex;
   gap: 1.5rem;
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 3vw, 1.125rem);
 }
 
 /* 導覽項目連結的樣式 */
@@ -237,11 +263,17 @@ onBeforeUnmount(() => {
     width: 100%;
     background: #1e40af;
     padding: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
   }
 
   .show-menu {
     display: flex;
+    max-height: 500px;
+    /* 根據內容調整 */
   }
+
 }
 
 /* 返回頂部按鈕樣式 */
@@ -273,6 +305,25 @@ onBeforeUnmount(() => {
 }
 
 .main {
-  padding-top: 150px;
+  padding-top: calc(80px + 2rem);
+  /* 導航欄高度 + 額外間距 */
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: calc(60px + 2rem);
+    /* 小螢幕下導航欄高度較小 */
+  }
+}
+
+/* 淡入淡出動畫 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

@@ -289,7 +289,7 @@ onMounted(() => {
 
 .adv-button {
   position: absolute;
-  right: 420px;
+  right: 1px;
   top: 50%;
   transform: translateY(-50%);
   background: none;
@@ -388,12 +388,6 @@ onMounted(() => {
   border-color: chocolate;
 }
 
-/* 讓卡片在小螢幕上自動換行，變為一排顯示1個 */
-@media (max-width: 768px) {
-  .equip-item {
-    display: block;
-  }
-}
 
 /* 無結果提示 */
 .no-results {
@@ -434,5 +428,19 @@ onMounted(() => {
   /* 放大 10% */
   transition: transform 0.2s ease;
   /* 添加平滑過渡效果 */
+}
+
+
+@media (max-width: 768px) {
+
+  /* 讓卡片在小螢幕上自動換行，變為一排顯示1個 */
+  .equip-item {
+    display: block;
+  }
+
+  .search-input-container {
+    width: 70%;
+    right: 5%;
+  }
 }
 </style>
