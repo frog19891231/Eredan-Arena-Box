@@ -5,7 +5,7 @@
       <div class="container_home">
         <!-- Logo -->
         <div class="logo"><a href="#" @click.prevent="switchComponent('intro')">
-            <img src="../../public/EABox.svg" ></img></a></div>
+            <img src="../../public/EABox-w.svg" ></img></a></div>
 
         <!-- 漢堡選單按鈕（小螢幕） -->
         <button class="menu-toggle" @click="toggleMenu">☰</button>
@@ -13,7 +13,7 @@
         <!-- 主要標籤 -->
         <ul :class="{ 'nav-links': true, 'show-menu': showMenu }">
           <li v-for="link in links" :key="link['1st']">
-            <a href="#" @click.prevent="switchComponent(link['1st'])">{{ link['2th'] }}</a>
+            <a href="#" @click.prevent="switchComponent(link['vue'])">{{ link['name'] }}</a>
           </li>
         </ul>
       </div>
@@ -33,7 +33,7 @@
 
     <!-- 頁腳 -->
     <footer class="footer">
-      Copyright &copy; 2025 MyWebsite.
+      Copyright &copy; 2025 Eredan-Arena-Box.
     </footer>
   </div>
 </template>
@@ -47,6 +47,7 @@ import EquipShow from './EquipShow.vue';
 import AddData from './AddData.vue';
 import AddCard from './AddCard.vue';
 import Feedback from './Feedback.vue';
+import cardOCR from './cardOCR.vue';
 import EquipImageSearch from './EquipImageSearch.vue';
 
 // 用於存儲當前的 Hash 值
@@ -85,6 +86,7 @@ const components = {
   AddData: markRaw(AddData),
   AddCard: markRaw(AddCard),
   Feedback: markRaw(Feedback),
+  cardOCR: markRaw(cardOCR),
   EquipImageSearch: markRaw(EquipImageSearch),
 };
 const currentComponent = ref(components.intro);
@@ -96,15 +98,17 @@ const links = ref([]);
 const updateLinks = () => {
   if (hash.value === '123') {
     links.value = [
-      { "1st": "AddData", "2th": "AddData" },
-      { "1st": "AddCard", "2th": "AddCard" },
-      { "1st": "EquipImageSearch", "2th": "EquipImageSearch" }
+      { "vue": "AddData", "name": "AddData" },
+      { "vue": "AddCard", "name": "AddCard" },
+      { "vue": "EquipImageSearch", "name": "EquipImg" },
+      { "vue": "cardOCR", "name": "OCR" }
     ];
   } else {
     links.value = [
-      { "1st": "CardFilter", "2th": "Card" },
-      { "1st": "SkillShow", "2th": "Skill" },
-      { "1st": "EquipShow", "2th": "Equip" }
+      { "vue": "CardFilter", "name": "Card" },
+      { "vue": "SkillShow", "name": "Skill" },
+      { "vue": "EquipShow", "name": "Equip" },
+      { "vue": "Feedback", "name": "Feedback" }
     ];
   }
 };

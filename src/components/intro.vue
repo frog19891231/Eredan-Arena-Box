@@ -1,16 +1,19 @@
 <template>
   <div class="intro-container">
+
+    <Div>
+      <button class="image-button" @click="redirectToNewPage">
+        <img src="https://support.discord.com/hc/theming_assets/01HZPN9XBJQZSPXWYYVY76TBEE">
+      </button>
+    </Div>
+
     <div>
       <div class="fb-page" data-href="https://www.facebook.com/EredanArenaOfficial/" data-tabs="timeline"
         data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true"
         data-hide-cover="false" data-show-facepile="true">
       </div>
     </div>
-    <Div>
-      <button class="image-button" @click="redirectToNewPage">
-        <img src="https://support.discord.com/hc/theming_assets/01HZPN9XBJQZSPXWYYVY76TBEE">
-      </button>
-    </Div>
+
     <div class="dashed-line"></div>
 
     <p class="intro-text">
@@ -56,11 +59,11 @@ export default {
 
 .intro-container {
   max-width: 800px;
+  width: 80%;
   margin: 0 auto;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
 .intro-text {
@@ -80,9 +83,9 @@ export default {
 }
 
 .image-button img {
-  padding: 80px 0;
-  width: 400px;
-  height: auto;
+  padding: 30px 0;
+  width: 200px;
+  
   transition: transform 0.2s ease;
 }
 
