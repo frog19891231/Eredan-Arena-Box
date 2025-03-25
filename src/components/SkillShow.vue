@@ -18,11 +18,11 @@
     <!-- 技能列表 -->
     <div class="skills-container">
       <div v-if="filteredSkills.length > 0" class="skills-list">
-        <div v-for="skill in filteredSkills" :key="skill.id" class="skill-item">
+        <div v-for="skill in filteredSkills" :key="skill.name" class="skill-item">
           <img :src="skill.img_url" :alt="skill.name" class="skill-image" />
           <div class="skill-details">
             <h2 class="skill-name">{{ skill.name }}</h2>
-            <p class="skill-description" style="white-space: pre-line; text-align: left">{{ skill.description }}</p>
+            <p class="skill-description" style="white-space: pre-line; text-align: left"  v-html="formattedText(skill.description)" :key="refresh"></p>
           </div>
 
         </div>
@@ -35,18 +35,26 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted, watch } from 'vue';
 import data_lib from '../data/library.json';
+import emojiUtil from "../scripts/emoToImg.js";
 
 // 從 JSON 文件中加載技能數據
 const libraries = ref(data_lib);
 const skillsMap = ref(new Map());
+const isImagesLoaded = emojiUtil.isImagesLoaded;
+const refresh = ref(0);
 
 // 將技能數據轉換為 Map 儲存
 onMounted(() => {
-  libraries.value.Skill.forEach(skill => {
-    skillsMap.value.set(skill.id, skill);
+  
+  skillsMap.value = new Map(); // 重新初始化
+  data_lib.Skill.forEach(skill => {
+    if (!skillsMap.value.has(skill.name)) {
+      skillsMap.value.set(skill.name, skill);
+    }
   });
+  emojiUtil.initEmojiData();
 });
 
 // 搜尋關鍵字
@@ -55,12 +63,10 @@ const searchQuery = ref('');
 // 計算屬性：根據搜尋關鍵字過濾技能列表
 const filteredSkills = computed(() => {
   const skillsArray = Array.from(skillsMap.value.values());
-  if (!searchQuery.value) {
-    return skillsArray; // 如果沒有輸入關鍵字，返回所有技能
-  }
-  return skillsArray.filter(skill =>
-    (skill.name || '').toLowerCase().includes(searchQuery.value.toLowerCase())
-  );
+
+  return skillsArray.filter((skill) => {
+    return !searchQuery.value || (skill.name?.toLowerCase() || "").includes(searchQuery.value.toLowerCase());
+  });
 });
 
 // 搜尋處理
@@ -71,7 +77,20 @@ const handleSearch = () => {
 // 清除搜尋內容
 const clearSearch = () => {
   searchQuery.value = '';
+
 };
+
+// 格式化文本，替換表情符號
+const formattedText = (text) => {
+  if (!text) return text;
+  return text.replace(/:([a-zA-Z0-9_~]+):/g, (matched, name) => emojiUtil.emoToImg(name) || matched);
+};
+
+watch(isImagesLoaded, (newVal) => {
+  if (newVal) {
+    refresh.value++;
+  }
+});
 </script>
 
 <style scoped>

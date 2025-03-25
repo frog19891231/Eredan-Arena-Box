@@ -5,7 +5,7 @@
 
         <!-- 下拉選單 -->
         <select v-model="selectedOption">
-            <option disabled value="">請選擇一個選項</option>
+            <option disabled value=""></option>
             <option v-for="option in options" :key="option.value" :value="option.value">
                 {{ option.label }}
             </option>
@@ -14,29 +14,17 @@
         <div class="dashed-line"></div>
 
         <!-- 動態表單 -->
-        <div v-show="selectedOption === 'option1'">
-            <div class="horizontal-table">
-                <div>
-                    <div v-for="field in skillFields" :key="field.key" class="table-cell">
-                        <label>{{ field.label }}：</label>
-                        <input type="text" v-model="inputData[field.key]"
-                            :placeholder="`Enter ${field.label.toLowerCase()}`" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div v-show="selectedOption === 'option2'">
+        <div v-show="selectedOption">
             <div class="horizontal-table">
                 <div>
                     <div class="table-cell">
-                        <label>Wiki Input：</label>
-                        <input type="text" v-model="input_wiki" placeholder="Enter wiki data" />
+                        <label>{{ }} Wiki Input：</label>
+                        <input type="text" v-model="inputWiki" placeholder="Enter wiki data" />
                         <button @click="parseInput">+</button>
                     </div>
                     <div class="table-cell">
-                        <label>url Input：</label>
-                        <input type="text" v-model="items.url" placeholder="Enter img url" />
+                        <label>URL Input：</label>
+                        <input type="text" v-model="inputUrl" placeholder="Enter img url" />
                     </div>
                 </div>
             </div>
@@ -63,62 +51,35 @@
 <script setup>
 import { ref, computed } from 'vue';
 
-// 輸入欄位的資料
-const inputData = ref({
-    name: '',
-    id: '',
-    description: '',
-    url: '',
-});
+// 响应式变量定义
+const inputWiki = ref('');         // 存储维基文本输入内容
+const inputUrl = ref('');          // 存储图片URL输入内容
+const preElement = ref(null);      // 指向 <pre> 输出元素的引用
+const copyStatus = ref(null);      // 复制操作状态（success/error/null）
+const selectedOption = ref(''); // 当前选中的选项（默认option1）
+const parsedData = ref({});        // 存储解析后的数据结构
 
-const input_wiki = ref('');
-const preElement = ref(null);
-const copyStatus = ref(null);
-
-// 下拉選單的選項
+// 可选的解析类型选项
 const options = ref([
-    { value: 'option1', label: 'Skill' },
-    { value: 'option2', label: 'Equip' },
+    { value: 'option1', label: 'Skill' },  // 选项1：技能解析
+    { value: 'option2', label: 'Equip' },  // 选项2：装备解析（待实现）
 ]);
 
-// 預設選擇的值
-const selectedOption = ref('option2');
-
-// 表單欄位配置
-const skillFields = ref([
-    { key: 'name', label: 'Name' },
-    { key: 'id', label: 'ID' },
-    { key: 'description', label: 'Description' },
-    { key: 'url', label: 'URL' },
-]);
-
-// 清空輸入欄位
+// 方法：清空所有输入字段
 const clearInputs = () => {
-    inputData.value = { name: '', id: '', description: '', url: '' };
-    input_wiki.value = '';
-    items.value = {};
-
+    inputWiki.value = '';
+    inputUrl.value = '';
+    parsedData.value = {};
 };
 
-// 格式化 JSON 輸出
-const formattedOutput = computed(() => {
-    let data = {};
+// 计算属性：将解析数据格式化为美观的JSON字符串
+const formattedOutput = computed(() => JSON.stringify(parsedData.value, null, 2));
 
-    if (selectedOption.value === 'option1') {
-        data = { ...inputData.value };
-    } else if (selectedOption.value === 'option2') {
-        data = { ...items.value };
-    }
-
-    return JSON.stringify(data, null, 2);
-});
-
-// 複製內容到剪貼簿
+// 方法：复制输出内容到剪贴板
 const copyOutput = async () => {
     if (!preElement.value) return;
 
     const preText = preElement.value.textContent;
-
     if (!preText.trim()) {
         copyStatus.value = 'error';
         setTimeout(() => (copyStatus.value = null), 2000);
@@ -128,75 +89,86 @@ const copyOutput = async () => {
     try {
         await navigator.clipboard.writeText(preText);
         copyStatus.value = 'success';
-        setTimeout(() => (copyStatus.value = null), 2000);
     } catch (err) {
-        console.error('複製失敗: ', err);
         copyStatus.value = 'error';
-        setTimeout(() => (copyStatus.value = null), 2000);
     }
+    setTimeout(() => (copyStatus.value = null), 2000); // 2秒后重置状态
 };
 
-// 解析後的數據
-const items = ref({});
-
+// 方法：解析输入内容
 const parseInput = () => {
-    if (!input_wiki.value.trim()) return;
+    // 確保 inputWiki 不為空
+    if (!inputWiki.value.trim()) return;
 
-    // 按換行符分割每一段
-    const lines = input_wiki.value.trim().split("\n");
+    // 將輸入分割成行
+    const lines = inputWiki.value.trim().split("\n");
 
-    // 只處理第一行（假設每次只有一筆資料）
-    const line = lines[0];
+    // 如果輸入只有一行，將其視為一個完整的字符串
+    if (lines.length === 1) {
+        lines.push("");  // 如果只有一行，將空行加入以避免後續錯誤
+    }
+
     const result = {};
 
-    // 提取 Name
-    const nameMatch = line.match(/^(.*?) Rarity /);
-    if (nameMatch) {
-        result.name = nameMatch[1].trim();
+    // 技能解析模式
+    if (selectedOption.value === 'option1') {
+        const [name, ...descParts] = lines.join(" ").split("Description ⋆");
+        result.name = name.trim();  // 提取技能名稱
+        result.description = descParts.join(" ").trim();  // 提取描述部分
+        const imgMatch = inputUrl.value.match(/([^\/]+)\.png$/);  // 提取圖片ID
+        result.id = imgMatch ? imgMatch[1] : '';  // 提取ID
+        result.img_url = inputUrl.value;  // 存儲完整圖片URL
+    }
+    // 裝備解析模式
+    else if (selectedOption.value === 'option2') {
+        // 確保有有效的 line 資料
+        const line = lines.join(" ");  // 將多行合併成一個字符串
+
+        // 提取 Name
+        const nameMatch = line.match(/^(.*?) Rarity/);
+        if (nameMatch) {
+            result.name = nameMatch[1].trim();
+        }
+
+        // 提取 Rarity
+        const rarityMatch = line.match(/Rarity (\w+)/);
+        if (rarityMatch) {
+            result.rarity = rarityMatch[1].trim();
+        }
+
+        // 提取 Position
+        const positionMatch = line.match(/Position (.*?) Level/);
+        if (positionMatch) {
+            result.position = positionMatch[1].trim();
+        }
+
+        // 提取 Level
+        const levelMatch = line.match(/Level (.*?) Effect/);
+        if (levelMatch) {
+            result.level = levelMatch[1].trim();
+        }
+
+        // 提取 Effect
+        const effectMatch = line.match(/Effect ⋆ (.*?) 圖片/);
+        if (effectMatch) {
+            result.effect = effectMatch[1].trim();
+        }
+
+        // 提取 Last Patch
+        const lastPatchMatch = line.match(/Last Patch: (.*?)$/);
+        if (lastPatchMatch) {
+            result.last_patch = lastPatchMatch[1].trim();
+        }
+
+        // 裝備解析的 URL (這裡假設你會手動處理或自動生成 URL)
+        result.url = inputUrl.value ? inputUrl.value : '';
     }
 
-    // 提取 Rarity
-    const rarityMatch = line.match(/Rarity (\w+)/);
-    if (rarityMatch) {
-        result.rarity = rarityMatch[1].trim();
-    }
-
-    // 提取 Position
-    const positionMatch = line.match(/Position (.*?) Level/);
-    if (positionMatch) {
-        result.position = positionMatch[1].trim();
-    }
-
-    // 提取 Level
-    const levelMatch = line.match(/Level (.*?) Effect/);
-    if (levelMatch) {
-        result.level = levelMatch[1].trim();
-    }
-
-    // 提取 Effect
-    const effectMatch = line.match(/Effect ⋆ (.*?) 圖片/);
-    if (effectMatch) {
-        result.effect = effectMatch[1].trim();
-    }
-
-    // 提取 Last Patch
-    const lastPatchMatch = line.match(/Last Patch: (.*?)$/);
-    if (lastPatchMatch) {
-        result.last_patch = lastPatchMatch[1].trim();
-    }
-    if (nameMatch) {
-        result.url = "";
-    }
-
-    // 將解析結果存儲到 items
-    items.value = result;
+    parsedData.value = result;  // 更新解析結果
 };
-
-
 </script>
 
 <style scoped>
-/* 樣式保持不變 */
 .dashed-line {
     width: 100%;
     border-top: 2px dashed #ddd;

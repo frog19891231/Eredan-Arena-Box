@@ -2,12 +2,14 @@
   <div class="intro-container">
 
     <Div>
-      <button class="image-button" @click="redirectToNewPage">
+      <button class="DC" @click="redirectToNewPage">
         <img src="https://support.discord.com/hc/theming_assets/01HZPN9XBJQZSPXWYYVY76TBEE">
       </button>
     </Div>
 
-    <div>
+    <div class="dashed-line"></div>
+
+    <div class="FB">
       <div class="fb-page" data-href="https://www.facebook.com/EredanArenaOfficial/" data-tabs="timeline"
         data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true"
         data-hide-cover="false" data-show-facepile="true">
@@ -75,21 +77,26 @@ export default {
   /* 斜體 */
 }
 
-.image-button {
+.DC {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
 }
 
-.image-button img {
+.DC img {
   padding: 30px 0;
   width: 200px;
   
   transition: transform 0.2s ease;
 }
 
-.image-button:hover img {
+.DC:hover img {
   transform: scale(1.1);
+}
+
+.FB {
+  background: none;
+  padding: 20px 0;
 }
 </style>

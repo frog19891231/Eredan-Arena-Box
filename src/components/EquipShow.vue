@@ -44,7 +44,7 @@
           <label>Tags:</label>
           <div class="tag-container">
             <button v-for="tag in uniqueTags" :key="tag" :class="['tag-button', { active: selectedTag === tag }]"
-              @click="selectTag(tag)" v-html="emoToImg(tag)">
+              @click="selectTag(tag)" v-html="emojiUtil.emoToImg(tag)">
             </button>
           </div>
         </div>
@@ -59,7 +59,7 @@
           <img :src="equip.url" :alt="equip.name" :class="['equip-image', getRarityClass(equip.rarity)]" />
           <div class="equip-details">
             <h2 class="equip-name">{{ equip.name }}</h2>
-            <pre class="equip-description" v-html="formattedText(equip.effect)"></pre>
+            <pre class="equip-description" v-html="formattedText(equip.effect)" :key="refresh"></pre>
           </div>
         </div>
       </div>
@@ -72,16 +72,17 @@
 
 <script setup>
 /******************************************************************** */
-import { ref, computed, onMounted } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 import data_lib from "../data/library.json";
+import emojiUtil from "../scripts/emoToImg.js";
 
 // 從 JSON 文件中加載技能數據
 const libraries = ref(data_lib);
 const equipMap = ref(new Map());
 const emojiData = ref({});
 const taghub = ref(new Set()); // 使用 Set 來存儲唯一的 tag
-
-const emoji = ref([]);
+const isImagesLoaded = emojiUtil.isImagesLoaded;
+const refresh = ref(0);
 
 // 篩選標的選項
 const EquipRarity = ref(["Common", "Rare", "Epic", "Legendary"]);
@@ -101,24 +102,6 @@ const showAdvSearch = ref(false);
 // 將 Set 轉換為陣列
 const uniqueTags = computed(() => Array.from(taghub.value));
 
-/************************************************************************** */
-// 加載圖片
-const loadImages = async () => {
-  const modules = import.meta.glob("../assets/img/aggregats/*.{jpg,png}");/**/
-  const paths = Object.keys(modules);
-
-  const images = await Promise.all(
-    paths.map(async (path) => {
-      const module = await modules[path]();
-      return {
-        id: path.split("/").pop().split(".")[0], // 提取檔案名稱（不含副檔名）
-        path: module.default, // 圖片的實際路徑
-      };
-    })
-  );
-
-  emoji.value = images; // 直接賦值，提高效能
-};
 
 // 計算屬性：根據搜尋關鍵字和篩選條件過濾技能列表
 const filteredequip = computed(() => {
@@ -135,6 +118,18 @@ const filteredequip = computed(() => {
       !selectedTag.value || (equip.tag && equip.tag.includes(selectedTag.value));
     return matchesSearch && matchesRarity && matchesPosition && matchesTag;
   });
+});
+
+// 格式化文本，替換表情符號
+const formattedText = (text) => {
+  if (!text) return text;
+  return text.replace(/:([a-zA-Z0-9_~]+):/g, (matched, name) => emojiUtil.emoToImg(name) || matched);
+};
+
+watch(isImagesLoaded, (newVal) => {
+  if (newVal) {
+    refresh.value++;
+  }
 });
 
 
@@ -172,37 +167,6 @@ const getRarityClass = (rarity) => {
   return rarityColors[rarity] || "rarity-default";
 };
 
-// 格式化文本，替換表情符號
-const formattedText = (text) => {
-  if (!text) {
-    return text; // 如果是 undefined 或 null，直接返回原始值
-  }
-
-  return text.replace(/:([a-zA-Z0-9_~]+):/g, (matched, name) => {
-
-
-    if (emoToImg(name)) {
-      return emoToImg(name)
-    }
-    // 如果沒有找到匹配的，返回原始文本
-    return matched;
-  });
-};
-
-const emoToImg = (name) => {
-  const emojiName = name;
-  // 比對資料庫中的名稱
-  const emo =
-    emojiData.value.find((item) => item.name === emojiName);
-
-  // 如果找到匹配的 emoji，返回 <img> 標籤
-  if (emo) {
-    const emojiImage = emoji.value.find((item) => item.id === emo.id);
-    if (emojiImage) {
-      return `<img src="${emojiImage.path}" alt="${name}" style="  width: 30px; height: 30px; ; vertical-align: middle; ">`;
-    }
-  }
-}
 
 
 /************************************************************************************ */
@@ -220,7 +184,7 @@ onMounted(() => {
     }
   });
   emojiData.value = libraries.value.Emoji;
-  loadImages();
+  emojiUtil.initEmojiData();
 });
 
 </script>

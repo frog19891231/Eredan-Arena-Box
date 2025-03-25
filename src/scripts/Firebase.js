@@ -22,15 +22,15 @@ const auth = getAuth(app);
 export const loginAnonymously = async () => {
     try {
         await signInAnonymously(auth);
-        console.log('匿名登入成功！');
+        //console.log('匿名登入成功！');
     } catch (error) {
-        console.error('匿名登入失敗：', error.message);
+        //console.error('匿名登入失敗：', error.message);
     }
 };
 
 // 發送留言
 export const sendMessage = async (messageText) => {
-    if (!messageText.trim()) return console.error('留言内容无效');
+    if (!messageText.trim()) return //console.error('留言内容无效');
 
     const user = auth.currentUser;
     if (user) {
@@ -39,7 +39,7 @@ export const sendMessage = async (messageText) => {
             timestamp: serverTimestamp(),
             user: {
                 uid: user.uid,
-                name: '匿名用戶'
+                name: 'Anonymous user'
             },
         });
     }
@@ -70,14 +70,14 @@ export const loadMessages = (callback) => {
 
         callback(newMessages);
     }, (error) => {
-        console.error('加载留言失败：', error);
+        //console.error('加载留言失败：', error);
         callback([]);
     });
 };
 
 // 发送回复
 export const sendReply = async (messageId, replyText) => {
-    if (!replyText.trim()) return console.error('回复内容无效');
+    if (!replyText.trim()) return //console.error('回复内容无效');
 
     const user = auth.currentUser;
     if (user) {
@@ -86,7 +86,7 @@ export const sendReply = async (messageId, replyText) => {
             timestamp: serverTimestamp(),
             user: {
                 uid: user.uid,
-                name: '匿名用戶'
+                name: 'Anonymous user'
             }
         });
     }

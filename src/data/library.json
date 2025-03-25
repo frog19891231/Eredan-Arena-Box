@@ -1,206 +1,206 @@
 {
   "Emoji": [
-      {
-        "name": "swordDice",
-        "id": "000"
-      },
-      {
-        "name": "redDice",
-        "id": "001"
-      },
-      {
-        "name": "blueDice",
-        "id": "002"
-      },
-      {
-        "name": "yellowDice",
-        "id": "003"
-      },
-      {
-        "full-name": "Sap Hearts",
-        "name":"sap",
-        "id": "1"
-      },
-      {
-        "full-name": "Nehantists",
-        "name":"neh",
-        "id": "3"
-      },
-      {
-        "full-name": "Zil Warriors",
-        "name":"zil",
-        "id": "5"
-      },
-      {
-        "full-name": "Avalonians",
-        "name":"ava",
-        "id": "32"
-      },
-      {
-        "full-name": "Tempus",
-        "name":"tem",
-        "id": "51"
-      },
-      {
-        "full-name": "The Council",
-        "name":"cou",
-        "id": "57"
-      },
-      {
-        "full-name": "Stonelinkers",
-        "name":"sto",
-        "id": "9"
-      },
-      {
-        "full-name": "Kotoba",
-        "name":"kot",
-        "id": "2"
-      },
-      {
-        "full-name": "Desert Nomads",
-        "name":"nom",
-        "id": "6"
-      },
-      {
-        "full-name": "Noz'Dingard Envoys",
-        "name":"noz",
-        "id": "4"
-      },
-      {
-        "full-name": "Pirates",
-        "name":"pir",
-        "id": "7"
-      },
-      {
-        "full-name": "Winter Tribes",
-        "name":"win",
-        "id": "41"
-      },
-      {
-        "full-name": "Equinoxians",
-        "name":"equinox",
-        "id": "58"
-      },
-      {
-        "full-name": "Runic Legion",
-        "name":"run",
-        "id": "8"
-      },
-      {
-        "full-name": "Mercenaries",
-        "name":"mer",
-        "id": "10"
-      },
-      {
-        "name": "warrior",
-        "id": "11"
-      },
-      {
-        "name": "marauder",
-        "id": "13"
-      },
-      {
-        "name": "craftsman",
-        "id": "15"
-      },
-      {
-        "name": "unknown",
-        "id": "17"
-      },
-      {
-        "name": "bard",
-        "id": "40"
-      },
-      {
-        "name": "sidekick",
-        "id": "54"
-      },
-      {
-        "name": "mage",
-        "id": "12"
-      },
-      {
-        "name": "priest",
-        "id": "14"
-      },
-      {
-        "name": "colossus",
-        "id": "33"
-      },
-      {
-        "name": "captain",
-        "id": "53"
-      },
-      {
-        "name": "protector",
-        "id": "56"
-      },
-      {
-        "name": "berserker",
-        "id": "16"
-      },
-      {
-        "name": "beast",
-        "id": "18"
-      },
-      {
-        "name": "demon",
-        "id": "20"
-      },
-      {
-        "name": "elfine",
-        "id": "22"
-      },
-      {
-        "name": "human",
-        "id": "27"
-      },
-      {
-        "name": "guem",
-        "full-name":"guemelite",
-        "id": "25"
-      },
-      {
-        "name": "iceelf",
-        "id": "21"
-      },
-      {
-        "name": "unkrace",
-        "id": "28"
-      },
-      {
-        "name": "dais",
-        "id": "19"
-      },
-      {
-        "name": "solarian",
-        "id": "30"
-      },
-      {
-        "name": "dragon",
-        "id": "52"
-      },
-      {
-        "name": "undead",
-        "id": "29"
-      },
-      {
-        "name": "eltarite",
-        "id": "23"
-      },
-      {
-        "name": "naga",
-        "id": "55"
-      },
-      {
-        "name": "golem",
-        "id": "24"
-      },
-      {
-        "name": "homchai",
-        "id": "26"
-      }
-    ],
+    {
+      "name": "swordDice",
+      "id": "000"
+    },
+    {
+      "name": "redDice",
+      "id": "001"
+    },
+    {
+      "name": "blueDice",
+      "id": "002"
+    },
+    {
+      "name": "yellowDice",
+      "id": "003"
+    },
+    {
+      "full-name": "Sap Hearts",
+      "name": "sap",
+      "id": "1"
+    },
+    {
+      "full-name": "Nehantists",
+      "name": "neh",
+      "id": "3"
+    },
+    {
+      "full-name": "Zil Warriors",
+      "name": "zil",
+      "id": "5"
+    },
+    {
+      "full-name": "Avalonians",
+      "name": "ava",
+      "id": "32"
+    },
+    {
+      "full-name": "Tempus",
+      "name": "tem",
+      "id": "51"
+    },
+    {
+      "full-name": "The Council",
+      "name": "cou",
+      "id": "57"
+    },
+    {
+      "full-name": "Stonelinkers",
+      "name": "sto",
+      "id": "9"
+    },
+    {
+      "full-name": "Kotoba",
+      "name": "kot",
+      "id": "2"
+    },
+    {
+      "full-name": "Desert Nomads",
+      "name": "nom",
+      "id": "6"
+    },
+    {
+      "full-name": "Noz'Dingard Envoys",
+      "name": "noz",
+      "id": "4"
+    },
+    {
+      "full-name": "Pirates",
+      "name": "pir",
+      "id": "7"
+    },
+    {
+      "full-name": "Winter Tribes",
+      "name": "win",
+      "id": "41"
+    },
+    {
+      "full-name": "Equinoxians",
+      "name": "equinox",
+      "id": "58"
+    },
+    {
+      "full-name": "Runic Legion",
+      "name": "run",
+      "id": "8"
+    },
+    {
+      "full-name": "Mercenaries",
+      "name": "mer",
+      "id": "10"
+    },
+    {
+      "name": "warrior",
+      "id": "11"
+    },
+    {
+      "name": "marauder",
+      "id": "13"
+    },
+    {
+      "name": "craftsman",
+      "id": "15"
+    },
+    {
+      "name": "unknown",
+      "id": "17"
+    },
+    {
+      "name": "bard",
+      "id": "40"
+    },
+    {
+      "name": "sidekick",
+      "id": "54"
+    },
+    {
+      "name": "mage",
+      "id": "12"
+    },
+    {
+      "name": "priest",
+      "id": "14"
+    },
+    {
+      "name": "colossus",
+      "id": "33"
+    },
+    {
+      "name": "captain",
+      "id": "53"
+    },
+    {
+      "name": "protector",
+      "id": "56"
+    },
+    {
+      "name": "berserker",
+      "id": "16"
+    },
+    {
+      "name": "beast",
+      "id": "18"
+    },
+    {
+      "name": "demon",
+      "id": "20"
+    },
+    {
+      "name": "elfine",
+      "id": "22"
+    },
+    {
+      "name": "human",
+      "id": "27"
+    },
+    {
+      "name": "guem",
+      "full-name": "guemelite",
+      "id": "25"
+    },
+    {
+      "name": "iceelf",
+      "id": "21"
+    },
+    {
+      "name": "unkrace",
+      "id": "28"
+    },
+    {
+      "name": "dais",
+      "id": "19"
+    },
+    {
+      "name": "solarian",
+      "id": "30"
+    },
+    {
+      "name": "dragon",
+      "id": "52"
+    },
+    {
+      "name": "undead",
+      "id": "29"
+    },
+    {
+      "name": "eltarite",
+      "id": "23"
+    },
+    {
+      "name": "naga",
+      "id": "55"
+    },
+    {
+      "name": "golem",
+      "id": "24"
+    },
+    {
+      "name": "homchai",
+      "id": "26"
+    }
+  ],
   "Guilds": {
     "AVALONIAN": {
       "name": {
@@ -458,7 +458,7 @@
       }
     }
   },
-  "Class":[
+  "Class": [
     "Warrior",
     "Marauder",
     "Craftsman",
@@ -472,23 +472,23 @@
     "Protector",
     "Berserker"
   ],
-  "Race":[
-  "Beast",
-  "Demon",
-  "Elfine",
-  "Human",
-  "Guemelite",
-  "Ice Elf",
-  "unkrace",
-  "Dais",
-  "Solarian",
-  "Dragon",
-  "Undead",
-  "Eltarite",
-  "Naga",
-  "Golem",
-  "Homchai"
-],
+  "Race": [
+    "Beast",
+    "Demon",
+    "Elfine",
+    "Human",
+    "Guemelite",
+    "Ice Elf",
+    "unkrace",
+    "Dais",
+    "Solarian",
+    "Dragon",
+    "Undead",
+    "Eltarite",
+    "Naga",
+    "Golem",
+    "Homchai"
+  ],
   "Skill": [
     {
       "name": "Absorb",
@@ -549,6 +549,30 @@
       "id": "q5vmftf",
       "description": "Neutral Alteration. Passive.\nIncreases the value of a specified alteration either by a given value or by a given percentage.",
       "img_url": "https://i.imgur.com/q5vmftf.png"
+    },
+    {
+      "name": "Axiom of Benevolence",
+      "id": "9878",
+      "description": "All your allies receives all your positive alterations.",
+      "url": "https://www.eredan-arena.com/images/HD/capacites/9878.png"
+    },
+    {
+      "name": "Axiom of Chivalry",
+      "id": "9951",
+      "description": "If you had more Noble skillcasts or tied than Brave skillcasts during the game: your allies receive 500 Blessing.  \nIf you had more Brave skillcasts than Noble skillcasts during the game: your allies receive 500 Strength.  \nA skillcast is noble if when casting a skill you suffered more damage than your opponent, and is brave if when casting a skill your opponent suffered more damage than you.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9951.png"
+    },
+    {
+      "name": "Axiom of Knowledge",
+      "id": "9747",
+      "description": "Get as much DMG+ as the total DMG+ gathered by your allies at the end of each round.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9747.png"
+    },
+    {
+      "name": "Axiom of Strength",
+      "id": "9336",
+      "description": "Triples your Strength, then deals a Shock Damage equal to the Strength Bonus accumulated by your heroes during the game.",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9336.png"
     },
     {
       "name": "Azure Tsunami",
@@ -705,6 +729,18 @@
       "id": "8778",
       "description": "Negative Alteration. Consumable\nWhen the holder of this debuff gets hit by a :swordDice:, the holder causes a :swordDice: DMG to himself too.\nThe Confusion DMG is a normal DMG that the card causes to itself considering all the alterations he has, i.e., consuming own Criticals, increased by DMG+, decreased by DMG-...",
       "img_url": "https://www.eredan-arena.com/images/HD/capacites/8778.png"
+    },
+    {
+      "name": "Conspire",
+      "description": "Positive Alteration.  At the end of the skill activation phase, deal a normal damage to your opponent equal your Conspire value.",
+      "id": "9769",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9769.png"
+    },
+    {
+      "name": "Conspiring Skill",
+      "description": "After the skill effect, you receive 10% of the skill value as Conspire.",
+      "id": "9769",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9769.png"
     },
     {
       "name": "Constricting Skill",
@@ -899,6 +935,12 @@
       "img_url": "https://www.eredan-arena.com/images/HD/capacites/5675.png"
     },
     {
+      "name": "Echo",
+      "description": "Give to your opponent X Echo. Each time the opponents dice gets changed, by you or himself, he suffers a DMG equal the Echo on him. After skills activation phase the opponent suffers again a DMG equal to half of the Echo he owns.",
+      "id": "4744",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/4744.png"
+    },
+    {
       "name": "Echoing Skill",
       "id": "4744",
       "description": "Skill mddifier.\nAfter the skill effect, applies Echo to your opponent equal to 10% of the skill's value.",
@@ -947,6 +989,12 @@
       "img_url": "https://www.eredan-arena.com/images/HD/capacites/5628.png"
     },
     {
+      "name": "Exalted Blessing",
+      "description": "Passive  Each time you activate an ability and at the end of the skill activation phase, deal as much Shock damage as your Blessing.  Shock damage is a damage that cannot be reduced or increased, but still can be prevented by skills like Shield or Scarab.",
+      "id": "9921",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9921.png"
+    },
+    {
       "name": "Fire Rune",
       "id": "1591",
       "description": "Create X Rune and the DMG that your opponent deals is decreased byX*20. At the end of the opponent's skill activation phase, each Rune deals 200 DMG.",
@@ -991,7 +1039,7 @@
     {
       "name": "Forsaken Destiny",
       "id": "9440",
-      "description": "Each time you activate a skill, you receive Curse equal to the sum of Curse on the opposing heroes.\nAt the end of skill activation phase, consume your Curse. If you have consumed at least:  2500 Curse: Deal 5000 flat damage. (not interacting with anything)  7500 Curse: Suffer 5000 flat damage to give ALL of your allies 2 Stardust. (even for non-active allies)  15000 Curse: All your opponent's receive 1500 Curse and 1500 more if you lose the round.",
+      "description": "Each time you activate a skill, you receive Curse equal to the sum of Curse on the opposing heroes.\nAt the end of skill activation phase, consume your Curse. If you have consumed at least:  \n2500 Curse: Deal \n5000 flat damage. (not interacting with anything)  \n7500 Curse: Suffer 5000 flat damage to give ALL of your allies 2 Stardust. (even for non-active allies)  \n15000 Curse: All your opponent's receive 1500 Curse and 1500 more if you lose the round.",
       "img_url": "https://www.eredan-arena.com/images/HD/capacites/9440.png"
     },
     {
@@ -1023,6 +1071,12 @@
       "id": "A78zxgd",
       "description": "Deals X DMG to your opponent and he receives X/10 Frostbite.",
       "img_url": "https://i.imgur.com/A78zxgd.png"
+    },
+    {
+      "name": "Gathering Storm",
+      "description": "Passive;  Each time you trigger Storm, it is increased by 25%.  If you already have 2000 Storm or more, your opponent's allies receives 25% of your the value of your Storm Bonus as Channeled Lightning instead",
+      "id": "9786",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9786.png"
     },
     {
       "name": "Happy Totem",
@@ -1104,8 +1158,8 @@
     },
     {
       "name": "Lethal Dose",
+      "description": "At the end of the skill activation phase, if your opponent has at least:  \n3 Poison: Delete all his Positive alterations  \n9 Poison: Deal Smite 10 and his Strength becomes 0  \n18 Poison: he suffers 99.999 flat damage,  \nFlat damage is a damage that ignores everything.",
       "id": "7918",
-      "description": "At the end of the skill activation phase, if your opponent has at least:  -10 Poison: Delete all his Positive alterations;  -15 Poison: his Strength becomes 0;  -25 Poison: He suffers 999 999 flat DMG.\nFlat DMG is a DMG that ignores everything.",
       "img_url": "https://www.eredan-arena.com/images/HD/capacites/7918.png"
     },
     {
@@ -1131,6 +1185,12 @@
       "id": "6936",
       "description": "Each time your opponent deals DMG to you, your opponent will be hurt by X Shock DMG and you will be healed by X.\nThis alteration cannot be targeted by other skills or alterations.\nShock DMG is a DMG that cannot be increased and decreased, but still consumes skills as Scarab and Shield.",
       "img_url": "https://www.eredan-arena.com/images/HD/capacites/6936.png"
+    },
+    {
+      "name": "Love Enchantment",
+      "description": "Passive.  Each time your cards activate a skill, their opponent receive 1 Allure.",
+      "id": "9903",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9903.png"
     },
     {
       "name": "Mad Hat",
@@ -1211,10 +1271,22 @@
       "img_url": "https://www.eredan-arena.com/images/HD/capacites/5126.png"
     },
     {
+      "name": "Multiclass Skill",
+      "description": "Increases the skill value by 25% per each different class on your current cards in game.  The class of your hero in combat is counted  The skill value is increased by at least 25% and at max by 75%.",
+      "id": "multi_classe",
+      "img_url": "http://static.eredan.com/images/print/multi_classe.png"
+    },
+    {
       "name": "Multiguild Skill",
       "id": "UvcQBjY",
       "description": "Increases the skill value by 25% per each different guild on your current cards in game.\nThe guild of your hero in combat is counted  The skill value is increased by at least 25% and at max by 75%",
       "img_url": "https://i.imgur.com/UvcQBjY.png"
+    },
+    {
+      "name": "Multirace Skill",
+      "description": "Increases the skill value by 25% per each different race on your current cards in game.  The race of your hero in combat is counted  The skill value is increased by at least 25% and at max by 75%",
+      "id": "VPjENEK",
+      "img_url": "https://i.imgur.com/VPjENEK.png"
     },
     {
       "name": "Necrotic",
@@ -1249,7 +1321,7 @@
     {
       "name": "Phalanx",
       "id": "9334",
-      "description": "⋆ Positive alteration. Shield-like skill.\nAbsorbs the next X damage you suffer.\nThe damage dealt to Phalanx is decreased by the Strength of your allies.\nConsumed before all the other Shield-type alterations (Shield, Blizzard, Arcane Barrier, Coating).\nShield Bash consume Shield first, then Phalanx on additional activation.",
+      "description": "Positive alteration. Shield-like skill.  \nAbsorbs the next X damage you suffer.  \nThe damage dealt to Phalanx is decreased by the Strength of your allies.  \nConsumed before all the other Shield-type alterations (Shield, Blizzard, Arcane Barrier, Coating).  \nShield Bash consume Shield first, then Phalanx on additional activation.",
       "img_url": "https://www.eredan-arena.com/images/HD/capacites/9334.png"
     },
     {
@@ -1433,6 +1505,12 @@
       "img_url": "https://www.eredan-arena.com/images/HD/capacites/4.png"
     },
     {
+      "name": "Shield the Population!",
+      "description": "Quest.  When you have absorbed at least 3000 DMG total with your shield:  All your Hero in play receive 200 Strength and Riposte 1, those value are doubled if they are :ava:.",
+      "id": "10003",
+      "img_url": "https://www.eredan-arena.com/images/HD/capacites/10003.png"
+    },
+    {
       "name": "Shield Bash",
       "id": "710",
       "description": "You lose your Shield and deal one and a half its value plus X DMG.",
@@ -1589,12 +1667,6 @@
       "img_url": "https://www.eredan-arena.com/images/HD/capacites/389.png"
     },
     {
-      "name": "The Axiom of Strength",
-      "id": "9336",
-      "description": "Triples your Strength, then deals a Shock Damage equal to the Strength Bonus accumulated by your heroes during the game.",
-      "img_url": "https://www.eredan-arena.com/images/HD/capacites/9336.png"
-    },
-    {
       "name": "Thorn",
       "id": "340",
       "description": "Your opponent will be hurt by X each time he deals DMG to you.",
@@ -1655,10 +1727,10 @@
       "img_url": "https://www.eredan-arena.com/images/HD/capacites/7847.png"
     },
     {
-      "name": "Unified Skill",
-      "id": "VPjENEK",
-      "description": "Increases the skill value by 25% per each different race on your current cards in game.\nThe race of your hero in combat is counted  The skill value is increased by at least 25% and at max by 75%",
-      "img_url": "https://i.imgur.com/VPjENEK.png"
+      "name": "United Skill",
+      "description": "The skill value is doubled if all 5 cards in your deck share the same guild.",
+      "id": "WCp9p1c",
+      "img_url": "https://i.imgur.com/WCp9p1c.png"
     },
     {
       "name": "Verdant Growth",
@@ -1700,7 +1772,9 @@
       "effect": "At the start of the fight you receive 48-247 Thorns.\n:sap:: you receive 48-247 Lightroot instead.",
       "last_patch": "24 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/35.png",
-      "tag":["sap"]
+      "tag": [
+        "sap"
+      ]
     },
     {
       "name": "Akra's Bowl",
@@ -1710,7 +1784,9 @@
       "effect": ":mer:: Each time you activate a skill, deal 200-1031 Tidal Wave DMG.\nIf you have \"Akra\" in your name, you also get 10-51 Stench.\nTidal Wave DMG is a Normal DMG that increases a random positive alteration on you by 25%.",
       "last_patch": "06 Apr 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/147.png",
-      "tag":["mer"]
+      "tag": [
+        "mer"
+      ]
     },
     {
       "name": "Amplifying Tome CS",
@@ -1720,7 +1796,7 @@
       "effect": "Each time you activate a skill, your Strength is increased by 10-51.",
       "last_patch": "29 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/68.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Amulet of Midnight",
@@ -1730,7 +1806,9 @@
       "effect": ":zil:: At the start of the fight, you receive 1000-5159 Shield and your opponent receives 10-51 Terror, increased by 25% for each of your :zil: allies with a different class from yours.",
       "last_patch": "24 Feb 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/143.png",
-      "tag":["zil"]
+      "tag": [
+        "zil"
+      ]
     },
     {
       "name": "Apple of Chaos",
@@ -1739,9 +1817,11 @@
       "level": "1 - 10",
       "effect": ":priest:: At the start of the fight and at the end of skill activation phase, deal 388-2001 Lightning DMG to your opponent and receive 1 Rune for each :run::priest: ally.\n:run::priest:: All the opposing heroes receive 38-200 Thunderstruck.\nLightning DMG is a normal DMG that applies 10% of its value as Thunderstruck to the opponent.",
       "last_patch": "28 Aug 2024",
-      "url": "https://www.eredan-arena.com/images/thumb/items/107.png"
-      ,
-      "tag":["priest","run"]
+      "url": "https://www.eredan-arena.com/images/thumb/items/107.png",
+      "tag": [
+        "priest",
+        "run"
+      ]
     },
     {
       "name": "Armor of Naptys",
@@ -1751,7 +1831,7 @@
       "effect": "At the start of the fight, get 50 Resilience.\nEach time you receive Blessing, receive 10-51 more.",
       "last_patch": "24 Mar 2022",
       "url": "https://www.eredan-arena.com/images/thumb/items/27.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Artrezil's Ring",
@@ -1761,7 +1841,10 @@
       "effect": ":mage: or :priest:: each time you sufffer less than 388-2001 DMG your opponent receives 35 Terror and you get 35 Blessing.\n\"Archmage Artrezil\" or \"Archmage Minerva\": at the start of the fight copy 1 random opposing positive alteration.",
       "last_patch": "31 Dec 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/40.png",
-      "tag":["mage","priest"]
+      "tag": [
+        "mage",
+        "priest"
+      ]
     },
     {
       "name": "Awakening",
@@ -1771,7 +1854,7 @@
       "effect": "Each time you receive Thorns, heal 195-1006 and receive 19-100 Strength+.\nDaïs: 39-201 instead of 19-100 Strength+.",
       "last_patch": "02 Mar 2023",
       "url": "http://static.eredan.com/images/print/2dc4fd25330f0b4290a869a6b06e8fbd.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Axe of the Border CS",
@@ -1781,7 +1864,7 @@
       "effect": "At the end of the activation phase, Deal 250-1289 Normal DMG + 25-128 for each of your :swordDice:.",
       "last_patch": "29 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/69.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Ben's Hook",
@@ -1791,7 +1874,10 @@
       "effect": "At the end of the skill activation phase, deal 465-2399 Shock DMG, +155-799 for every :zil: or :pir: ally.\nBen, the Buccaneer: Two of your :redDice: become :swordDice:.\nShock DMG is an unmodifiable DMG that still consumes Shield-like skills and Scarabs.",
       "last_patch": "25 Mar 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/65.png",
-      "tag":["zil","pir"]
+      "tag": [
+        "zil",
+        "pir"
+      ]
     },
     {
       "name": "Black Fang Skin",
@@ -1801,7 +1887,11 @@
       "effect": ":beast:: At the start of the fight, you and your :beast: allies get 291-1501 Shield.\n:zil::beast: or :mer::beast: : Your Strength Bonuses are increased in 10%.",
       "last_patch": "22 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/56.png",
-      "tag":["beast","zil","mer"]
+      "tag": [
+        "beast",
+        "zil",
+        "mer"
+      ]
     },
     {
       "name": "Blade of the Witch",
@@ -1811,7 +1901,10 @@
       "effect": ":noz::marauder: : at the end of the fight deal 500-2579 Pure DMG to your opponent, + 125-644 for each of your :swordDice: or :noz::marauder: ally.\nThis equipment DMG is caused AFTER the :swordDice: phase.\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
       "last_patch": "19 Sep 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/104.png",
-      "tag":["noz","marauder"]
+      "tag": [
+        "noz",
+        "marauder"
+      ]
     },
     {
       "name": "Blessed Wing CS",
@@ -1821,7 +1914,7 @@
       "effect": "Each time you activate a skill, Heal 40-206 DMG.",
       "last_patch": "29 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/72.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Book of Incantations",
@@ -1831,7 +1924,10 @@
       "effect": ":noz::mage:: each time you receive DMG+, deal 200-1031 Lightning, Fireball, Tidal Wave or Icy Hit DMG to your opponent.\nLightning DMG is a Normal DMG that causes a tenth of its value as Thunderstruck to the opponent.\nFireball DMG is a Normal DMG that causes a tenth of its value as DMG- to the opponent.\nTidal Wave DMG is a Normal DMG that increases a random positive alteration on you by 25%.\nIcy Hit DMG is a Normal DMG increased by 10% for every Ice token on your opponent, and it gives an Ice token to the opponent after the DMG.",
       "last_patch": "30 Sep 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/110.png",
-      "tag":["noz","mage"]
+      "tag": [
+        "noz",
+        "mage"
+      ]
     },
     {
       "name": "Book of Shadows",
@@ -1841,7 +1937,10 @@
       "effect": ":guem:: Each time your opponent receives DMG-, Deal 150-773 Shock DMG.\n:guem::mage:: Each time your opponent receives Terror, Deal 150-773 Flat DMG.\nShock DMG is a DMG that cannot be reduced or increased, but still is affected by Scarab and Shield-like skills.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "27 Apr 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/126.png",
-      "tag":["guem","mage"]
+      "tag": [
+        "guem",
+        "mage"
+      ]
     },
     {
       "name": "Bubblez",
@@ -1851,7 +1950,9 @@
       "effect": ":zil:: Each time your opponent receives Terror he suffers 242-1248 flat DMG and you receive 24-124 DMG+.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "02 Sep 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/92.png",
-      "tag":["zil"]
+      "tag": [
+        "zil"
+      ]
     },
     {
       "name": "Caliburn",
@@ -1861,7 +1962,10 @@
       "effect": ":warrior:: At start of the fight, deal 776-4003 normal DMG and your Strength increase by 97-500.\n:warrior::undead:: You also receive 1-10 DMG-.",
       "last_patch": "28 Jun 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/155.png",
-      "tag":["warrior","undead"]
+      "tag": [
+        "warrior",
+        "undead"
+      ]
     },
     {
       "name": "Carnival Mask",
@@ -1871,7 +1975,7 @@
       "effect": "Receive 291-1501 Shield.\nEach time your opponent receives a new type of positive alteration, receive 145-750 more Shield.",
       "last_patch": "18 Jan 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/31.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Chains of Dread",
@@ -1881,7 +1985,10 @@
       "effect": ":neh: or :demon:: Each time you receive a new type of negative alteration, your opponent receives 20 Terror and suffers 388-2001 Shock DMG.\nShock DMG is an unmodifiable DMG.",
       "last_patch": "18 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/81.png",
-      "tag":["neh","demon"]
+      "tag": [
+        "neh",
+        "demon"
+      ]
     },
     {
       "name": "Chew Bone",
@@ -1891,7 +1998,9 @@
       "effect": ":beast:: at the end of the skill activation phase you heal 581-2997 points and receive 116-599 DMG+.",
       "last_patch": "09 Sep 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/97.png",
-      "tag":["beast"]
+      "tag": [
+        "beast"
+      ]
     },
     {
       "name": "Chimera",
@@ -1901,7 +2010,7 @@
       "effect": "At the end of the fight, deals 485-2502 unmodifiable DMG.\nYour :swordDice: attacks remove half of an opposing positive alteration.",
       "last_patch": "24 Mar 2022",
       "url": "https://www.eredan-arena.com/images/HD/items/54.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Claws of Hrimnir",
@@ -1911,7 +2020,9 @@
       "effect": ":win:: Each time you receive DMG+, deal 200-1031 Icy Normal DMG to your opponent.\nKing Hrimnir: Your opponent also receive 50-257 Frostbite.\nIcy DMG is a DMG that is increased by 10% for every Frost on your opponent.",
       "last_patch": "23 Dec 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/135.png",
-      "tag":["win"]
+      "tag": [
+        "win"
+      ]
     },
     {
       "name": "Cobra Bow",
@@ -1921,7 +2032,9 @@
       "effect": ":nom:: each time you activate a skill you deal 150-773 Life Drain DMG to your opponent.\nKamenwati or Hamadryad: you gain 30-154 DMG+ before that.\nLife Drain DMG is a Normal DMG that simultaneously heals the same value.",
       "last_patch": "21 Oct 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/119.png",
-      "tag":["nom"]
+      "tag": [
+        "nom"
+      ]
     },
     {
       "name": "Coconut Bomb",
@@ -1931,7 +2044,10 @@
       "effect": ":pir: or :dais:: At the end of skill activation phase, deal 150-773 Fireball DMG to the opposing hero for each Powder or Spore on them.\nFireball DMG is a normal DMG that applies 10% of its value as DMG- to the opponent.",
       "last_patch": "30 Aug 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/164.png",
-      "tag":["pir","dais"]
+      "tag": [
+        "pir",
+        "dais"
+      ]
     },
     {
       "name": "Communicator",
@@ -1941,7 +2057,10 @@
       "effect": ":marauder:: Each time one of your Dexterity is consumed, you and your :maraudeur: allies that you share a race with receive 20-103 DMG+ & 0-2 Dodge.\n:noz::marauder:: your :marauder: allies receive the bonuses without race restrictions.",
       "last_patch": "18 May 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/152.png",
-      "tag":["noz","marauder"]
+      "tag": [
+        "noz",
+        "marauder"
+      ]
     },
     {
       "name": "Conch of the Tides",
@@ -1951,7 +2070,7 @@
       "effect": "Naga: At the start of combat, your Naga heroes receive 388-2001 Shield and increase the value of all your positive alterations by 25%.\nAbysscaller Tamira: 50% instead of 25%.",
       "last_patch": "09 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/76.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Councillor's Outfit",
@@ -1961,7 +2080,7 @@
       "effect": "At the start of the fight, receive 24-123 DMG+ for each ally from a different guild.",
       "last_patch": "24 Mar 2022",
       "url": "https://www.eredan-arena.com/images/HD/items/32.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Councillor's Stiletto",
@@ -1971,7 +2090,7 @@
       "effect": "At the start of the fight, deal 485-2502 DMG and decrease the opponent's strength by 25%.\nUnknown Race or Edrianne: Your opponent receives 50 bleeding.",
       "last_patch": "18 Jan 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/64.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Councillor's Treaty",
@@ -1981,7 +2100,9 @@
       "effect": ":cou:: at the start of the fight, you get the following effects depending on the number of Guilds represented by your visible heroes:  1 guild: Strength+ 120-619;  2 guilds: the previous more opp Thunderstruck 120-619;  3 guilds: the previous more DMG Drain 120-619.",
       "last_patch": "28 Oct 2023",
       "url": "https://images-ext-2.discordapp.net/external/lbVY7VAMB9v-eLX3yVZ5KAwsneETchYwt7GeZOu8Nfw/http/static.eredan.com/images/web_big/037727064d89b993dd6e70a473fcebaf.png",
-      "tag":["cou"]
+      "tag": [
+        "cou"
+      ]
     },
     {
       "name": "Crown of the Border CS",
@@ -1991,7 +2112,7 @@
       "effect": "At the end of the activation phase, get 300-1547 Shield + 30-154 for each of your non-:swordDice:.",
       "last_patch": "29 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/73.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Crystal Armor",
@@ -2001,7 +2122,10 @@
       "effect": ":noz: or :win:: Each time your opponent receives a Frost token, you receive 50-257 Shield for each of them.\nWhen you lose your Shield, your opponent suffers 250-1285 Frostbolt damage.\nFrostbolt damage is a normal damage that applies 10% of its value as Frostbite to the opponent.",
       "last_patch": "16 Dec 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/190.png",
-      "tag":["noz","win"]
+      "tag": [
+        "noz",
+        "win"
+      ]
     },
     {
       "name": "Crystal Mirror",
@@ -2011,7 +2135,9 @@
       "effect": ":noz:: At the start of the fight, you receive 1-5 Decoy and 1000-5159 Shield.",
       "last_patch": "27 Jan 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/139.png",
-      "tag":["noz"]
+      "tag": [
+        "noz"
+      ]
     },
     {
       "name": "Cursed Armor",
@@ -2021,7 +2147,7 @@
       "effect": "At the start of the fight, receive 100 DMG-.\nEach time you suffer DMG from :swordDice:, the opponent receives 155-799 Bleeding.",
       "last_patch": "24 Mar 2022",
       "url": "https://www.eredan-arena.com/images/HD/items/38.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Deadly Arrow",
@@ -2031,7 +2157,9 @@
       "effect": ":elfine:: at the start of the fight, Deal 500-2579 Pure DMG and your opponent get 50-257 Bleeding.\nDeathcaller Ludmilla: at the end of the fight, Deal as much DMG as your Strength.\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
       "last_patch": "04 Nov 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/124.png",
-      "tag":["elfine"]
+      "tag": [
+        "elfine"
+      ]
     },
     {
       "name": "Demonic Mask",
@@ -2041,7 +2169,9 @@
       "effect": ":demon:: Each time your opponent receives a new type of negative alteration, you receive 485-2502 Shield.",
       "last_patch": "18 Aug 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/79.png",
-      "tag":["demon"]
+      "tag": [
+        "demon"
+      ]
     },
     {
       "name": "Desert Scimitar",
@@ -2051,7 +2181,7 @@
       "effect": "At the start of the fight, deal 310-1599 DMG to your opponent, then 77-399 for each of your :swordDice:.",
       "last_patch": "24 Mar 2022",
       "url": "https://www.eredan-arena.com/images/HD/items/44.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Desert Sword",
@@ -2061,7 +2191,9 @@
       "effect": ":nom:: Each time you receive a positive alteration (except Decoy), deal 200-1031 Normal DMG and receive 1-5 Decoy.",
       "last_patch": "17 Feb 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/142.png",
-      "tag":["nom"]
+      "tag": [
+        "nom"
+      ]
     },
     {
       "name": "Divine Hammer",
@@ -2071,7 +2203,10 @@
       "effect": ":priest:: at the start of the fight deal 600-3095 Shock DMG and receive 60-309 Blessing.\n:ava::priest:: you receive 1 Riposte also.\nShock DMG is a DMG that cannot be modified by alterations, but can consume shield skills and can be prevented.",
       "last_patch": "07 Dec 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/15.png",
-      "tag":["priest","ava"]
+      "tag": [
+        "priest",
+        "ava"
+      ]
     },
     {
       "name": "Eredan's Wisdom",
@@ -2081,7 +2216,9 @@
       "effect": ":mage:: At the start of the fight, deal 1400-7223 Pure DMG and receive 0-3 Critical. Repeat the damage once if the opponent is :equinox:.\nCiramor(both): At the end of the skill activation phase, deal 1400-7223 Pure DMG.**  Pure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
       "last_patch": "17 Sep 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/167.png",
-      "tag":["mage"]
+      "tag": [
+        "mage"
+      ]
     },
     {
       "name": "Executionner's Key",
@@ -2091,7 +2228,10 @@
       "effect": ":marauder::guem: : Each time you use a Critical bonus, deal 116-598 flat DMG and your opponente receives 11-59 Bleeding.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "31 Aug 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/90.png",
-      "tag":["marauder","guem"]
+      "tag": [
+        "marauder",
+        "guem"
+      ]
     },
     {
       "name": "Ferocious Bite",
@@ -2101,7 +2241,7 @@
       "effect": "Black Fang: Each time you activate a skill, increase the Bleeding on your opponent by 9-46, 13-69 VS Humans.",
       "last_patch": "04 Jul 2022",
       "url": "https://www.eredan-arena.com/images/thumb/items/57.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Festering Horns",
@@ -2111,7 +2251,10 @@
       "effect": ":neh:: At the start of the fight, deal 800-4127 Plague DMG.\n:neh::dais:: Give your :neh: allies 80-412 Thorn and 80-412 Strength.\nPlague DMG is a Normal DMG that applies 1 Poison to your opponent.",
       "last_patch": "17 Sep 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/168.png",
-      "tag":["neh","dais"]
+      "tag": [
+        "neh",
+        "dais"
+      ]
     },
     {
       "name": "Firestorm",
@@ -2121,7 +2264,7 @@
       "effect": "At the start of the fight, deal 194-1000 Lightning and 194-1000 Fireball DMG.\nThundering Bragan, Mylad or Bragan: Each time the opponent receives DMG- or Thunderstruck, he gets 25% of the other as well.",
       "last_patch": "30 Jul 2022",
       "url": "http://static.eredan.com/images/print/5d09cf7da1d1356342da54478f260825.jpg",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Flame of the Phoenix",
@@ -2131,7 +2274,7 @@
       "effect": "Each time you receive Blessing, you deal 400-2063 flat DMG to your opponent and he receives 40-206 DMG- .\nThe Phoenix or a \"Killicrew\", you also receive 40-206 DMG+ and 40-206 Strength.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "13 Sep 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/102.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Frimacier",
@@ -2141,7 +2284,10 @@
       "effect": ":undead: : you and your opponent get 4-20 Frostbite.\nEach time you receive a new positive or negative alteration deal 400-2063 DMG.\nDeath-Knight Oscar or :ava: : Deal 600-3094 DMG instead if your opponent is more wounded than you.",
       "last_patch": "12 Sep 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/166.png",
-      "tag":["undead","ava"]
+      "tag": [
+        "undead",
+        "ava"
+      ]
     },
     {
       "name": "Frozen Stone Heart",
@@ -2151,7 +2297,7 @@
       "effect": "Each time your opponent receive 1 or more Frost, you Heal 100-515 DMG.",
       "last_patch": "16 Dec 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/134.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Frozen-death Potion",
@@ -2161,7 +2307,7 @@
       "effect": "At the beggining of the fight, deal 400-2063 DMG and your opponent receive 1 Frost.",
       "last_patch": "16 Dec 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/133.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Gae Bolga",
@@ -2171,7 +2317,11 @@
       "effect": ":run:, :mer: or :ava:: Each time you activate a skill, deal 200-1031 flat DMG to your opponent. All your opponents receive 25 Bleeding.\nBoadicea: At the start of the fight you and your :human: allies receive 1 Critical.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "02 Dec 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/129.png",
-      "tag":["run","mer","ava"]
+      "tag": [
+        "run",
+        "mer",
+        "ava"
+      ]
     },
     {
       "name": "Gladiator's Gaive",
@@ -2181,7 +2331,9 @@
       "effect": ":run:: Each time you receive a new positive alteration (except Decoy), deal 250-1289 Normal DMG and receive 1-5 Decoy.",
       "last_patch": "07 Feb 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/141.png",
-      "tag":["run"]
+      "tag": [
+        "run"
+      ]
     },
     {
       "name": "Golem's Heart",
@@ -2191,7 +2343,10 @@
       "effect": ":noz::golem:: at the start of the fight you receive 20-103 DMG+ and 200-1031 Shield.\nIf Delko is one of your allies: he and your :golem: allies receive 10-51 DMG+ and 100-515 Shield.",
       "last_patch": "30 Sep 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/111.png",
-      "tag":["noz","golem"]
+      "tag": [
+        "noz",
+        "golem"
+      ]
     },
     {
       "name": "Heart of Oural",
@@ -2201,7 +2356,9 @@
       "effect": ":sto:: At the start of the fight, receive 155-799 DMG+ and 775-3995 Shield.\nTemujin: two of your :sto: allies receive 50% of these bonuses.",
       "last_patch": "10 Oct 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/159.png",
-      "tag":["sto"]
+      "tag": [
+        "sto"
+      ]
     },
     {
       "name": "Heart of the Giant",
@@ -2211,7 +2368,9 @@
       "effect": ":colossus:: Each time you activate a skill you get 155-799 Shield and your allies get 51-266 Shield.\n:colossus::mer:: you also get 1 Mist or 1 Endurance.",
       "last_patch": "06 Sep 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/95.png",
-      "tag":["colossus"]
+      "tag": [
+        "colossus"
+      ]
     },
     {
       "name": "Heroic Strike",
@@ -2221,7 +2380,7 @@
       "effect": "Lucyan, the vagabond: For each Dodge, Critical or Riposte received during the fight, you and your Human allies get 48-247 Strength+, 72-370 VS Beast.",
       "last_patch": "04 Jul 2022",
       "url": "https://www.eredan-arena.com/images/HD/items/58.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Horns of Ourenos",
@@ -2231,7 +2390,10 @@
       "effect": ":homchai: or :eltarite:: each time you suffer DMG, you gain Rage 6-30 and each time you deal DMG, you get Berserk 6-30.\n:eltarite:: receives 12-60 instead.",
       "last_patch": "28 Oct 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/123.png",
-      "tag":["homchai","eltarite"]
+      "tag": [
+        "homchai",
+        "eltarite"
+      ]
     },
     {
       "name": "Icy Axe",
@@ -2241,7 +2403,9 @@
       "effect": ":iceelf:: At the beginning of the fight, Deal 600-3095 DMG and your opponent receives 0-3 Frost.",
       "last_patch": "02 Dec 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/131.png",
-      "tag":["iceelf"]
+      "tag": [
+        "iceelf"
+      ]
     },
     {
       "name": "Icy Crown",
@@ -2251,7 +2415,10 @@
       "effect": ":win:: At the end of the skill activation phase, your Strength is increased by 120-619 +12-61 for each of your Frost Malus.\n:win::beast:: Your Strength is increased by 180-928 + 24-123 for each of your Frost Malus instead.",
       "last_patch": "02 Dec 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/130.png",
-      "tag":["win","beast"]
+      "tag": [
+        "win",
+        "beast"
+      ]
     },
     {
       "name": "Imperial Armor",
@@ -2261,7 +2428,10 @@
       "effect": ":kot:: At the start of the fight, receive 581-2997 Shield and your :kot: :warrior: allies receive 193-999 Shield.",
       "last_patch": "26 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/85.png",
-      "tag":["kot","warrior"]
+      "tag": [
+        "kot",
+        "warrior"
+      ]
     },
     {
       "name": "Iron Bull",
@@ -2271,7 +2441,9 @@
       "effect": ":warrior:: Everytime you receive a Riposte bonus, deal 250-1289 flat DMG for each Riposte bonus received, or 375-1933 if your Strength is superior to your opponent's Strength.\nMankato: you receive also DMG+ 25-128.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "24 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/88.png",
-      "tag":["warrior"]
+      "tag": [
+        "warrior"
+      ]
     },
     {
       "name": "Ishaïa's Soulstone",
@@ -2281,7 +2453,9 @@
       "effect": ":mer:: Each time you activate a skill you heal 194-1000 and receive 19-100 Thorn.\nPrimula, The Council's Rose or Councillor Ishaïa: Your allies receive 19-100 Blessing or 19-100 DMG+.",
       "last_patch": "24 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/83.png",
-      "tag":["mer"]
+      "tag": [
+        "mer"
+      ]
     },
     {
       "name": "Jolly Roger",
@@ -2291,7 +2465,9 @@
       "effect": ":pir:: each time you receive a new positive alteration you gain 20-103 Strength, 40-206 if your opponent also has the same alteration.",
       "last_patch": "18 Jul 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/114.png",
-      "tag":["pir"]
+      "tag": [
+        "pir"
+      ]
     },
     {
       "name": "Knight's Shield",
@@ -2301,7 +2477,7 @@
       "effect": "At the start of combat you receive 581-2997 Shield.\nAt the end of skill activation phase receive 116-599 Shield for each opponent Sword.",
       "last_patch": "18 Jan 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/23.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Kotoba's Banner",
@@ -2311,7 +2487,10 @@
       "effect": ":kot:: each time your Strength increase, deal 100-515 flat DMG.\n:kot::human:: at the beggining of the fight, you receive also 10-51 Rage.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "14 Oct 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/117.png",
-      "tag":["kot","human"]
+      "tag": [
+        "kot",
+        "human"
+      ]
     },
     {
       "name": "Kunai",
@@ -2321,7 +2500,10 @@
       "effect": ":kot::marauder:: At the start of the fight, Deal 400-2063 Normal DMG and receive 0-2 Dexterity.",
       "last_patch": "23 Mar 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/146.png",
-      "tag":["kot","marauder"]
+      "tag": [
+        "kot",
+        "marauder"
+      ]
     },
     {
       "name": "Last Meal",
@@ -2331,7 +2513,9 @@
       "effect": ":undead:: at start of the fight, you receive 100 Curse.\nEach time you activate a skill, if you have a Stench Bonus, you Heal 200-1031, +50-257 for each of your negative alterations.",
       "last_patch": "24 May 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/118.png",
-      "tag":["undead"]
+      "tag": [
+        "undead"
+      ]
     },
     {
       "name": "Laurel of the Muse",
@@ -2341,7 +2525,9 @@
       "effect": ":bard:: At the start of the fight, receive 10-51 DMG+ and Flow for each non-:redDice: dice rolled.",
       "last_patch": "19 Nov 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/186.png",
-      "tag":["bard"]
+      "tag": [
+        "bard"
+      ]
     },
     {
       "name": "Lazurd",
@@ -2351,7 +2537,9 @@
       "effect": ":noz:: Each time one of your dice becomes :swordDice:, receive 10-51 DMG+ and Deal 500-2579 Spellbreaker DMG.\nKelltaron: receive an additional 10-51 DMG+ for each of your :noz: allies.\nSpellbreaker DMG is a DMG that halves a random opposing positive alteration.",
       "last_patch": "18 May 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/151.png",
-      "tag":["noz"]
+      "tag": [
+        "noz"
+      ]
     },
     {
       "name": "Lightning Rod",
@@ -2361,7 +2549,10 @@
       "effect": ":pir: or :tem:: At the Start of the fight, you and your opponent each receive 50-257 Thunderstruck.",
       "last_patch": "18 Nov 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/187.png",
-      "tag":["pir","tem"]
+      "tag": [
+        "pir",
+        "tem"
+      ]
     },
     {
       "name": "Lightning-thrower",
@@ -2371,7 +2562,9 @@
       "effect": "At the end of skill activation phase, if you are :pir:, increase the Thunderstruck on your opponent by 25%, then deal 2x 194-1000 Lightning DMG.\nLightning DMG is a DMG that causes a tenth of its value as Thunderstruck.",
       "last_patch": "30 Jul 2022",
       "url": "http://static.eredan.com/images/print/0e700fca41e768b1092a61370e58b823.png",
-      "tag":["pir"]
+      "tag": [
+        "pir"
+      ]
     },
     {
       "name": "Lion Sword",
@@ -2381,7 +2574,7 @@
       "effect": "At the end of the skill activation phase (after Runes and Spores), receive 100 Strength+ for each time you have activated a skill, then deal 388-2001 Shock DMG.\nShock DMG is an unmodifiable DMG.",
       "last_patch": "24 Mar 2022",
       "url": "https://www.eredan-arena.com/images/thumb/items/46.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Maestro's Baton",
@@ -2391,7 +2584,9 @@
       "effect": ":bard:: Each time your opponent receives Echo, your :bard: receive 58-299 Flow.\nThe Maestro: They also receive 1 Critical and 150 DMG+.",
       "last_patch": "10 Aug 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/78.png",
-      "tag":["bard"]
+      "tag": [
+        "bard"
+      ]
     },
     {
       "name": "Mask of Confusion",
@@ -2401,7 +2596,11 @@
       "effect": ":neh: or :zil:: At the end of skill activation phase deal 600-3095 Pure DMG to your opponent and give 0-3 Confusion to them.\n:neh::berserker: or :zil::berserker:: you deal Life Drain DMG instead of Pure DMG.\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.\nLife Drain DMG is a normal DMG that also heals by the same value.",
       "last_patch": "12 Jul 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/156.png",
-      "tag":["neh","zil","berserker"]
+      "tag": [
+        "neh",
+        "zil",
+        "berserker"
+      ]
     },
     {
       "name": "Mask of Ptol'A",
@@ -2411,7 +2610,11 @@
       "effect": ":nom:: each time you receive a new alteration your opponent receives 100-515 Curse.\n:nom::undead: or :nom::priest:: at the start of the fight your opponent receives 50-257 Bleeding.\nThis effect considers the positive and negative alterations you get.",
       "last_patch": "21 Oct 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/120.png",
-      "tag":["nom","undead","priest"]
+      "tag": [
+        "nom",
+        "undead",
+        "priest"
+      ]
     },
     {
       "name": "Master-Linker Cane",
@@ -2421,7 +2624,12 @@
       "effect": ":iceelf:: At start of the fight, deal 400-2063 Tidal Wave damage and 400-2063 Frostbolt damage.\n:iceelf::mage: or :iceelf::priest:: Deal 600-3094 instead.\n:sto::iceelf::mage: or :sto::iceelf::priest:: Deal 800-4126 instead.\nTidal Wave damage is a normal damage that before being dealt increases one of your positive alterations at random by 25% (rounded up).\nFrostbolt damage is a normal damage that applies 10% of its value as Frostbite to the opponent.",
       "last_patch": "13 Dec 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/191.png",
-      "tag":["iceelf","mage","priest","sto"]
+      "tag": [
+        "iceelf",
+        "mage",
+        "priest",
+        "sto"
+      ]
     },
     {
       "name": "Morning Star Mace",
@@ -2431,7 +2639,11 @@
       "effect": ":sap:: At the start of the fight, deal 581-2997 Pure DMG to your opponent, then receive Thorn equal to 20% of their Strength.\n:sap::warrior: or :sap: :berserker:: you also receive 1 Dexterity.\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
       "last_patch": "09 Sep 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/100.png",
-      "tag":["sap","warrior","berserker"]
+      "tag": [
+        "sap",
+        "warrior",
+        "berserker"
+      ]
     },
     {
       "name": "Murasama's Sheath",
@@ -2441,7 +2653,11 @@
       "effect": ":kot:: each time one of your dice is changed during the fight, your Strength and DMG+ are increased by 4-20%.\n:kot::warrior: or :kot::marauder:: you also receive 1 Dodge, Riposte or Critical at random.",
       "last_patch": "07 Jun 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/87.png",
-      "tag":["kot","warrior","marauder"]
+      "tag": [
+        "kot",
+        "warrior",
+        "marauder"
+      ]
     },
     {
       "name": "Naya's Crown",
@@ -2451,7 +2667,10 @@
       "effect": "At the start of the fight your :noz::marauder: heroes receive 600-3095 Shield and all the opposing heroes receive 60-309 Frostbite.\nNaya: your :noz::marauder: heroes also receive 60-309 DMG+ and 1 Dodge.",
       "last_patch": "16 Sep 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/105.png",
-      "tag":["noz","marauder"]
+      "tag": [
+        "noz",
+        "marauder"
+      ]
     },
     {
       "name": "Nobleman's Helmet",
@@ -2461,7 +2680,9 @@
       "effect": ":ava: : Each time you active an ability, if you are more wounded than your opponent, Heal 250-1289 and you receive 1-5 Decoy.",
       "last_patch": "31 Jan 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/140.png",
-      "tag":["ava"]
+      "tag": [
+        "ava"
+      ]
     },
     {
       "name": "Not that Spooky Mask",
@@ -2471,7 +2692,11 @@
       "effect": ":undead:, :demon: or :unkrace:: at the start of the fight, you get 1 Mist for each of your :undead:, :demon: or :unkrace: ally.\nEach time you consume a Mist, you heal 350-1805.",
       "last_patch": "28 Oct 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/121.png",
-      "tag":["undead","demon","unkrace"]
+      "tag": [
+        "undead",
+        "demon",
+        "unkrace"
+      ]
     },
     {
       "name": "Obscure",
@@ -2481,7 +2706,11 @@
       "effect": ":zil:: each time you receive a new positive alteration, deal 405-2089 Shock DMG, +101-522 for each opposing positive alteration.\n:zil::mage: or :zil::marauder:: Receive 0-2 Decoy at the start of the fight.\nShock DMG is a DMG that cannot be reduced or increased, but still is affected by Scarab and Shield-like skills.",
       "last_patch": "18 Jul 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/149.png",
-      "tag":["zil","mage","marauder"]
+      "tag": [
+        "zil",
+        "mage",
+        "marauder"
+      ]
     },
     {
       "name": "Oracle's Scepter",
@@ -2491,7 +2720,9 @@
       "effect": ":priest: or :unkclass:: Each time you receive Runes, you deal 100-515 flat DMG to the opposing hero for each Rune received, then gain 20-103 Blessing.\nSapient or The Curator: Triggering your Blessing also deals as much flat DMG as your Blessing to the opposing hero.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "28 Aug 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/162.png",
-      "tag":["priest"]
+      "tag": [
+        "priest"
+      ]
     },
     {
       "name": "Orb of Fire",
@@ -2501,7 +2732,7 @@
       "effect": "At the start of the fight, deals 155-799 DMG to the opponent, and it receives 15-79 DMG-.",
       "last_patch": "24 Mar 2022",
       "url": "https://www.eredan-arena.com/images/HD/items/1.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Orb of Life",
@@ -2511,7 +2742,7 @@
       "effect": "At the end of skill activation phase, heal 388-2001 health points.",
       "last_patch": "24 Mar 2022",
       "url": "https://www.eredan-arena.com/images/HD/items/19.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Paladin's Amulet",
@@ -2521,7 +2752,9 @@
       "effect": ":ava:: at the end of the fight Heal 400-2063 and deal 400-2063 Shock DMG, 600-3094 if you have Blessing or Lightroot.\nShock DMG is a DMG that cannot be modified by alterations, but can consume shield skills and can be prevented.",
       "last_patch": "24 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/112.png",
-      "tag":["ava"]
+      "tag": [
+        "ava"
+      ]
     },
     {
       "name": "Pocket-shooter",
@@ -2531,7 +2764,9 @@
       "effect": "At the end of the fight, deals 291-1501 Fireball DMG. Repeat it once if you are a :pir:.\nFireball DMG is a DMG that causes a tenth of its value as DMG-.",
       "last_patch": "24 Mar 2022",
       "url": "https://www.eredan-arena.com/images/HD/items/48.png",
-      "tag":["pir"]
+      "tag": [
+        "pir"
+      ]
     },
     {
       "name": "Potion of Power CS",
@@ -2541,7 +2776,7 @@
       "effect": "At the start of the fight, you receive 15-77 DMG+.",
       "last_patch": "29 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/67.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Power of Guem",
@@ -2551,7 +2786,9 @@
       "effect": ":colossus:: Each time you activate a skill, deal 252-1300 flat DMG to your opponent, and if you have exactly 1 Roll left, your opponent gets 50 Thunderstruck or 50 DMG-.\nFlat DMG is a DMG that ignores any alteration.",
       "last_patch": "01 Jun 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/74.png",
-      "tag":["colossus"]
+      "tag": [
+        "colossus"
+      ]
     },
     {
       "name": "Reindeer Bell",
@@ -2561,7 +2798,10 @@
       "effect": ":win::beast:: At the start of the fight, you receive 50-257 DMG+ more 5-25 for each of your opponent Frost tokens and your opponent receive 1 Frost + 1 for each of your :human: allies.",
       "last_patch": "23 Dec 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/193.png",
-      "tag":["win","beast"]
+      "tag": [
+        "win",
+        "beast"
+      ]
     },
     {
       "name": "Repulsion Belt",
@@ -2571,7 +2811,9 @@
       "effect": ":mage:: At the start of the fight, get 39-201 DMG+.\nEach time you receive Thunderstruck, receive half of it as DMG+.",
       "last_patch": "30 Jul 2022",
       "url": "https://www.eredan-arena.com/images/thumb/items/59.png",
-      "tag":["mage"]
+      "tag": [
+        "mage"
+      ]
     },
     {
       "name": "Rhum of the Pirate",
@@ -2581,7 +2823,10 @@
       "effect": ":pir: : At the start of the fight you receive 58-299 DMG+ and all your other :pir: receive 29-149 DMG+.\n:captain: : you also receive 29-149 Rage.",
       "last_patch": "13 Sep 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/101.png",
-      "tag":["pir","captain"]
+      "tag": [
+        "pir",
+        "captain"
+      ]
     },
     {
       "name": "Ring of the Winter",
@@ -2591,7 +2836,9 @@
       "effect": ":iceelf:: At the start of the fight and at the end of skill activation phase, receive 500-2579 Blizzard, +50-257 for every Frost on the opposing heroes.\nNibelle or The Cailleach: your opponents also receive 0-2 Frost.\nThis items considers the Frosts on opponents outside of the combat too.",
       "last_patch": "09 Dec 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/132.png",
-      "tag":["iceelf"]
+      "tag": [
+        "iceelf"
+      ]
     },
     {
       "name": "Rondache",
@@ -2601,7 +2848,9 @@
       "effect": ":human:: At the start of the fight, give yourself and your :human: allies Shield = 500-2579 + your base Strength.",
       "last_patch": "20 Jan 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/55.png",
-      "tag":["human"]
+      "tag": [
+        "human"
+      ]
     },
     {
       "name": "Rosary of Corruption",
@@ -2611,7 +2860,10 @@
       "effect": ":neh:: Each time you suffer more than 3000 DMG, your opponent receives 58-299 DMG- and 58-299 Bleeding.\n:neh::demon:: Your opponent also loses a positive alteration.",
       "last_patch": "18 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/80.png",
-      "tag":["neh","demon"]
+      "tag": [
+        "neh",
+        "demon"
+      ]
     },
     {
       "name": "Royal Sword",
@@ -2621,7 +2873,10 @@
       "effect": ":ava::warrior:: At start of the fight, deal 600-3095 normal DMG and receive 0-3 Riposte.",
       "last_patch": "28 Jun 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/144.png",
-      "tag":["ava","warrior"]
+      "tag": [
+        "ava",
+        "warrior"
+      ]
     },
     {
       "name": "Runic Diadem",
@@ -2631,7 +2886,10 @@
       "effect": ":run::priest:: each time you activate a skill receive 20-103 Blessing.",
       "last_patch": "29 Sep 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/109.png",
-      "tag":["run","priest"]
+      "tag": [
+        "run",
+        "priest"
+      ]
     },
     {
       "name": "Ruuna's Trident",
@@ -2641,7 +2899,11 @@
       "effect": ":priest:: Each time you activate an ability, deal 175-902 Tidal Wave damage.\n:win::priest:: Deal 175-902 Icy Tidal Wave damage instead.\n:run::priest:: Deal 262-1353 Tidal Wave damage instead.\nTidal Wave damage is a normal damage that before being dealt increases one of your positive alterations at random by 25% (rounded up).\nIcy damage is a damage increased by 10% for each Frost token on your opponent that also applies 1 Frost token to your opponent after that damage.",
       "last_patch": "18 Dec 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/194.png",
-      "tag":["priest","win","run"]
+      "tag": [
+        "priest",
+        "win",
+        "run"
+      ]
     },
     {
       "name": "Scroll of Entropy",
@@ -2651,7 +2913,9 @@
       "effect": ":priest:: At the end of skill activation phase, remove two negative alterations from both heroes in fight.\nRandomly deal 200-1031 Pure DMG to the opposing hero or heal 200-1031 DMG for each alteration removed.\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
       "last_patch": "28 Aug 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/163.png",
-      "tag":["priest"]
+      "tag": [
+        "priest"
+      ]
     },
     {
       "name": "Secret Plan",
@@ -2661,7 +2925,9 @@
       "effect": ":craftsman:: At the beggining of the fight, for each of your :swordDice: get a random effect between:  +80-412 Strength  opp 80-412 thunderStruck  80-412 DMG+  80-412 opp DMG-",
       "last_patch": "14 Oct 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/116.png",
-      "tag":["craftsman"]
+      "tag": [
+        "craftsman"
+      ]
     },
     {
       "name": "Serpentine Scepter",
@@ -2671,7 +2937,9 @@
       "effect": ":naga:: Each time your opponent's Constriction is triggered, Heal 97-500 and increase one of your positive alterations by 4-25% (rounded up or down randomly)",
       "last_patch": "03 Sep 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/165.png",
-      "tag":["naga"]
+      "tag": [
+        "naga"
+      ]
     },
     {
       "name": "Shield CS",
@@ -2681,7 +2949,7 @@
       "effect": "At the start of the fight, get 120-619 Shield.",
       "last_patch": "29 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/70.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Shield Generator",
@@ -2691,7 +2959,9 @@
       "effect": ":golem:: at the start of the fight, you get 600-3095 Shield + 150-773 for each of your :golem: ally.",
       "last_patch": "11 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/127.png",
-      "tag":["golem"]
+      "tag": [
+        "golem"
+      ]
     },
     {
       "name": "Sinister Shroud",
@@ -2701,7 +2971,9 @@
       "effect": ":guem:: Each time you receive DMG+, you also receive 155-799 Shield, + 77-399 for each opposing positive alteration.\nIf Oykun, the Kagemusha or Graviton, Warden of the Void or Councillor Kuraying is one of your allies, he receives 15-79 DMG+.",
       "last_patch": "31 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/89.png",
-      "tag":["guem"]
+      "tag": [
+        "guem"
+      ]
     },
     {
       "name": "Smash-rock Mass",
@@ -2711,7 +2983,7 @@
       "effect": "Each time you deal DMG higher than 4000, receive 39-201 Rage and 39-201 Berserk.",
       "last_patch": "24 Mar 2022",
       "url": "https://www.eredan-arena.com/images/thumb/items/50.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Snowsplitter",
@@ -2721,7 +2993,9 @@
       "effect": ":berserker:: At the start of the fight, deal 350-1805 Shieldbreaker and receive 0-2 Endurance.\nAt the end of the skill activation phase, deal also 175-902 Icy Hit damage and receive 0-1 Riposte.\nShieldbreaker damage is a normal damage that removes one of your opponent's shield-skills (Blizzard, Shield or Arcane Barrier) at random and increases the damage by the value of the removed shield more half of it.\nIcy Hit damage is a normal damage increased by 10% for each Frost token on your opponent that also applies 1 Frost token to your opponent after that damage.",
       "last_patch": "02 Dec 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/189.png",
-      "tag":["berserker"]
+      "tag": [
+        "berserker"
+      ]
     },
     {
       "name": "Solra's Bumblebee",
@@ -2731,7 +3005,10 @@
       "effect": ":nom:: Each time you are Healed, you receive 8-41 Resilience.\n:nom::priest:: If you are Healed by at least 1000 DMG, you receive Purify 1.",
       "last_patch": "17 Feb 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/137.png",
-      "tag":["nom","priest"]
+      "tag": [
+        "nom",
+        "priest"
+      ]
     },
     {
       "name": "Solstice Stone",
@@ -2741,7 +3018,11 @@
       "effect": ":mage: or :priest:: Each time you are Healed, Deal 98-505 flat damage and you get 9-50 DMG+.\n:sto::mage: or :sto::priest:: Trigger this effect at the beginning and at the end of the fight as well.",
       "last_patch": "10 Oct 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/125.png",
-      "tag":["mage","priest","sto"]
+      "tag": [
+        "mage",
+        "priest",
+        "sto"
+      ]
     },
     {
       "name": "Sorcerer's Staff",
@@ -2751,7 +3032,11 @@
       "effect": ":mage::guem:: At the start of the fight you deal 349-1800 Lightning and 349-1800 Tidal Wave DMG to your opponent.\n:sto::mage::guem:: You also deal 349-1800 Spellbreaker DMG.",
       "last_patch": "31 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/91.png",
-      "tag":["mage","guem","sto"]
+      "tag": [
+        "mage",
+        "guem",
+        "sto"
+      ]
     },
     {
       "name": "Spiked Scourge",
@@ -2761,7 +3046,10 @@
       "effect": ":marauder: ou :warrior: : at the start of the fight you receive 48-247 Thorns.\nEach time you activate a skill you deal flat DMG to your opponent equal to your Thorn's value.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "24 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/84.png",
-      "tag":["warrior","marauder"]
+      "tag": [
+        "warrior",
+        "marauder"
+      ]
     },
     {
       "name": "Spiritual Branch",
@@ -2771,7 +3059,9 @@
       "effect": ":dais:: At the end of skill activation phase, receive 40-206, +4-20 for each of your Spores, then deal 400-2060 Pure DMG to your opponent twice.\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
       "last_patch": "19 Jul 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/157.png",
-      "tag":["dais"]
+      "tag": [
+        "dais"
+      ]
     },
     {
       "name": "Staff of Kei'zan",
@@ -2781,7 +3071,9 @@
       "effect": "At the start of the fight, Deal 1000-5159 Flowering DMG, +333-1719 for each of your :dais: allies, then receive 50-257 Thorns.\nKei'zan or Kei'zan the World-Tree: you also receive 10-51 Restore & 1 Critical.\nFlowering DMG is a normal DMG that applies 1 Spore to you and to your opponent.",
       "last_patch": "19 Jul 2024",
       "url": "http://static.eredan.com/images/print/517ae72f6f1dedfad3ad7f83eecb5e9c.png",
-      "tag":["dais"]
+      "tag": [
+        "dais"
+      ]
     },
     {
       "name": "Stink Bomb",
@@ -2791,7 +3083,7 @@
       "effect": "At the start of the fight, you and your opponent are dealt 400-2063 Shock damage and receive 40-206 Stench.\nShock damage is a damage that cannot be reduced or increased, but still can be prevented by skills like Shield or Scarab.",
       "last_patch": "06 Aug 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/145.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Sun Emblem",
@@ -2801,7 +3093,9 @@
       "effect": ":solarian:: At the start of the fight and after the skill activation phase, you receive 40-206 Resilience & 0-2 Solar Light.",
       "last_patch": "31 May 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/148.png",
-      "tag":["solarian"]
+      "tag": [
+        "solarian"
+      ]
     },
     {
       "name": "Sword CS",
@@ -2811,7 +3105,7 @@
       "effect": "At the start of the Fight, deal 100-515 Normal DMG.",
       "last_patch": "29 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/66.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Sword of Artaban",
@@ -2821,7 +3115,7 @@
       "effect": ":colossus:: At the start of the fight deal 969-4999 Pure DMG to your opponent, +242-1249 for each of your :swordDice: and receive 96-499 DMG+.\nArtaban: you also receive 1 Riposte and 1 Critical.\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
       "last_patch": "06 Sep 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/96.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Sword of Sins",
@@ -2831,7 +3125,9 @@
       "effect": ":demon:: Each time your opponent receives DMG-, it suffers 145-748 flat DMG.\nDark Messiah Samael: you also gain 29-149 Strength+.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "18 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/82.png",
-      "tag":["demon"]
+      "tag": [
+        "demon"
+      ]
     },
     {
       "name": "Sword of the 5 Elders",
@@ -2841,7 +3137,7 @@
       "effect": "Every fifth damage you deal is increased by 15-77%, and every fifth damage you suffer is decreased by 15-77%.",
       "last_patch": "24 Mar 2022",
       "url": "https://www.eredan-arena.com/images/HD/items/52.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Tear of Guem",
@@ -2851,7 +3147,7 @@
       "effect": "Colossus: Each time you activate a skill, heal 291-1501, plus 400 Shield if you have 1 Roll left.",
       "last_patch": "01 Jun 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/75.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Telendar's Blade",
@@ -2861,7 +3157,10 @@
       "effect": ":zil::marauder:: Each time you change one of your dice to :swordDice: you deal 194-1000 Backstab DMG to your opponent.\nTelendar: you also receive DMG+ 38-200.",
       "last_patch": "06 Jan 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/94.png",
-      "tag":["zil","marauder"]
+      "tag": [
+        "zil",
+        "marauder"
+      ]
     },
     {
       "name": "Temporal Backpack",
@@ -2871,7 +3170,9 @@
       "effect": ":tem:: Each time you receive a new negative alteration trigger a Portal 600-3095 and receive Dodge 0-3.",
       "last_patch": "19 Apr 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/150.png",
-      "tag":["tem"]
+      "tag": [
+        "tem"
+      ]
     },
     {
       "name": "The Bestial",
@@ -2881,7 +3182,7 @@
       "effect": "At the start of the fight deal 1400-7223 flat DMG to your opponent and receive 140-722 Curse.\nFenrath or Kolodan: at the end of the skill activation phase convert your highest negative alteration into Strength.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "21 Jun 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/154.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "The Bushido Code",
@@ -2891,7 +3192,9 @@
       "effect": "Each time your opponent receives Strength, get 10-51% of it.\n:kot::At the start of the fight receive 1 Riposte.",
       "last_patch": "26 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/39.png",
-      "tag":["kot"]
+      "tag": [
+        "kot"
+      ]
     },
     {
       "name": "The Council's Banner",
@@ -2901,7 +3204,9 @@
       "effect": ":cou:: Each time you receive a new positive alteration you Heal 400-2063 DMG and your allies receive 20-103 DMG+ and 20-103 Strength+, 40-206 if they belong to :cou:.",
       "last_patch": "24 Nov 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/106.png",
-      "tag":["cou"]
+      "tag": [
+        "cou"
+      ]
     },
     {
       "name": "The Hullbreaker",
@@ -2911,7 +3216,11 @@
       "effect": ":pir:: each time you activate a skill deal 100-515 flat DMG to your opponent and they receive 10-51 DMG- for each of their Powder.\n:pir::warrior: or :pir::berserker:: at the start of the fight, give your opponent 1 Powder.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "07 Oct 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/115.png",
-      "tag":["pir","warrior","berserker"]
+      "tag": [
+        "pir",
+        "warrior",
+        "berserker"
+      ]
     },
     {
       "name": "The Imperatrice's Crown",
@@ -2921,7 +3230,9 @@
       "effect": ":equinox:: Your opponent get 80-412 Leech and Bleeding.\nThe Imperatrice: Set your opponent's Strength to 1 and you get 0-2 Critical.",
       "last_patch": "29 Oct 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/170.png",
-      "tag":["equinox"]
+      "tag": [
+        "equinox"
+      ]
     },
     {
       "name": "The Kingslayers",
@@ -2931,7 +3242,9 @@
       "effect": ":marauder:: At the start of the fight, deal 200-1031 Backstab damage and you receive 0-2 Dodge.\nAt the end of the fight, deal 400-2063 Decisive Strike and you receive 0-2 Dodge.\nBackstab damage is a damage that also decreases your opponent Strength by 50% of the damage value.\nDecisive Strike is a DMG that ignores all alterations that could reduce or prevent it.",
       "last_patch": "25 Nov 2024",
       "url": "https://www.eredan-arena.com/images/thumb/items/188.png",
-      "tag":["marauder"]
+      "tag": [
+        "marauder"
+      ]
     },
     {
       "name": "The Last Barrier",
@@ -2941,7 +3254,9 @@
       "effect": ":tem:: At the start of the fight, receive 800-4127 Shield and trigger a Deja Vu.",
       "last_patch": "18 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/42.png",
-      "tag":["tem"]
+      "tag": [
+        "tem"
+      ]
     },
     {
       "name": "The Perforator",
@@ -2951,7 +3266,7 @@
       "effect": "At the start of the fight, delete half of one of your opponent's positive alteration 0-4 times then deal 850-4385 Shock DMG.\nShock DMG is an unmodifiable DMG.",
       "last_patch": "03 Feb 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/51.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "The Pilgrim",
@@ -2961,7 +3276,9 @@
       "effect": ":mage:: each time your opponent receives a new negative alteration, receive 2 Critical then you deal 300-1547 Pure DMG to them.\nMalyss, Alishk or Lord Alishk: Also trigger this effect at the start of the fight.\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
       "last_patch": "30 Sep 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/53.png",
-      "tag":["mage"]
+      "tag": [
+        "mage"
+      ]
     },
     {
       "name": "Thunder Spear",
@@ -2971,7 +3288,9 @@
       "effect": ":ava:: each time one of your alterations is decreased or consumed you deal 200-1031 flat DMG to your opponent and they receive 20-103 Thunderstruck.\nThunder King: at the end of the fight repeatedly deal 200-1031 Lightning DMG for each of your :swordDice:.\nFlat DMG is a DMG that ignores everything.\nLightning DMG is a Normal DMG that causes a tenth of its value as Thunderstruck to the opponent.\nThis equipment considers negative and positive alterations to trigger.",
       "last_patch": "07 Oct 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/113.png",
-      "tag":["ava"]
+      "tag": [
+        "ava"
+      ]
     },
     {
       "name": "Time Portal Hourglass",
@@ -2981,7 +3300,9 @@
       "effect": ":tem:: At the end of the skill activation phase, deal 600-3095 Portal DMG.\nPortal DMG is a Normal DMG that after being caused applies one of your negative alterations to the opponent.",
       "last_patch": "18 Nov 2023",
       "url": "https://www.eredan-arena.com/images/thumb/items/128.png",
-      "tag":["tem"]
+      "tag": [
+        "tem"
+      ]
     },
     {
       "name": "Tonbokiri",
@@ -2991,7 +3312,10 @@
       "effect": ":kot::warrior:: at the start of the fight deal 600-3095 Earthquake DMG, +150-773 for each of your :swordDice:.\nMaster Tadakatsu: each time you attack with your :swordDice:, give the opposing heroes 120-619 Aftermath.\nEarthquake DMG is a DMG that ignores all alterations that could reduce or prevent it and applies half of its value as Aftermath to all active opponents.",
       "last_patch": "07 Jun 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/153.png",
-      "tag":["kot","warrior"]
+      "tag": [
+        "kot",
+        "warrior"
+      ]
     },
     {
       "name": "Totem of Spirits",
@@ -3001,7 +3325,18 @@
       "effect": ":dais:: Each time you activate a skill, heal 97-500 and receive 9-50 DMG+.",
       "last_patch": "19 Jul 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/158.png",
-      "tag":["dais"]
+      "tag": [
+        "dais"
+      ]
+    },
+    {
+      "name": "Transmuting Saw",
+      "rarity": "Epic",
+      "position": "1st / Attacker",
+      "level": "1 - 10",
+      "effect": ":equinox:: Each time you activate an ability, deal 110-567 damage and your opponnent receives 11-56 Bleeding.\n:equinox::unkrace:: at the start of the fight gain also Mirror 0-2.",
+      "last_patch": "21 Mar 2025",
+      "url": "https://www.eredan-arena.com/images/thumb/items/199.png"
     },
     {
       "name": "Utga",
@@ -3011,7 +3346,9 @@
       "effect": "At the end of skill activation phase, deal 291-1501 Shock DMG and receive 291-1501 Shield, +145-750 for each :sto: ally.\n:sto:: Each time one of your dice becomes a :swordDice:, receive 97-500 Shield.\nShock DMG is a DMG that cannot be reduced or increased, but still is affected by Scarab and Shield-like skills.",
       "last_patch": "06 Aug 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/45.png",
-      "tag":["sto"]
+      "tag": [
+        "sto"
+      ]
     },
     {
       "name": "Vampire Dagger",
@@ -3021,7 +3358,9 @@
       "effect": ":undead:: At the end of skill activation phase, deal 500-2579 Backstab damage and 500-2579 Life Drain damage to your opponent.\nLazlo, the Bloody Count or Wayna or Wayna's Reflection: Deal 250-1289 Bite damage and 250-1289 Backstab damage at the start of the fight.\nBite damage is a damage that also applies 100 Bleeding to the opponent.\nBackstab damage is a damage that also decreases your opponent Strength by 50% of the damage value.\nLifedrain damage is a damage that also heals by the same value.",
       "last_patch": "29 Oct 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/169.png",
-      "tag":["undead"]
+      "tag": [
+        "undead"
+      ]
     },
     {
       "name": "Variustradi",
@@ -3031,7 +3370,9 @@
       "effect": ":bard:: Each time you activate a skill, your opponent receives 48-247 Echo.",
       "last_patch": "10 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/77.png",
-      "tag":["bard"]
+      "tag": [
+        "bard"
+      ]
     },
     {
       "name": "Wakizashi",
@@ -3041,7 +3382,9 @@
       "effect": ":kot:: At the end of the fight, deal 485-2502 pure DMG to your opponent, +97-500 for each of your :swordDice: .\nPure DMG is a DMG that ignores all alterations that could reduce or prevent it.",
       "last_patch": "26 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/86.png",
-      "tag":["kot"]
+      "tag": [
+        "kot"
+      ]
     },
     {
       "name": "War Cuirass",
@@ -3051,7 +3394,7 @@
       "effect": "At the rune consumption phase, gain 155-799 Shield for each Rune consumed.",
       "last_patch": "04 Aug 2022",
       "url": "https://www.eredan-arena.com/images/HD/items/34.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Weakening Potion CS",
@@ -3061,7 +3404,7 @@
       "effect": "At the start of the fight, your opponent's Strength is reduced by 30-154.",
       "last_patch": "29 Nov 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/71.png",
-      "tag":[]
+      "tag": []
     },
     {
       "name": "Wings of Amalgon",
@@ -3071,7 +3414,9 @@
       "effect": "At the start of combat, receive 1 Dragon Hide, or 2 if you are :dragon:.\nEach time one of your Dragon Hides are consumed, deal 500-2579 Flat DMG to your opponent and he receives 50-257 Bleeding.\nFlat DMG is a DMG that ignores everything.",
       "last_patch": "10 Feb 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/41.png",
-      "tag":["dragon"]
+      "tag": [
+        "dragon"
+      ]
     },
     {
       "name": "Witchblade Armor",
@@ -3081,7 +3426,10 @@
       "effect": ":noz::marauder::The first two times you suffer more than 2500 DMG at once, cast a Spellbreaker 300-1547 and receive 30-154 DMG+.\nSpellbreaker DMG is a DMG that halves a random opposing positive alteration.",
       "last_patch": "19 Sep 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/103.png",
-      "tag":["noz","marauder"]
+      "tag": [
+        "noz",
+        "marauder"
+      ]
     },
     {
       "name": "Wolf Muzzle",
@@ -3091,7 +3439,9 @@
       "effect": ":beast: : At the start of the fight, deal 485-2502 Shock DMG to your opponent and receive 20 Berserk for each of your :beast:. \"  Shock DMG is a DMG that cannot be modified by alteration, but can consume shield skills and can be prevented.",
       "last_patch": "22 Aug 2023",
       "url": "https://www.eredan-arena.com/images/HD/items/47.png",
-      "tag":["beast"]
+      "tag": [
+        "beast"
+      ]
     },
     {
       "name": "Wyrmguard",
@@ -3101,7 +3451,10 @@
       "effect": ":noz::warrior:: If you did not roll any :swordDice: at the start of the game, all the positive alterations received by you are increased by 8-41%, +10% if Blue-Mark is one of your current allies in game (rounded up).",
       "last_patch": "20 Aug 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/161.png",
-      "tag":["noz","warrior"]
+      "tag": [
+        "noz",
+        "warrior"
+      ]
     },
     {
       "name": "Yafujima's Scroll",
@@ -3111,7 +3464,10 @@
       "effect": ":kot::mage:: each time your Strength increases, you receive as much DMG+ as 10-51% of this Strength increase.",
       "last_patch": "13 Jan 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/136.png",
-      "tag":["kot","mage"]
+      "tag": [
+        "kot",
+        "mage"
+      ]
     },
     {
       "name": "Zil Bell",
@@ -3121,7 +3477,11 @@
       "effect": ":zil:: at the start and at the end of the fight, deal 388-2001 Illusion DMG.\n:zil::human: or :zil::guem:: you also gain 1 Critical.\nIllusion DMG is a DMG that acts randomly as one of the others standard damaging active skills, except Smite or Physical Attack.",
       "last_patch": "06 Jan 2024",
       "url": "https://www.eredan-arena.com/images/HD/items/93.png",
-      "tag":["zil","human","guem"]
+      "tag": [
+        "zil",
+        "human",
+        "guem"
+      ]
     }
   ]
 }
